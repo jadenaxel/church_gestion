@@ -1,0 +1,125 @@
+{
+  "recordedAt": "2026-10-02T03:27:50.259Z",
+  "environment": "Windows local native; existing PostgreSQL 18; Node 24.19.0; pnpm 11.25.0; no external deployment",
+  "webBuildId": "9Rs93DdT6H9Go53CnWtsV",
+  "tests": [
+    {
+      "artifact": "gc-unit-results.json",
+      "start": "2026-10-02T03:13:31.005Z",
+      "files": 52,
+      "passed": 352,
+      "failed": 0,
+      "pending": 0,
+      "success": true
+    },
+    {
+      "artifact": "gc-root-api-results.json",
+      "start": "2026-10-02T03:13:49.622Z",
+      "files": 6,
+      "passed": 69,
+      "failed": 0,
+      "pending": 0,
+      "success": true
+    },
+    {
+      "artifact": "gc-backend-api-results.json",
+      "start": "2026-10-02T03:14:43.224Z",
+      "files": 9,
+      "passed": 90,
+      "failed": 0,
+      "pending": 0,
+      "success": true
+    },
+    {
+      "artifact": "gc-db-final-results.json",
+      "start": "2026-10-02T03:15:45.080Z",
+      "files": 7,
+      "passed": 36,
+      "failed": 0,
+      "pending": 0,
+      "success": true
+    }
+  ],
+  "browser": {
+    "startTime": "2026-10-02T03:16:20.790Z",
+    "duration": 215083.799,
+    "expected": 19,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "hashes": [
+    {
+      "path": "docs/premium-evidence/2026-10-01/gc-unit-results.json",
+      "sha256": "d9bf473a235dc0a55ee5a0deefa949da966b83723ac643abaffd83b958c14073"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/gc-root-api-results.json",
+      "sha256": "0b5e6aa2a6f6acf473ff4e33fd78a460cab93ecfb82259ab67a4ccf3d39659fa"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/gc-backend-api-results.json",
+      "sha256": "d2f7e7a1e583e830469137c4afbc942492f18f8382bd82d5090d0e7bf0ae518d"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/gc-db-final-results.json",
+      "sha256": "3b55aae43e664a6ef5daee921923b308ba19b093b43d1c28f6938a02914c2d66"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/browser-results.json",
+      "sha256": "1ffdd01c4ce7f76a4461149fe3920ecd0090b499e31a0f9b60797be77f9fd779"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/performance-final.json",
+      "sha256": "34f17fa95eb8a902b54157daeb34c3864b37532ec0d3f565c8ad08c1b4056025"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/final-local-state.json",
+      "sha256": "1e89fb96d49786b995b252e9e7d50449b6b0a5766c2423d01634f853cf8b96ef"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/source-secret-scan-review.json",
+      "sha256": "3043587ac0413d5e41ebca9da01f4d62ab884d15ca126f5f00f587c99c274eff"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/reporte-sintetico.pdf",
+      "sha256": "a1046d2607bf98b5aec2e2884410335d84a50aacc274ad601efdf4cbfb21a05f"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/reporte-sintetico-es.pdf",
+      "sha256": "498287a4f52f2e6916e56d8dc1d045cdb77654768a2aebdaff306d02197094fa"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/reporte-sintetico-en.pdf",
+      "sha256": "305a0537279246c4ad6466374d65f0c3234c1e5a658820ae7af7e708cd13f0c2"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/reporte-sintetico-fr.pdf",
+      "sha256": "a271d9d22f6e9c89889c85287c51bb946eca018b1070fcb5f8179679abc2a8d2"
+    }
+  ],
+  "staticChecks": {
+    "typecheck": "PASS",
+    "lint": {
+      "result": "PASS",
+      "files": 256
+    },
+    "buildServices": "PASS",
+    "buildWeb": "PASS",
+    "openapi": {
+      "result": "PASS",
+      "routes": 151
+    },
+    "productionDependencyAudit": "No known vulnerabilities reported on this run; not independent security approval",
+    "sbom": "docs/sbom.cdx.json; CycloneDX 1.7"
+  },
+  "overallAcceptance": "INCOMPLETE; production not approved",
+  "limits": [
+    "Hashes identify these generated artifacts, not a signature or a hash of all source files.",
+    "Browser 19 comprises 16 GC and 3 Nom scenarios, not 19 complete ministry/nominations cycles.",
+    "DB36 repeats prior DB19+15 and adds leased-disconnect2; do not sum repetitions.",
+    "ServicesReady true, metadataReviewClear false due one owner-unverified unregistered database; no deletion.",
+    "D10 requires specific authorization and review; R29, reset outbox, cross-database commit and runtime provisioning distribution remain technical gaps.",
+    "Human/physical/provider/staging/load/independent validations remain pending."
+  ]
+}

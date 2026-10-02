@@ -1,0 +1,39 @@
+{
+  "verifiedAt": "2026-10-02T03:01:30.605Z",
+  "mode": "read-only local metadata; no schema, business, credential, membership or message writes",
+  "webBuildId": "deA8EC3awHzyV_-6jgeyw",
+  "postgresqlExistingMajor": 18,
+  "registeredChurches": 2,
+  "originalCanonicalTargetsVerified": true,
+  "residuals": {
+    "syntheticTenants": 0,
+    "syntheticGlobalUsers": 0,
+    "unregisteredTenantDatabases": 1,
+    "temporaryControlDatabases": 0,
+    "unregisteredRuntimeLogins": 0
+  },
+  "services": {
+    "web": {
+      "up": false,
+      "status": null
+    },
+    "gateway": {
+      "up": false,
+      "status": null
+    },
+    "nominationsWeb": {
+      "up": false,
+      "status": null
+    },
+    "nominationsApi": {
+      "up": false,
+      "status": null
+    }
+  },
+  "pass": false,
+  "limits": [
+    "Own fixture cleanup verified separately in each test. This metadata count is not authorization to delete unknown resources.",
+    "Immutable synthetic control audit is deliberately retained.",
+    "Local readiness does not certify production infrastructure or providers."
+  ]
+}

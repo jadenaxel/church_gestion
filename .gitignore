@@ -1,0 +1,16 @@
+node_modules/
+.next/
+dist/
+.local/
+.env
+.env.local
+.env.*
+!.env.example
+outputs/ozama/
+coverage/
+playwright-report/
+test-results/
+*.log
+*.tsbuildinfo
+apps/web/public/fonts/*.otf
+!apps/web/public/fonts/.gitkeep

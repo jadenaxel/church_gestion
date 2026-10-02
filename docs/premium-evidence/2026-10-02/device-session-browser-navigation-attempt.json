@@ -1,0 +1,276 @@
+{
+  "config": {
+    "argv": [
+      "[REDACTED_LOCAL_USER_PATH]",
+      "X:\\CODE\\GestionChurch\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.device-session.config.ts"
+    ],
+    "configFile": "X:\\CODE\\GestionChurch\\playwright.device-session.config.ts",
+    "rootDir": "X:/CODE/GestionChurch/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "X:/CODE/GestionChurch/.local/device-session-browser-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "device-session-isolated-chromium",
+        "name": "device-session-isolated-chromium",
+        "testDir": "X:/CODE/GestionChurch/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "device-signer-storage.spec.ts",
+          "premium-nominations.spec.ts"
+        ],
+        "timeout": 360000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/premium-evidence/2026-10-02/device-session-browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "device-signer-storage.spec.ts",
+      "file": "device-signer-storage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "real IndexedDB signer creation is immutable across tabs, scopes and reloads",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "device-session-isolated-chromium",
+              "projectName": "device-session-isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 174,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T14:45:09.661Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "febe7fc7ab67805923e7-4a566cdfe65b05e2d4b0",
+          "file": "device-signer-storage.spec.ts",
+          "line": 19,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "premium-nominations.spec.ts",
+      "file": "premium-nominations.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "GestionChurch SSO, tenant isolation and return work in the real browser",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "device-session-isolated-chromium",
+              "projectName": "device-session-isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1422,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T14:45:10.671Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "44bf0c62e61301b4b59c-14b0babcb43aaa9176f0",
+          "file": "premium-nominations.spec.ts",
+          "line": 155,
+          "column": 1
+        },
+        {
+          "title": "device-bound guided start, persisted browser proof, explicit approval and targeted revocation work end to end",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "device-session-isolated-chromium",
+              "projectName": "device-session-isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 23212,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('dialog', { name: 'Nuevo proceso de nombramientos', exact: true }).getByRole('button', { name: 'Continuar', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled type=\"button\" data-slot=\"button\" data-size=\"default\" data-variant=\"default\" class=\"inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-[box-shadow,transform,border-color] outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:poin…>…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not stable\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is not stable\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m  15 × retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  - element was detached from the DOM, retrying\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('dialog', { name: 'Nuevo proceso de nombramientos', exact: true }).getByRole('button', { name: 'Continuar', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled type=\"button\" data-slot=\"button\" data-size=\"default\" data-variant=\"default\" class=\"inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-[box-shadow,transform,border-color] outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:poin…>…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not stable\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is not stable\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m  15 × retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  - element was detached from the DOM, retrying\u001b[22m\n\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium-nominations.spec.ts:204:72",
+                    "location": {
+                      "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium-nominations.spec.ts",
+                      "column": 72,
+                      "line": 204
+                    },
+                    "snippet": "  202 |   await dialog.locator('input[type=date]').nth(0).fill('2027-01-01');\n  203 |   await dialog.locator('input[type=date]').nth(1).fill('2027-12-31');\n> 204 |   await dialog.getByRole('button', { name: 'Continuar', exact: true }).click();\n      |                                                                        ^\n  205 |   await dialog.getByRole('button', { name: 'Continuar', exact: true }).click();\n  206 |   const createdPromise = page.waitForResponse((response) => response.url().endsWith('/v1/cycles') && response.request().method() === 'POST');\n  207 |   await dialog.getByRole('button', { name: 'Crear período en borrador', exact: true }).click();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium-nominations.spec.ts",
+                        "column": 72,
+                        "line": 204
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('dialog', { name: 'Nuevo proceso de nombramientos', exact: true }).getByRole('button', { name: 'Continuar', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled type=\"button\" data-slot=\"button\" data-size=\"default\" data-variant=\"default\" class=\"inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-[box-shadow,transform,border-color] outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:poin…>…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not stable\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is not stable\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m  15 × retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  - element was detached from the DOM, retrying\u001b[22m\n\n\n  202 |   await dialog.locator('input[type=date]').nth(0).fill('2027-01-01');\n  203 |   await dialog.locator('input[type=date]').nth(1).fill('2027-12-31');\n> 204 |   await dialog.getByRole('button', { name: 'Continuar', exact: true }).click();\n      |                                                                        ^\n  205 |   await dialog.getByRole('button', { name: 'Continuar', exact: true }).click();\n  206 |   const createdPromise = page.waitForResponse((response) => response.url().endsWith('/v1/cycles') && response.request().method() === 'POST');\n  207 |   await dialog.getByRole('button', { name: 'Crear período en borrador', exact: true }).click();\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium-nominations.spec.ts:204:72"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T14:45:14.784Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "public-http-diagnostics",
+                      "contentType": "application/json",
+                      "body": "W3sicGF0aCI6Ii92MS9zZXNzaW9uIiwic3RhdHVzIjoyMDAsImhhc1NlcnZlclRpbWUiOnRydWUsImxpZmV0aW1lTXMiOjI4Nzk5ODc1fV0="
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium-nominations.spec.ts",
+                    "column": 72,
+                    "line": 204
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "44bf0c62e61301b4b59c-b65ebcc471ca4397bafe",
+          "file": "premium-nominations.spec.ts",
+          "line": 169,
+          "column": 1
+        },
+        {
+          "title": "central explicit operational roles project and revocation invalidates the old session",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "device-session-isolated-chromium",
+              "projectName": "device-session-isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2052,
+                  "error": {
+                    "message": "Error: Command failed: [REDACTED_LOCAL_USER_PATH]\n(node:20944) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n{\"pass\":false,\"operation\":\"scoped-gestionchurch-browser-fixture\",\"stage\":\"cleanup-ownership-preflight\",\"code\":\"ERR_ASSERTION\"}\n",
+                    "stack": "Error: Command failed: [REDACTED_LOCAL_USER_PATH]\n(node:20944) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n{\"pass\":false,\"operation\":\"scoped-gestionchurch-browser-fixture\",\"stage\":\"cleanup-ownership-preflight\",\"code\":\"ERR_ASSERTION\"}\n"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: Command failed: [REDACTED_LOCAL_USER_PATH]\n(node:20944) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n{\"pass\":false,\"operation\":\"scoped-gestionchurch-browser-fixture\",\"stage\":\"cleanup-ownership-preflight\",\"code\":\"ERR_ASSERTION\"}\n"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T14:48:23.524Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "44bf0c62e61301b4b59c-7a790b928d2d0ef0558e",
+          "file": "premium-nominations.spec.ts",
+          "line": 339,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-02T14:45:08.199Z",
+    "duration": 363603.622,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  },
+  "evidenceRedaction": {
+    "version": 3,
+    "scope": "local URL query strings and fragments; private error-context attachment references removed; local user filesystem paths redacted",
+    "rawReportRetainedPrivately": true,
+    "testOutcomesAndCountsUnchanged": true
+  }
+}

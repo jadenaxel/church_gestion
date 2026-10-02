@@ -1,0 +1,200 @@
+x-app: &app
+  build:
+    context: .
+    target: runtime
+  restart: unless-stopped
+  environment: &app-env
+    # This compose stack is local development, not an internet-facing production deployment.
+    NODE_ENV: development
+    BIND_HOST: 0.0.0.0
+    CONTROL_DATABASE_URL: postgresql://postgres:gestionchurch-local-only@postgres:5432/gestionchurch_control
+    POSTGRES_ADMIN_URL: postgresql://postgres:gestionchurch-local-only@postgres:5432/postgres
+    TENANT_DATABASE_HOST: postgres
+    TENANT_DATABASE_PORT: 5432
+    TENANT_DATABASE_USER: postgres
+    TENANT_DATABASE_PASSWORD: gestionchurch-local-only
+    JWT_SECRET: local-only-change-this-jwt-secret-32-chars
+    INTERNAL_SERVICE_SECRET: local-only-change-this-service-secret
+    CONFIG_ENCRYPTION_KEY: local-only-change-this-configuration-key-32-chars
+    WEB_ORIGIN: http://localhost:3000
+    BASE_DOMAIN: gestionchurch.com
+    AUTH_RATE_LIMIT_PER_MINUTE: 10
+    API_RATE_LIMIT_PER_MINUTE: 240
+    IDENTITY_SERVICE_URL: http://identity:4011
+    TENANT_SERVICE_URL: http://tenant:4012
+    CALENDAR_SERVICE_URL: http://calendar:4013
+    FILE_SERVICE_URL: http://files:4014
+    NOTIFICATION_SERVICE_URL: http://notification:4015
+    PUBLIC_API_URL: http://localhost:4000/api/v1
+    REPORTS_SERVICE_URL: http://reports:4016
+    ELDERS_SERVICE_URL: http://elders:4017
+    PERSONAL_MINISTRIES_SERVICE_URL: http://personal-ministries:4018
+    WOMENS_MINISTRY_SERVICE_URL: http://womens-ministry:4019
+    DEPARTMENT_OPERATIONS_SERVICE_URL: http://department-operations:4020
+    SMTP_HOST: mailpit
+    SMTP_PORT: 1025
+    OBJECT_STORAGE_PROVIDER: s3
+    S3_ENDPOINT: http://minio:9000
+    S3_ACCESS_KEY: gestionchurch
+    S3_SECRET_KEY: gestionchurch-local-only
+    S3_BUCKET: gestionchurch-programs
+    CLAMAV_HOST: clamav
+    CLAMAV_PORT: 3310
+    REDIS_URL: redis://redis:6379
+    NATS_URL: nats://nats:4222
+    OTEL_EXPORTER_OTLP_ENDPOINT: http://jaeger:4318
+    WHATSAPP_MODE: simulated
+    WHATSAPP_APP_SECRET: local-only-meta-webhook-secret
+  depends_on:
+    setup:
+      condition: service_completed_successfully
+
+services:
+  postgres:
+    image: postgres:18.0-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: gestionchurch-local-only
+      POSTGRES_DB: gestionchurch_control
+    ports: ["127.0.0.1:55432:5432"]
+    volumes: ["postgres-data:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d gestionchurch_control"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+  redis:
+    image: redis:8.2-alpine
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes: ["redis-data:/data"]
+  nats:
+    image: nats:2.11-alpine
+    restart: unless-stopped
+    command: ["-js", "-sd", "/data", "-m", "8222"]
+    volumes: ["nats-data:/data"]
+  minio:
+    image: minio/minio:RELEASE.2025-09-07T16-13-09Z
+    restart: unless-stopped
+    command: server /data --console-address :9001
+    environment:
+      MINIO_ROOT_USER: gestionchurch
+      MINIO_ROOT_PASSWORD: gestionchurch-local-only
+    ports: ["127.0.0.1:59001:9001"]
+    volumes: ["minio-data:/data"]
+  clamav:
+    image: clamav/clamav:1.4
+    restart: unless-stopped
+    volumes: ["clamav-data:/var/lib/clamav"]
+  mailpit:
+    image: axllent/mailpit:v1.27
+    restart: unless-stopped
+    ports: ["127.0.0.1:58025:8025"]
+  jaeger:
+    image: jaegertracing/all-in-one:1.68.0
+    restart: unless-stopped
+    environment:
+      COLLECTOR_OTLP_ENABLED: "true"
+    ports: ["127.0.0.1:16686:16686"]
+  setup:
+    <<: *app
+    restart: "no"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    command: ["sh", "-c", "pnpm db:migrate && pnpm db:seed"]
+  identity:
+    <<: *app
+    command: ["pnpm", "exec", "tsx", "services/identity-service/src/main.ts"]
+    healthcheck: { test: ["CMD", "wget", "-qO-", "http://127.0.0.1:4011/health/live"], interval: 10s, timeout: 3s, retries: 10 }
+  tenant:
+    <<: *app
+    command: ["pnpm", "exec", "tsx", "services/tenant-service/src/main.ts"]
+    healthcheck: { test: ["CMD", "wget", "-qO-", "http://127.0.0.1:4012/health/live"], interval: 10s, timeout: 3s, retries: 10 }
+  calendar:
+    <<: *app
+    depends_on:
+      setup: { condition: service_completed_successfully }
+      nats: { condition: service_started }
+    command: ["pnpm", "exec", "tsx", "services/calendar-service/src/main.ts"]
+    healthcheck: { test: ["CMD", "wget", "-qO-", "http://127.0.0.1:4013/health/live"], interval: 10s, timeout: 3s, retries: 10 }
+  files:
+    <<: *app
+    depends_on:
+      setup: { condition: service_completed_successfully }
+      minio: { condition: service_started }
+      clamav: { condition: service_started }
+    command: ["pnpm", "exec", "tsx", "services/file-service/src/main.ts"]
+    healthcheck: { test: ["CMD", "wget", "-qO-", "http://127.0.0.1:4014/health/live"], interval: 10s, timeout: 3s, retries: 10 }
+  notification:
+    <<: *app
+    depends_on:
+      setup: { condition: service_completed_successfully }
+      mailpit: { condition: service_started }
+      nats: { condition: service_started }
+    command: ["pnpm", "exec", "tsx", "services/notification-service/src/main.ts"]
+    healthcheck: { test: ["CMD", "wget", "-qO-", "http://127.0.0.1:4015/health/live"], interval: 10s, timeout: 3s, retries: 10 }
+  reports:
+    <<: *app
+    depends_on:
+      setup: { condition: service_completed_successfully }
+    command: ["pnpm", "exec", "tsx", "services/reports-service/src/main.ts"]
+    healthcheck: { test: ["CMD", "wget", "-qO-", "http://127.0.0.1:4016/health/live"], interval: 10s, timeout: 3s, retries: 10 }
+  elders:
+    <<: *app
+    depends_on:
+      setup: { condition: service_completed_successfully }
+    command: ["pnpm", "exec", "tsx", "services/elders-service/src/main.ts"]
+    healthcheck: { test: ["CMD", "wget", "-qO-", "http://127.0.0.1:4017/health/live"], interval: 10s, timeout: 3s, retries: 10 }
+  personal-ministries:
+    <<: *app
+    depends_on:
+      setup: { condition: service_completed_successfully }
+    command: ["pnpm", "exec", "tsx", "services/personal-ministries-service/src/main.ts"]
+    healthcheck: { test: ["CMD", "wget", "-qO-", "http://127.0.0.1:4018/health/live"], interval: 10s, timeout: 3s, retries: 10 }
+  womens-ministry:
+    <<: *app
+    depends_on:
+      setup: { condition: service_completed_successfully }
+    command: ["pnpm", "exec", "tsx", "services/womens-ministry-service/src/main.ts"]
+    healthcheck: { test: ["CMD", "wget", "-qO-", "http://127.0.0.1:4019/health/live"], interval: 10s, timeout: 3s, retries: 10 }
+  department-operations:
+    <<: *app
+    depends_on:
+      setup: { condition: service_completed_successfully }
+    command: ["pnpm", "exec", "tsx", "services/department-operations-service/src/main.ts"]
+    healthcheck: { test: ["CMD", "wget", "-qO-", "http://127.0.0.1:4020/health/live"], interval: 10s, timeout: 3s, retries: 10 }
+  gateway:
+    <<: *app
+    depends_on:
+      setup: { condition: service_completed_successfully }
+      identity: { condition: service_healthy }
+      tenant: { condition: service_healthy }
+      calendar: { condition: service_healthy }
+      files: { condition: service_healthy }
+      notification: { condition: service_healthy }
+      reports: { condition: service_healthy }
+      elders: { condition: service_healthy }
+      personal-ministries: { condition: service_healthy }
+      womens-ministry: { condition: service_healthy }
+      department-operations: { condition: service_healthy }
+    command: ["pnpm", "exec", "tsx", "services/api-gateway/src/main.ts"]
+    ports: ["127.0.0.1:4000:4000"]
+    healthcheck: { test: ["CMD", "wget", "-qO-", "http://127.0.0.1:4000/health/ready"], interval: 10s, timeout: 4s, retries: 10 }
+  web:
+    <<: *app
+    environment:
+      <<: *app-env
+      NEXT_PUBLIC_API_URL: http://localhost:4000/api/v1
+    depends_on:
+      gateway: { condition: service_healthy }
+    command: ["pnpm", "--dir", "apps/web", "exec", "next", "start", "--hostname", "0.0.0.0", "--port", "3000"]
+    ports: ["127.0.0.1:3000:3000"]
+
+volumes:
+  postgres-data:
+  redis-data:
+  nats-data:
+  minio-data:
+  clamav-data:

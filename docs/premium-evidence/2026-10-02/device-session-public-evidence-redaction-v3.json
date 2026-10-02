@@ -1,0 +1,265 @@
+{
+  "generatedAt": "2026-10-02T16:48:12.109Z",
+  "pass": true,
+  "redaction": {
+    "version": 3,
+    "scope": "local URL query strings and fragments; private error-context attachment references removed; local user filesystem paths redacted",
+    "rawReportRetainedPrivately": true,
+    "testOutcomesAndCountsUnchanged": true
+  },
+  "scope": "The 13 selected existing public browser JSON copies only; no private originals, application logs, databases, keys or production source read or changed.",
+  "privateOriginalsRead": false,
+  "privateOriginalsModified": false,
+  "backupsCreated": false,
+  "mainAndFinalByteIdentical": true,
+  "fullReportsPreservedExceptDeclaredRedactions": true,
+  "identitiesOutcomesCountsPreserved": true,
+  "idempotenceVerified": true,
+  "selfTests": {
+    "pass": true,
+    "pathCases": 8,
+    "publicAttachmentCases": 2,
+    "failedSkippedPassedPreserved": true,
+    "alteredOutcomeRejected": true,
+    "alteredIdentityRejected": true,
+    "alteredCountRejected": true,
+    "idempotence": true
+  },
+  "files": [
+    {
+      "file": "device-session-browser-first-attempt.json",
+      "beforeSha256": "4d45bb9214f7901a33890ce1525cf06a6e90dbafae4883e91f8e0bccca24b298",
+      "afterSha256": "898177180ffcf938251415f1efb96428c9a4a4ba40f1a305de8ed136d025183b",
+      "redactionCount": 1,
+      "redactions": [
+        {
+          "rule": "local-user-filesystem-path",
+          "fieldRoute": "$.config.argv[0]"
+        }
+      ],
+      "outcomesUnchanged": true,
+      "identitiesUnchanged": true,
+      "countsUnchanged": true,
+      "beforeOutcomeSnapshotSha256": "2f18346e4364e2f3abb5cc9faaf443347b936711b0d8266649281831d4835732",
+      "afterOutcomeSnapshotSha256": "2f18346e4364e2f3abb5cc9faaf443347b936711b0d8266649281831d4835732"
+    },
+    {
+      "file": "device-session-browser-diagnostic-attempt.json",
+      "beforeSha256": "a659e574e2167e46ad9981c54cb2f64f370bf0bde18fd53d4cc30448bd32e7d6",
+      "afterSha256": "30655321ed52d77bd30d19897df564dd1594272fc5a8f9b568d7db6a01aa5a02",
+      "redactionCount": 1,
+      "redactions": [
+        {
+          "rule": "local-user-filesystem-path",
+          "fieldRoute": "$.config.argv[0]"
+        }
+      ],
+      "outcomesUnchanged": true,
+      "identitiesUnchanged": true,
+      "countsUnchanged": true,
+      "beforeOutcomeSnapshotSha256": "34c8cca810aab278f99cebcec1c919f1baddafbe2b57e6804897527bfa06476a",
+      "afterOutcomeSnapshotSha256": "34c8cca810aab278f99cebcec1c919f1baddafbe2b57e6804897527bfa06476a"
+    },
+    {
+      "file": "device-session-browser-clock-attempt.json",
+      "beforeSha256": "145b924e2e5e557aae460bd725dabfc8f8f7c19df853457702d9fe1a4807d3b6",
+      "afterSha256": "4412eb9709c13c9d20e74f91434280a19ce925446061e3a5d1be6f3740c55ab8",
+      "redactionCount": 1,
+      "redactions": [
+        {
+          "rule": "local-user-filesystem-path",
+          "fieldRoute": "$.config.argv[0]"
+        }
+      ],
+      "outcomesUnchanged": true,
+      "identitiesUnchanged": true,
+      "countsUnchanged": true,
+      "beforeOutcomeSnapshotSha256": "904256f0608f800821d18685cc8fb11d89a54bb109a4df2647956542c2959758",
+      "afterOutcomeSnapshotSha256": "904256f0608f800821d18685cc8fb11d89a54bb109a4df2647956542c2959758"
+    },
+    {
+      "file": "device-session-browser-membership-race-attempt.json",
+      "beforeSha256": "930aa8e25bb1a34179db8f60135006ce7a6d51dacbdd5bad5e4f5c183abc2855",
+      "afterSha256": "5bef40d5f78eb5d7fb93347ab09380706422ed015b880db8616b20d11a7a3732",
+      "redactionCount": 1,
+      "redactions": [
+        {
+          "rule": "local-user-filesystem-path",
+          "fieldRoute": "$.config.argv[0]"
+        }
+      ],
+      "outcomesUnchanged": true,
+      "identitiesUnchanged": true,
+      "countsUnchanged": true,
+      "beforeOutcomeSnapshotSha256": "09f89f714a9f99e0c81fb8bce67ca3d2e5824e0a55199f58825177c49fcc5487",
+      "afterOutcomeSnapshotSha256": "09f89f714a9f99e0c81fb8bce67ca3d2e5824e0a55199f58825177c49fcc5487"
+    },
+    {
+      "file": "device-session-browser-navigation-attempt.json",
+      "beforeSha256": "b59be16e133c1b5534bb0915fddaa30ffe247255132b24718e2f3a57f16431d1",
+      "afterSha256": "6e10c901b390403785c1a387160bf731a30d2d29c819891c42a76c75d6f5d6a0",
+      "redactionCount": 4,
+      "redactions": [
+        {
+          "rule": "local-user-filesystem-path",
+          "fieldRoute": "$.config.argv[0]"
+        },
+        {
+          "rule": "local-user-filesystem-path",
+          "fieldRoute": "$.suites[1].specs[2].tests[0].results[0].error.message"
+        },
+        {
+          "rule": "local-user-filesystem-path",
+          "fieldRoute": "$.suites[1].specs[2].tests[0].results[0].error.stack"
+        },
+        {
+          "rule": "local-user-filesystem-path",
+          "fieldRoute": "$.suites[1].specs[2].tests[0].results[0].errors[0].message"
+        }
+      ],
+      "outcomesUnchanged": true,
+      "identitiesUnchanged": true,
+      "countsUnchanged": true,
+      "beforeOutcomeSnapshotSha256": "82b70bd7b981d3bcfaa0be90cf83082e94989f84c118279fffb5ccbb7ab5d0bb",
+      "afterOutcomeSnapshotSha256": "82b70bd7b981d3bcfaa0be90cf83082e94989f84c118279fffb5ccbb7ab5d0bb"
+    },
+    {
+      "file": "device-session-browser-tablet-attempt.json",
+      "beforeSha256": "ea67c211d3f98320f8d4b4fc266213e342a4cd983b3b308e6bc09e46c43d92e4",
+      "afterSha256": "136fb842dd2372d8dbd5c6d04cbfcda128c853a8c636112e18570b5ef1e98a47",
+      "redactionCount": 1,
+      "redactions": [
+        {
+          "rule": "local-user-filesystem-path",
+          "fieldRoute": "$.config.argv[0]"
+        }
+      ],
+      "outcomesUnchanged": true,
+      "identitiesUnchanged": true,
+      "countsUnchanged": true,
+      "beforeOutcomeSnapshotSha256": "0d2e1b919e23ebcbfa26149da59f9b2b75622bf4a936eb66981abd4f947a1868",
+      "afterOutcomeSnapshotSha256": "0d2e1b919e23ebcbfa26149da59f9b2b75622bf4a936eb66981abd4f947a1868"
+    },
+    {
+      "file": "device-session-browser-focus-attempt.json",
+      "beforeSha256": "4903d090fe73fcb9d6494b322fdacca7838931dc364197b488589968ece659ba",
+      "afterSha256": "1456c3514c5132ae6ed4adc4c46d32fa4b0137cfe9796dd9c24b872d555897f4",
+      "redactionCount": 1,
+      "redactions": [
+        {
+          "rule": "local-user-filesystem-path",
+          "fieldRoute": "$.config.argv[0]"
+        }
+      ],
+      "outcomesUnchanged": true,
+      "identitiesUnchanged": true,
+      "countsUnchanged": true,
+      "beforeOutcomeSnapshotSha256": "7c1735a89d0182ce597cae59ec0a08af3c9beff79ffba2893f19b32472620e5c",
+      "afterOutcomeSnapshotSha256": "7c1735a89d0182ce597cae59ec0a08af3c9beff79ffba2893f19b32472620e5c"
+    },
+    {
+      "file": "device-session-browser-rebound-attempt.json",
+      "beforeSha256": "19031161f0335edfd6a9a7ebbf116697b505af487577ee0dc4237c1d1b0c65d2",
+      "afterSha256": "a53bac8d9ccab1ed6b349f2fff4fd7f5107bd480544094cd6083d21cff411bdb",
+      "redactionCount": 1,
+      "redactions": [
+        {
+          "rule": "local-user-filesystem-path",
+          "fieldRoute": "$.config.argv[0]"
+        }
+      ],
+      "outcomesUnchanged": true,
+      "identitiesUnchanged": true,
+      "countsUnchanged": true,
+      "beforeOutcomeSnapshotSha256": "73590702d4d5f155392569bb04e6fde9568ae534b1744351da8941546a777368",
+      "afterOutcomeSnapshotSha256": "73590702d4d5f155392569bb04e6fde9568ae534b1744351da8941546a777368"
+    },
+    {
+      "file": "device-session-browser-exchange-attempt.json",
+      "beforeSha256": "be89c004cec0b7c170b35520864f904df43c13c32d791b1b6441e67f0bc6775b",
+      "afterSha256": "517824d018f1595b36636a7e0f32cc94649a54ca2483ebc59ca70e7a7f45a9a2",
+      "redactionCount": 1,
+      "redactions": [
+        {
+          "rule": "local-user-filesystem-path",
+          "fieldRoute": "$.config.argv[0]"
+        }
+      ],
+      "outcomesUnchanged": true,
+      "identitiesUnchanged": true,
+      "countsUnchanged": true,
+      "beforeOutcomeSnapshotSha256": "5ad70662cbf9b73593654df4717a680a720961ee66758979be122dba2be94269",
+      "afterOutcomeSnapshotSha256": "5ad70662cbf9b73593654df4717a680a720961ee66758979be122dba2be94269"
+    },
+    {
+      "file": "device-session-browser-upstream-diagnostic-attempt.json",
+      "beforeSha256": "ebc202644a8309d021cfda7b12b7e3622fc97acb97939e8c167a41036abcd028",
+      "afterSha256": "5b3083407e3b04c577d239ddba6b97bcbb3017c89e8efc4aa79dae8677d2c4b3",
+      "redactionCount": 1,
+      "redactions": [
+        {
+          "rule": "local-user-filesystem-path",
+          "fieldRoute": "$.config.argv[0]"
+        }
+      ],
+      "outcomesUnchanged": true,
+      "identitiesUnchanged": true,
+      "countsUnchanged": true,
+      "beforeOutcomeSnapshotSha256": "7b75ba407d03d5ef852d1e0fd50e27ae0ea10c083f177c431e02485c070678c8",
+      "afterOutcomeSnapshotSha256": "7b75ba407d03d5ef852d1e0fd50e27ae0ea10c083f177c431e02485c070678c8"
+    },
+    {
+      "file": "device-session-browser-upstream-confirmation-attempt.json",
+      "beforeSha256": "fcd87c322ceca83cc87041001b5d792a9151f22a483cda5911e3624045c11f4a",
+      "afterSha256": "7757da56f9a2af2cfcecb0e879944c18c904ee7a603ddadd889a78386327d916",
+      "redactionCount": 1,
+      "redactions": [
+        {
+          "rule": "local-user-filesystem-path",
+          "fieldRoute": "$.config.argv[0]"
+        }
+      ],
+      "outcomesUnchanged": true,
+      "identitiesUnchanged": true,
+      "countsUnchanged": true,
+      "beforeOutcomeSnapshotSha256": "7cb85573fdfacaff8098e0f071dc6c5177781e68de1ad50465053c6911e83bd1",
+      "afterOutcomeSnapshotSha256": "7cb85573fdfacaff8098e0f071dc6c5177781e68de1ad50465053c6911e83bd1"
+    },
+    {
+      "file": "device-session-browser-final-attempt.json",
+      "beforeSha256": "b22578bc5d3a4058178797b18699e1ab17b6acb34f35149b103484bba72e61f8",
+      "afterSha256": "61771761ef847ced010deccafce910f4c52243e9563c8d8e0911d7b321b54ab2",
+      "redactionCount": 1,
+      "redactions": [
+        {
+          "rule": "local-user-filesystem-path",
+          "fieldRoute": "$.config.argv[0]"
+        }
+      ],
+      "outcomesUnchanged": true,
+      "identitiesUnchanged": true,
+      "countsUnchanged": true,
+      "beforeOutcomeSnapshotSha256": "1095fd2b40df56f8b6eef6a65bbf2fdd2792c608cdd6bb94559f6fbc5d0ec96f",
+      "afterOutcomeSnapshotSha256": "1095fd2b40df56f8b6eef6a65bbf2fdd2792c608cdd6bb94559f6fbc5d0ec96f"
+    },
+    {
+      "file": "device-session-browser-results.json",
+      "beforeSha256": "b22578bc5d3a4058178797b18699e1ab17b6acb34f35149b103484bba72e61f8",
+      "afterSha256": "61771761ef847ced010deccafce910f4c52243e9563c8d8e0911d7b321b54ab2",
+      "redactionCount": 1,
+      "redactions": [
+        {
+          "rule": "local-user-filesystem-path",
+          "fieldRoute": "$.config.argv[0]"
+        }
+      ],
+      "outcomesUnchanged": true,
+      "identitiesUnchanged": true,
+      "countsUnchanged": true,
+      "beforeOutcomeSnapshotSha256": "1095fd2b40df56f8b6eef6a65bbf2fdd2792c608cdd6bb94559f6fbc5d0ec96f",
+      "afterOutcomeSnapshotSha256": "1095fd2b40df56f8b6eef6a65bbf2fdd2792c608cdd6bb94559f6fbc5d0ec96f"
+    }
+  ],
+  "totalRedactions": 16,
+  "remainingRedactions": 0
+}

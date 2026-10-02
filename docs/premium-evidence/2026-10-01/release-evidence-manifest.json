@@ -1,0 +1,268 @@
+{
+  "manifestVersion": 2,
+  "recordedAt": "2026-10-02T04:38:22Z",
+  "environment": "Windows local native; existing PostgreSQL 18; Node 24.19.0; pnpm 11.25.0; no external deployment",
+  "webBuildId": "m3K6tJtdsnu8HBjapaS00",
+  "sourceAssociation": "Root coordinated a full services/web build and Native Start -SkipDataSetup -NoBuild before these regressions. Vitest/Playwright JSONs do not embed BuildID; this association is executor provenance, not a cryptographic hash of every source file.",
+  "tests": [
+    {
+      "artifact": "gc-unit-results.json",
+      "start": "2026-10-02T04:12:52.931Z",
+      "files": 57,
+      "passed": 395,
+      "failed": 0,
+      "pending": 0,
+      "success": true
+    },
+    {
+      "artifact": "gc-root-api-results.json",
+      "start": "2026-10-02T04:13:29.137Z",
+      "files": 6,
+      "passed": 69,
+      "failed": 0,
+      "pending": 0,
+      "success": true
+    },
+    {
+      "artifact": "gc-backend-api-results.json",
+      "start": "2026-10-02T04:14:10.049Z",
+      "files": 10,
+      "passed": 103,
+      "failed": 0,
+      "pending": 0,
+      "success": true
+    },
+    {
+      "artifact": "gc-db-final-results.json",
+      "start": "2026-10-02T04:15:57.203Z",
+      "files": 9,
+      "passed": 66,
+      "failed": 0,
+      "pending": 0,
+      "success": true
+    }
+  ],
+  "browser": {
+    "startTime": "2026-10-02T04:12:42.61Z",
+    "duration": 220658.34300000002,
+    "expected": 21,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0,
+    "gcScenarios": 18,
+    "nominationsScenarios": 3
+  },
+  "subsets": {
+    "passwordReset": {
+      "units": 14,
+      "postgresql": 17,
+      "http": 8
+    },
+    "tenantSettingsReconciliation": {
+      "postgresql": 12,
+      "http": 3
+    },
+    "calendarHttp": 9,
+    "eldersPostgresql": 15,
+    "rule": "Already included in the four main JSONs; do not sum them again."
+  },
+  "runtime": {
+    "readOnlySnapshot": "2026-10-02T04:21:49.907Z",
+    "servicesReady": true,
+    "metadataReviewClear": false,
+    "pass": false,
+    "unregisteredOwnerUnverifiedTenantDatabases": 1,
+    "syntheticRegisteredTenants": 0,
+    "officialStatusLatest": "2026-10-02T00:37:03.2010212-04:00",
+    "officialStatus": "UP web3000 gateway4000 Nomweb3300 NomAPI4100 PostgreSQL existing"
+  },
+  "staticChecks": {
+    "typecheck": "PASS",
+    "lint": {
+      "result": "PASS",
+      "files": 305,
+      "scope": "Count at documented repetition; configuration/artifacts included, not module/action coverage."
+    },
+    "buildServices": "PASS",
+    "buildWeb": "PASS",
+    "openapi": {
+      "result": "PASS",
+      "routes": 153
+    },
+    "productionDependencyAudit": "No known vulnerabilities reported on this run; not independent security approval",
+    "sbom": "docs/sbom.cdx.json; CycloneDX 1.7",
+    "repetitionEvidence": "static-checks-final.json"
+  },
+  "performance": {
+    "artifact": "performance-final.json",
+    "measuredAt": "2026-10-02T04:21:29.478Z",
+    "samples": {
+      "reads": 80,
+      "replaysOfOneCommand": 25
+    },
+    "concurrency": 1,
+    "p95Ms": {
+      "reads": 10.06,
+      "commands": 12.85
+    },
+    "userApprovedSlo": false
+  },
+  "sourcePatternScan": {
+    "artifact": "source-secret-scan-review.json",
+    "executedAt": "2026-10-02T04:29:28Z",
+    "files": 938,
+    "patterns": 6,
+    "findings": 9,
+    "exitCode": 1
+  },
+  "pdfVisualReview": {
+    "artifact": "pdf-visual-review.md",
+    "exportRangeUtc": "2026-10-02T04:15:57Z..2026-10-02T04:16:13Z",
+    "pdfs": 4,
+    "pagesInspected": 12,
+    "rasterDpi": 144,
+    "tagged": false,
+    "pdfUaApproved": false
+  },
+  "schemaApplication": {
+    "artifact": "additive-recovery-schema.json",
+    "businessDataMutations": 0,
+    "newIdentityGrants": 0,
+    "realUserRolesChanged": 0,
+    "credentialsChanged": 0,
+    "qaMessagesSentToRealUsers": 0
+  },
+  "hashes": [
+    {
+      "path": "docs/premium-evidence/2026-10-01/gc-unit-results.json",
+      "sha256": "0c8fa834c73b8019b8b4ba0365ebe85e81cbccbcc2c0e677f6580f1c8c4d0593"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/gc-root-api-results.json",
+      "sha256": "27a71b7cc09bf5d691ac9315b28570032741337cbe51e6ebd8138a8caa5bbea3"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/gc-backend-api-results.json",
+      "sha256": "1c2b153b90832cb54c05045b2341d043a1432cbeb8445ad76e2b55bddd41e54f"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/gc-db-final-results.json",
+      "sha256": "a0787cf2c10f694e03f05268625f6d9f72246be2f3a561f732a5825ef88f7b31"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/browser-results.json",
+      "sha256": "e4723dd9ff8bef2a5dbe254ffa829534cf5a2164e860515631cc6b6c8965b0c1"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/performance-final.json",
+      "sha256": "0c8b36e19e8541fea46e68eb5d835ebc4eb24955e02e5dfd955d432c8d94b293"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/final-local-state.json",
+      "sha256": "642a810338c1114c54f9b865e0ade296093c680073668ecb35b18ec7c9f2186e"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/source-secret-scan-review.json",
+      "sha256": "aa2114abdfd452aae2816255eb87a8f7f1b1c12c1e5cacc927d72a7b2eef5624"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/reporte-sintetico.pdf",
+      "sha256": "15446b3e5c90bc983ab2e7df33de0ec23c5def0ddb768d4d48b0e6332ee8950c"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/reporte-sintetico-es.pdf",
+      "sha256": "4e240852074f7e45e666e79fddde40a8c4f7ac314108ce57a1c3fe13ad737dbd"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/reporte-sintetico-en.pdf",
+      "sha256": "b7d99020caac24e9e6a798671512c10961b92e6b7730db4e48d2c9e49eb40f96"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/reporte-sintetico-fr.pdf",
+      "sha256": "9854db82133655a71cf08b22ff8e66b2c2111c0a822800d8011e866b3efedaf4"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/static-checks-final.json",
+      "sha256": "3d386c543231c771f5b709d846bb83b3acb5c3682f89f08a6ac180df2eb386d1"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/additive-recovery-schema.json",
+      "sha256": "97c363ba082638ce5d368ddf36df69b3ca602e198aa50649348652f56212c402"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/tenant-settings-reconciliation-db.json",
+      "sha256": "dc7e3b09a28ccea856f88b492a23831666efb9c0f5082c3a1de656990f258713"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/password-reset-outbox.md",
+      "sha256": "eb5360bda8e36b8f92681eb05233747d95be4ae59afd2eaa7e1be818d58a4ad1"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/frontend-ux.md",
+      "sha256": "def16c8d713925dea0c9b30f2174805e3559b980c83837aa25df13a8d7d25d94"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/pdf-visual-review.md",
+      "sha256": "d02d34e73e5bb44a55e77431218ed497845db6e167429eb03c8a0818a85debce"
+    },
+    {
+      "path": "docs/sbom.cdx.json",
+      "sha256": "fb9dcf75ba4117875c99201977a429bf9419ce59023d451928881782fb0cf8cf"
+    },
+    {
+      "path": "docs/premium-release-report.md",
+      "sha256": "6f331559d189a866e95911ac2f7120d5906817e8fb6a9b0ca9a16f1da7531112"
+    },
+    {
+      "path": "docs/premium-requirements-matrix.md",
+      "sha256": "203fd5f9b7b09f8126b1def39b1df03da09a561d7a3c722411977839762efac8"
+    },
+    {
+      "path": "docs/premium-delivery-plan.md",
+      "sha256": "a7490bd3718b2aa56c7e3914716b26353880f36f1fcb1dcaedbbe2603d938103"
+    },
+    {
+      "path": "docs/premium-action-inventory.md",
+      "sha256": "5556d3ed231c568f040af73740d591d97e6e145e0f6fc89e24b3b6438ee5c582"
+    },
+    {
+      "path": "docs/premium-threat-model.md",
+      "sha256": "09f5db65b4a3c196f1a048f8283c2c087591a5bbf2fa9c4dc81bee627f2208d1"
+    },
+    {
+      "path": "docs/premium-operations-runbook.md",
+      "sha256": "63f85e0526aa5fa8afe0472eaa2a4bda258748aed356aed292ac1d42b1ef5a8c"
+    },
+    {
+      "path": "docs/premium-user-guide.md",
+      "sha256": "4379d1e1d71440d50cf1f66078d52595f0944982f79951fe897fceeddf0ea089"
+    },
+    {
+      "path": "docs/premium-authorization-decisions.md",
+      "sha256": "d04b01c8a7b831a14fe815a32861f347d512dcf0cda83ebf0e111e1a5ba5c69f"
+    },
+    {
+      "path": "docs/premium-evidence/2026-10-01/evidence-index.md",
+      "sha256": "23133627f4798b477924bbb69b6683ebf6758907bb7f3e9306d6e46f339e0aa5"
+    }
+  ],
+  "hashScope": "These 28 artifacts only. Not an external signature, certification, every source file, all secrets, or all implementation behavior.",
+  "historical": {
+    "previous9RsFolder": "previous-9Rs93Dd",
+    "archivedFiles": 47,
+    "previousDeA8Folder": "previous-deA8EC3",
+    "failedAttemptsRetained": true,
+    "rule": "Historical runs and targeted repetitions are not additive coverage."
+  },
+  "overallAcceptance": "INCOMPLETE; production not approved",
+  "limits": [
+    "Browser21 comprises18 GC and3 Nom scenarios, not all ministry/nominations actions or21 full cycles.",
+    "DB66 includes earlier selections and new reset17/settings12; do not sum repeated suites.",
+    "ServicesReady true but metadataReviewClear false for one owner-unverified unregistered database, preserved rather than deleted.",
+    "D11 central explicit commission/custody assignments implemented; administrators do not automatically receive those permissions.",
+    "D10 device-session protocol requires specific authorization and review; revoked-device cookie defect is not resolved by role-revocation401.",
+    "Explicit valid DRAFT save and confirmed File survive reload/another tab; incomplete drafts, unacknowledged files and uncertain keys still rely on memory.",
+    "Reset durable intent and tenant-settings receipts/recovery tested; no exactly-once external delivery, distributed transaction or complete reconciliation UX claimed.",
+    "Runtime credential distribution, long storage outages, full action-state matrix, coordinated disaster recovery, human/physical/provider/staging/load/independent validations remain pending."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "recordedAt": "2026-10-02T04:32:23Z",
+  "webBuildId": "m3K6tJtdsnu8HBjapaS00",
+  "scope": "Final read-only static check repetition after source freeze; no browser/API/build execution in this record",
+  "checks": [
+    {
+      "command": "pnpm typecheck",
+      "exitCode": 0,
+      "output": "$ tsc -p tsconfig.services.json --noEmit && pnpm --dir apps/web typecheck\n$ tsc --noEmit"
+    },
+    {
+      "command": "pnpm lint",
+      "exitCode": 0,
+      "output": "$ biome lint . --diagnostic-level=error\nChecked 305 files in 162ms. No fixes applied."
+    },
+    {
+      "command": "pnpm validate:openapi; pnpm audit --prod",
+      "exitCode": 0,
+      "output": "$ tsx scripts/validate-openapi.ts\nOpenAPI válido: 153 rutas.\nNo known vulnerabilities found"
+    }
+  ],
+  "limits": [
+    "Lint file count includes configuration/generated artifacts, not modules or coverage.",
+    "Dependency audit absence of known notices is not an independent security assessment.",
+    "Build PASS and runtime association are recorded separately by the root executor; this record did not rebuild."
+  ]
+}

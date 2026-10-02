@@ -1,0 +1,262 @@
+{
+  "config": {
+    "argv": [
+      "[REDACTED_LOCAL_USER_PATH]",
+      "X:\\CODE\\GestionChurch\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.device-session.config.ts"
+    ],
+    "configFile": "X:\\CODE\\GestionChurch\\playwright.device-session.config.ts",
+    "rootDir": "X:/CODE/GestionChurch/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "X:/CODE/GestionChurch/.local/device-session-browser-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "device-session-isolated-chromium",
+        "name": "device-session-isolated-chromium",
+        "testDir": "X:/CODE/GestionChurch/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "device-signer-storage.spec.ts",
+          "premium-nominations.spec.ts"
+        ],
+        "timeout": 360000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/premium-evidence/2026-10-02/device-session-browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "device-signer-storage.spec.ts",
+      "file": "device-signer-storage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "real IndexedDB signer creation is immutable across tabs, scopes and reloads",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "device-session-isolated-chromium",
+              "projectName": "device-session-isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 276,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T13:43:42.398Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "febe7fc7ab67805923e7-4a566cdfe65b05e2d4b0",
+          "file": "device-signer-storage.spec.ts",
+          "line": 12,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "premium-nominations.spec.ts",
+      "file": "premium-nominations.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "GestionChurch SSO, tenant isolation and return work in the real browser",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "device-session-isolated-chromium",
+              "projectName": "device-session-isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1837,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T13:43:43.580Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "44bf0c62e61301b4b59c-14b0babcb43aaa9176f0",
+          "file": "premium-nominations.spec.ts",
+          "line": 124,
+          "column": 1
+        },
+        {
+          "title": "device-bound guided start, persisted browser proof, explicit approval and targeted revocation work end to end",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "device-session-isolated-chromium",
+              "projectName": "device-session-isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5319,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at assertNoHorizontalOverflow (X:\\CODE\\GestionChurch\\tests\\browser\\premium-nominations.spec.ts:88:100)\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium-nominations.spec.ts:197:7",
+                    "location": {
+                      "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium-nominations.spec.ts",
+                      "column": 100,
+                      "line": 88
+                    },
+                    "snippet": "  86 |\n  87 | async function assertNoHorizontalOverflow(page: Page) {\n> 88 |   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBe(true);\n     |                                                                                                    ^\n  89 | }\n  90 |\n  91 | async function unlockBrowser(page: Page, label: string) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium-nominations.spec.ts",
+                        "column": 100,
+                        "line": 88
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  86 |\n  87 | async function assertNoHorizontalOverflow(page: Page) {\n> 88 |   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBe(true);\n     |                                                                                                    ^\n  89 | }\n  90 |\n  91 | async function unlockBrowser(page: Page, label: string) {\n    at assertNoHorizontalOverflow (X:\\CODE\\GestionChurch\\tests\\browser\\premium-nominations.spec.ts:88:100)\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium-nominations.spec.ts:197:7"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T13:43:48.262Z",
+                  "annotations": [],
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium-nominations.spec.ts",
+                    "column": 100,
+                    "line": 88
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "44bf0c62e61301b4b59c-b65ebcc471ca4397bafe",
+          "file": "premium-nominations.spec.ts",
+          "line": 138,
+          "column": 1
+        },
+        {
+          "title": "central explicit operational roles project and revocation invalidates the old session",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "device-session-isolated-chromium",
+              "projectName": "device-session-isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2095,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T13:46:39.993Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "44bf0c62e61301b4b59c-7a790b928d2d0ef0558e",
+          "file": "premium-nominations.spec.ts",
+          "line": 292,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-02T13:43:40.850Z",
+    "duration": 348734.98199999996,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "evidenceRedaction": {
+    "version": 3,
+    "scope": "local URL query strings and fragments; private error-context attachment references removed; local user filesystem paths redacted",
+    "rawReportRetainedPrivately": true,
+    "testOutcomesAndCountsUnchanged": true
+  }
+}

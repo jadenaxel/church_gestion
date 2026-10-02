@@ -1,0 +1,61 @@
+name: quality
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:18-alpine
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: gestionchurch_control
+        ports: [55432:5432]
+        options: >-
+          --health-cmd "pg_isready -U postgres -d gestionchurch_control"
+          --health-interval 5s --health-timeout 5s --health-retries 20
+    env:
+      CONTROL_DATABASE_URL: postgresql://postgres:postgres@127.0.0.1:55432/gestionchurch_control
+      POSTGRES_ADMIN_URL: postgresql://postgres:postgres@127.0.0.1:55432/postgres
+      TENANT_DATABASE_HOST: 127.0.0.1
+      TENANT_DATABASE_PORT: 55432
+      TENANT_DATABASE_USER: postgres
+      TENANT_DATABASE_PASSWORD: postgres
+      JWT_SECRET: ci-only-secret-with-at-least-32-characters
+      INTERNAL_SERVICE_SECRET: ci-only-internal-secret
+      WHATSAPP_MODE: simulated
+    steps:
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
+        with: { version: 11.25.0 }
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm db:migrate && pnpm db:seed
+      - run: pnpm typecheck
+      - run: pnpm lint
+      - run: pnpm validate:openapi
+      - run: pnpm generate:sbom
+      - run: pnpm audit --prod --audit-level high
+      - run: pnpm dev > gestionchurch-ci.log 2>&1 &
+      - name: Wait for application
+        run: for i in {1..60}; do curl -fsS http://127.0.0.1:4000/health/live && curl -fsS http://127.0.0.1:3000/login >/dev/null && exit 0; sleep 2; done; exit 1
+      - run: pnpm test
+      - run: pnpm test:browser
+      - run: pnpm test:performance
+      - run: pnpm build
+      - if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostics
+          path: |
+            gestionchurch-ci.log
+            test-results
+            playwright-report

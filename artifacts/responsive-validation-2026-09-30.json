@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-01T00:02:17Z",
+  "localDate": "2026-09-30",
+  "scope": "Correcciones responsive y de accesibilidad de GestionChurch y su módulo Nombramientos. No es una certificación de todos los procesos de negocio ni de todos los dispositivos.",
+  "result": "PASS_WITH_COVERAGE_LIMITS",
+  "environment": {
+    "browser": "Codex In-app Browser, viewport emulado",
+    "tenantUsedForUIValidation": "central",
+    "runtime": "Native, compilaciones de producción locales",
+    "gestionChurchURL": "http://localhost:3000",
+    "nominationsURL": "http://localhost:3300",
+    "physicalDeviceTesting": false
+  },
+  "implementation": [
+    "Reflow basado en el ancho útil del contenido, manteniendo la línea gráfica existente.",
+    "Espacios departamentales con pestañas visibles, nombres accesibles y navegación por teclado.",
+    "Menú móvil con foco controlado, fondo inerte y cierre por Escape o fuera del menú.",
+    "Diálogos compartidos con aislamiento del fondo, navegación Tab/Shift+Tab, Escape y retorno del foco.",
+    "Formularios móviles en una columna, campos legibles y controles táctiles ampliados.",
+    "Tablas y listas anchas con desplazamiento local, sin ocultar desbordamientos globales.",
+    "Viewport dinámico y áreas seguras para menús, navegación inferior y diálogos.",
+    "Corrección de Revisión y del encabezado departamental en orientación horizontal.",
+    "Adaptación del encabezado, tarjetas protegidas y asistente inicial de Nombramientos.",
+    "Retorno del foco al botón Iniciar proceso al cerrar el asistente de Nombramientos."
+  ],
+  "browserValidation": {
+    "method": "Navegación real, inspección de accesibilidad, medición DOM de solo lectura y capturas mediante la herramienta de navegador. No se modificaron registros de negocio desde la UI.",
+    "horizontalOverflowMetric": "max(0, document.documentElement.scrollWidth - document.documentElement.clientWidth)",
+    "intentionalLocalScrollAllowed": true,
+    "gestionChurchRoutes": [
+      "/dashboard", "/calendar", "/reviews", "/reports", "/elders",
+      "/personal-ministries", "/womens-ministry",
+      "/ministry-hub?departmentId=409dad03-ca49-498d-b64c-f18af5785584",
+      "/ministry-hub", "/notifications", "/documents", "/team",
+      "/settings/departments", "/settings/roster", "/settings/activity-form",
+      "/settings/channels", "/audit", "/activities/new"
+    ],
+    "nominationsRoutes": [
+      "/es/app/overview", "/es/app/workflow", "/es/app/session",
+      "/es/app/results", "/es/app/members", "/es/app/catalog",
+      "/es/app/committee", "/es/app/organization", "/es/app/reports",
+      "/es/app/history", "/es/app/library", "/es/app/access", "/es/app/settings"
+    ],
+    "routeCount": 31,
+    "fullRouteMatrix": [
+      { "width": 320, "height": 844, "globalHorizontalOverflowPx": 0 },
+      { "width": 390, "height": 844, "globalHorizontalOverflowPx": 0 },
+      { "width": 768, "height": 1024, "globalHorizontalOverflowPx": 0 },
+      { "width": 1024, "height": 768, "globalHorizontalOverflowPx": 0 },
+      { "width": 1440, "height": 900, "globalHorizontalOverflowPx": 0 }
+    ],
+    "landscapeChecks": {
+      "viewport": { "width": 844, "height": 390 },
+      "gestionChurchRoutes": [
+        "/reviews", "/reports", "/womens-ministry", "/personal-ministries",
+        "/ministry-hub?departmentId=409dad03-ca49-498d-b64c-f18af5785584",
+        "/activities/new", "/audit"
+      ],
+      "nominationsRoutes": [
+        "/es/app/workflow", "/es/app/catalog", "/es/app/settings", "/es/app/access"
+      ],
+      "globalHorizontalOverflowPx": 0,
+      "reviewSessionControlsOverlap": false
+    },
+    "lastChangeRegression": {
+      "routes": [
+        "/reviews", "/ministry-hub?departmentId=409dad03-ca49-498d-b64c-f18af5785584"
+      ],
+      "widths": [320, 768, 844, 1024, 1440],
+      "globalHorizontalOverflowPx": 0
+    },
+    "interactiveChecks": [
+      "Las ocho pestañas del espacio departamental cambian al panel conectado a 320 px.",
+      "ArrowRight cambia selección y foco a la pestaña siguiente.",
+      "El menú móvil cierra con Escape y fuera del panel, y devuelve el foco al botón de apertura.",
+      "El formulario de plan anual de ancianos cabe en el viewport, mantiene desplazamiento interno y limita Tab/Shift+Tab al diálogo.",
+      "Los diálogos administrativos de Equipo, Departamentos, Revisión y Documentos caben a 320 px y cierran sin guardar.",
+      "El panel de accesibilidad cierra con Escape y restaura el foco.",
+      "El asistente de Nombramientos permite recorrer sus tres pasos sin ejecutar la creación del proceso.",
+      "El asistente de Nombramientos cierra con Escape y devuelve el foco a Iniciar proceso."
+    ],
+    "languageAndTextSizeChecks": {
+      "primaryLocale": "es",
+      "additionalLocales": ["en", "fr"],
+      "additionalLocaleViewport": { "width": 320, "height": 844 },
+      "textScale": "xlarge, 130%",
+      "representativeGestionChurchRoutes": [
+        "/dashboard", "/reviews", "/reports", "/womens-ministry",
+        "/personal-ministries",
+        "/ministry-hub?departmentId=409dad03-ca49-498d-b64c-f18af5785584",
+        "/settings/channels", "/activities/new"
+      ],
+      "globalHorizontalOverflowPx": 0,
+      "preferencesRestored": "Español y tamaño de texto normal",
+      "scope": "Reflow con textos ampliados y traducciones existentes; no es una auditoría exhaustiva de exactitud de traducción."
+    }
+  },
+  "automatedValidation": {
+    "gestionChurchUnitTests": { "passed": 24, "failed": 0 },
+    "nominationsWebUnitTests": { "passed": 236, "failed": 0 },
+    "totalUnitTestsPassed": 260,
+    "includesStaticSourceWiringGuards": true,
+    "notEquivalentTo260EndToEndTests": true,
+    "gestionChurchTypecheck": "PASS",
+    "gestionChurchLint": "PASS",
+    "nominationsTypecheck": "PASS",
+    "nominationsWebLint": "PASS",
+    "gestionChurchProductionBuild": "PASS",
+    "nominationsProductionBuild": "PASS",
+    "commands": [
+      "pnpm exec vitest run tests/unit",
+      "pnpm --filter @nombramientos/web test:unit",
+      "pnpm typecheck",
+      "pnpm lint",
+      "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./start-gestionchurch.ps1 -Action Restart -Mode Native"
+    ]
+  },
+  "finalRuntimeStatus": {
+    "web3000": "UP",
+    "gateway4000": "UP",
+    "nominationsWeb3300": "UP",
+    "nominationsAPI4100": "UP",
+    "postgresql": "UP",
+    "docker": "NOT_AVAILABLE",
+    "productionInfrastructureCertification": false
+  },
+  "evidence": [
+    "X:/CODE/GestionChurch/artifacts/responsive-mobile-2026-09-30.png",
+    "X:/CODE/GestionChurch/artifacts/responsive-nominations-mobile-2026-09-30.png",
+    "X:/CODE/GestionChurch/tests/unit/responsive-wiring.test.ts",
+    "X:/CODE/NOMBRAMIENTOS/apps/web/lib/accessibility-pwa.test.ts"
+  ],
+  "coverageLimits": [
+    "No se probaron iPhone, iPad ni teléfonos o tablets Android físicos.",
+    "No se certificaron Safari, Firefox, teclados virtuales, gestos ni lectores de pantalla reales.",
+    "Central no tiene un ciclo activo de Nombramientos: algunas rutas se validaron en el estado protegido de inicio, no con todos los datos de un ciclo activo.",
+    "No se realizaron escrituras funcionales de actividades, presupuestos, nombramientos ni cambios de roles durante la revisión UI.",
+    "Las páginas de detalle y edición con identificadores, la consola global y todos los estados condicionales no forman parte de la matriz completa de 31 vistas.",
+    "El arranque oficial ejecutó sus migraciones, seed de Central y sincronización de tenants habituales; no se instaló otra base de datos.",
+    "El modo Native usa los adaptadores locales/degradados previstos cuando Docker no está disponible.",
+    "El resultado no certifica el 100% de todos los requisitos históricos de la plataforma ni reemplaza pruebas de aceptación en dispositivos reales."
+  ]
+}

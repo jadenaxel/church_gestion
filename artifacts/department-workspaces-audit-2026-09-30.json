@@ -1,0 +1,656 @@
+{
+  "auditedAt": "2026-09-30T20:38:35.504Z",
+  "verdict": "NOT_READY_FOR_100_PERCENT_COMPLETENESS_CERTIFICATION",
+  "scope": {
+    "ozama": "Inventario, cargos y membresías mediante SELECT; sin modificar usuarios, permisos o datos de negocio.",
+    "central": "Pruebas con cuentas de desarrollo existentes, lecturas API, exportación diagnóstica y recorrido de formularios sin guardarlos. Los inicios de sesión y la exportación registran su auditoría normal.",
+    "limitations": [
+      "No se ejecutó la prueba E2E que crea registros de negocio.",
+      "No se enviaron mensajes reales por SMTP ni WhatsApp.",
+      "No se validó cada combinación de rol y acción mediante operaciones de escritura.",
+      "La cobertura del Manual requiere revisión eclesiástica y pruebas de aceptación por responsables."
+    ]
+  },
+  "manual": {
+    "edition": "21.ª edición, revisión 2025",
+    "url": "https://gc.adventist.org/wp-content/uploads/2025/10/Seventh-day_Adventist_Church_Manual-2025-10-13.pdf"
+  },
+  "technicalValidation": {
+    "lint": "PASS (109 files)",
+    "typecheck": "PASS",
+    "unitTests": "18 PASS",
+    "openapi": "PASS (147 routes)",
+    "accessCatalogE2E": "1 PASS; 1 business-mutation test intentionally skipped",
+    "ozamaAssignments": "PASS (102 users, 30 departments, 147 appointments, 146 memberships, 0 mismatches; separate tenant databases)",
+    "browserConsoleErrors": 0
+  },
+  "results": {
+    "technicalProbeStatus": "PASS",
+    "completenessCertification": "NOT_CERTIFIED_REQUIRES_DOMAIN_AND_UX_REMEDIATION",
+    "ozama": {
+      "departments": 30,
+      "packCounts": {
+        "WORSHIP_MUSIC": 2,
+        "ELDERS_OPERATIONS": 1,
+        "GENERAL": 15,
+        "COMMUNICATION": 1,
+        "DEACONRY": 2,
+        "SABBATH_SCHOOL": 1,
+        "FAMILY": 1,
+        "CHILDREN_YOUTH": 2,
+        "STEWARDSHIP_FINANCE": 2,
+        "WOMENS_MINISTRY": 1,
+        "PERSONAL_MINISTRIES": 1,
+        "HEALTH": 1
+      },
+      "inventory": [
+        {
+          "name": "Adoración",
+          "ministry_key": "WORSHIP_MUSIC",
+          "members": 1
+        },
+        {
+          "name": "Ancianos",
+          "ministry_key": "ELDERS_OPERATIONS",
+          "members": 16
+        },
+        {
+          "name": "Audiovisuales",
+          "ministry_key": "GENERAL",
+          "members": 1
+        },
+        {
+          "name": "Club de Aventureros",
+          "ministry_key": "GENERAL",
+          "members": 2
+        },
+        {
+          "name": "Club de Conquistadores",
+          "ministry_key": "GENERAL",
+          "members": 3
+        },
+        {
+          "name": "Club de Guías",
+          "ministry_key": "GENERAL",
+          "members": 4
+        },
+        {
+          "name": "Clubes",
+          "ministry_key": "GENERAL",
+          "members": 1
+        },
+        {
+          "name": "Comunicaciones",
+          "ministry_key": "COMMUNICATION",
+          "members": 2
+        },
+        {
+          "name": "Diaconisas",
+          "ministry_key": "DEACONRY",
+          "members": 29
+        },
+        {
+          "name": "Diáconos",
+          "ministry_key": "DEACONRY",
+          "members": 21
+        },
+        {
+          "name": "Dorcas",
+          "ministry_key": "GENERAL",
+          "members": 1
+        },
+        {
+          "name": "Educación",
+          "ministry_key": "GENERAL",
+          "members": 1
+        },
+        {
+          "name": "Escuela Sabática",
+          "ministry_key": "SABBATH_SCHOOL",
+          "members": 10
+        },
+        {
+          "name": "Hogar y Familia",
+          "ministry_key": "FAMILY",
+          "members": 1
+        },
+        {
+          "name": "Jóvenes",
+          "ministry_key": "CHILDREN_YOUTH",
+          "members": 24
+        },
+        {
+          "name": "Libertad Religiosa",
+          "ministry_key": "GENERAL",
+          "members": 1
+        },
+        {
+          "name": "Mantenimiento",
+          "ministry_key": "GENERAL",
+          "members": 2
+        },
+        {
+          "name": "Mayordomía",
+          "ministry_key": "STEWARDSHIP_FINANCE",
+          "members": 1
+        },
+        {
+          "name": "Ministerio de Caballeros",
+          "ministry_key": "GENERAL",
+          "members": 1
+        },
+        {
+          "name": "Ministerio de la Mujer",
+          "ministry_key": "WOMENS_MINISTRY",
+          "members": 1
+        },
+        {
+          "name": "Ministerio de Música",
+          "ministry_key": "WORSHIP_MUSIC",
+          "members": 1
+        },
+        {
+          "name": "Ministerio de Oración",
+          "ministry_key": "GENERAL",
+          "members": 2
+        },
+        {
+          "name": "Ministerio de Publicaciones",
+          "ministry_key": "GENERAL",
+          "members": 1
+        },
+        {
+          "name": "Ministerio Infantil",
+          "ministry_key": "CHILDREN_YOUTH",
+          "members": 3
+        },
+        {
+          "name": "Ministerios Personales",
+          "ministry_key": "PERSONAL_MINISTRIES",
+          "members": 4
+        },
+        {
+          "name": "Pianistas",
+          "ministry_key": "GENERAL",
+          "members": 4
+        },
+        {
+          "name": "Posibilidades y ADRA",
+          "ministry_key": "GENERAL",
+          "members": 1
+        },
+        {
+          "name": "Salud",
+          "ministry_key": "HEALTH",
+          "members": 1
+        },
+        {
+          "name": "Secretaría",
+          "ministry_key": "GENERAL",
+          "members": 2
+        },
+        {
+          "name": "Tesorería",
+          "ministry_key": "STEWARDSHIP_FINANCE",
+          "members": 4
+        }
+      ],
+      "businessRecordCounts": {
+        "plans": 0,
+        "initiatives": 0,
+        "tasks": 0
+      }
+    },
+    "central": {
+      "workspaceProbes": [
+        {
+          "department": "Adoración",
+          "route": "/ministry-hub?departmentId=2e22c3f3-fd22-4c37-a56b-326ff6a74b17",
+          "status": 200,
+          "exactDepartment": true,
+          "pack": "WORSHIP_MUSIC",
+          "recordTypes": [
+            "REPERTOIRE",
+            "REHEARSAL",
+            "SERVICE_SET",
+            "EQUIPMENT"
+          ],
+          "access": {
+            "canRead": true,
+            "canManage": true,
+            "canFinance": true,
+            "canApprove": true,
+            "role": null
+          },
+          "budgetLedgerInContext": false
+        },
+        {
+          "department": "Ancianos",
+          "route": "/elders",
+          "status": 200,
+          "exactDepartment": true,
+          "pack": "ELDERS_OPERATIONS",
+          "recordTypes": [
+            "PASTORAL_COORDINATION",
+            "WORSHIP_PLATFORM",
+            "ELDER_ROTATION",
+            "CARE_FOLLOW_UP"
+          ],
+          "access": {
+            "canRead": true,
+            "canManage": true,
+            "canFinance": true,
+            "canApprove": true,
+            "role": null
+          },
+          "budgetLedgerInContext": false
+        },
+        {
+          "department": "Jóvenes",
+          "route": "/ministry-hub?departmentId=2a2f8176-372d-44dd-9ac4-dc688f2ebec2",
+          "status": 200,
+          "exactDepartment": true,
+          "pack": "CHILDREN_YOUTH",
+          "recordTypes": [
+            "AGE_PROGRAM",
+            "SAFEGUARDING_CHECK",
+            "PARENTAL_CONSENT",
+            "CHECK_IN_SUMMARY"
+          ],
+          "access": {
+            "canRead": true,
+            "canManage": true,
+            "canFinance": true,
+            "canApprove": true,
+            "role": null
+          },
+          "budgetLedgerInContext": false
+        },
+        {
+          "department": "Mayordomía",
+          "route": "/ministry-hub?departmentId=fc064744-c961-4a94-9615-bcb2cd6d70de",
+          "status": 200,
+          "exactDepartment": true,
+          "pack": "STEWARDSHIP_FINANCE",
+          "recordTypes": [
+            "STEWARDSHIP_PROGRAM",
+            "RECONCILIATION",
+            "FINANCIAL_CONTROL",
+            "BUDGET_REVIEW"
+          ],
+          "access": {
+            "canRead": true,
+            "canManage": true,
+            "canFinance": true,
+            "canApprove": true,
+            "role": null
+          },
+          "budgetLedgerInContext": false
+        },
+        {
+          "department": "Ministerio de la Mujer",
+          "route": "/womens-ministry",
+          "status": 200,
+          "exactDepartment": true,
+          "pack": "WOMENS_MINISTRY",
+          "recordTypes": [
+            "WOMENS_PROGRAM",
+            "RETREAT",
+            "INCLUSION_FOLLOW_UP",
+            "BIRTHDAY_CARE"
+          ],
+          "access": {
+            "canRead": true,
+            "canManage": true,
+            "canFinance": true,
+            "canApprove": true,
+            "role": null
+          },
+          "budgetLedgerInContext": false
+        },
+        {
+          "department": "Ministerio Infantil",
+          "route": "/ministry-hub?departmentId=409dad03-ca49-498d-b64c-f18af5785584",
+          "status": 200,
+          "exactDepartment": true,
+          "pack": "CHILDREN_YOUTH",
+          "recordTypes": [
+            "AGE_PROGRAM",
+            "SAFEGUARDING_CHECK",
+            "PARENTAL_CONSENT",
+            "CHECK_IN_SUMMARY"
+          ],
+          "access": {
+            "canRead": true,
+            "canManage": true,
+            "canFinance": true,
+            "canApprove": true,
+            "role": null
+          },
+          "budgetLedgerInContext": false
+        },
+        {
+          "department": "Ministerios Personales",
+          "route": "/personal-ministries",
+          "status": 200,
+          "exactDepartment": true,
+          "pack": "PERSONAL_MINISTRIES",
+          "recordTypes": [
+            "MISSIONARY_INITIATIVE",
+            "BIBLE_STUDY_SUMMARY",
+            "SMALL_GROUP",
+            "EVANGELISTIC_CAMPAIGN"
+          ],
+          "access": {
+            "canRead": true,
+            "canManage": true,
+            "canFinance": true,
+            "canApprove": true,
+            "role": null
+          },
+          "budgetLedgerInContext": false
+        },
+        {
+          "department": "Música",
+          "route": "/ministry-hub?departmentId=b6d049f0-bbb2-48aa-9d4f-9d3b1a904d52",
+          "status": 200,
+          "exactDepartment": true,
+          "pack": "WORSHIP_MUSIC",
+          "recordTypes": [
+            "REPERTOIRE",
+            "REHEARSAL",
+            "SERVICE_SET",
+            "EQUIPMENT"
+          ],
+          "access": {
+            "canRead": true,
+            "canManage": true,
+            "canFinance": true,
+            "canApprove": true,
+            "role": null
+          },
+          "budgetLedgerInContext": false
+        },
+        {
+          "department": "Publicidad",
+          "route": "/ministry-hub?departmentId=a8f1c8a2-4005-48e5-8b48-7128852c0371",
+          "status": 200,
+          "exactDepartment": true,
+          "pack": "COMMUNICATION",
+          "recordTypes": [
+            "EDITORIAL_ITEM",
+            "CAMPAIGN_ASSET",
+            "PUBLICATION_APPROVAL",
+            "MEDIA_COVERAGE"
+          ],
+          "access": {
+            "canRead": true,
+            "canManage": true,
+            "canFinance": true,
+            "canApprove": true,
+            "role": null
+          },
+          "budgetLedgerInContext": false
+        }
+      ],
+      "specialized": [
+        {
+          "path": "/elders/context",
+          "status": 200,
+          "sections": [
+            "access",
+            "currentUserId",
+            "people",
+            "participants",
+            "departments",
+            "departmentAssignments",
+            "rotations",
+            "programs",
+            "templates"
+          ],
+          "access": {
+            "full": true,
+            "publication": false,
+            "manager": true,
+            "ownPrograms": true
+          }
+        },
+        {
+          "path": "/personal-ministries/context",
+          "status": 200,
+          "sections": [
+            "access",
+            "team",
+            "plans",
+            "initiatives",
+            "budgetEntries",
+            "contacts",
+            "studies",
+            "groups",
+            "missionaryMinutes",
+            "campaigns",
+            "localChurchActivities",
+            "metrics"
+          ],
+          "access": {
+            "canRead": true,
+            "canManage": true,
+            "canAssign": true,
+            "canManageRecords": true,
+            "departmentId": null,
+            "membershipRole": null
+          }
+        },
+        {
+          "path": "/womens-ministry/context",
+          "status": 200,
+          "sections": [
+            "access",
+            "department",
+            "team",
+            "availableUsers",
+            "women",
+            "birthdays",
+            "activities",
+            "retreats",
+            "followUps",
+            "metrics"
+          ],
+          "access": {
+            "canRead": true,
+            "canManage": true,
+            "canFinance": true,
+            "departmentRole": null
+          }
+        }
+      ],
+      "roleProbes": [
+        {
+          "fixture": "Youth director",
+          "status": 200,
+          "department": "Jóvenes",
+          "access": {
+            "canRead": true,
+            "canManage": true,
+            "canFinance": true,
+            "canApprove": false,
+            "role": "DIRECTOR"
+          }
+        },
+        {
+          "fixture": "Elder / contributor",
+          "status": 200,
+          "department": "Ancianos",
+          "access": {
+            "canRead": true,
+            "canManage": false,
+            "canFinance": false,
+            "canApprove": false,
+            "role": "CONTRIBUTOR"
+          }
+        }
+      ],
+      "notificationProbe": [
+        {
+          "event_type": "personal_ministries.assignment",
+          "notifications": 2,
+          "external_delivery_records": 0
+        },
+        {
+          "event_type": "womens_ministry.assignment",
+          "notifications": 15,
+          "external_delivery_records": 0
+        },
+        {
+          "event_type": "womens_ministry.birthday",
+          "notifications": 30,
+          "external_delivery_records": 0
+        }
+      ],
+      "budgetProbe": {
+        "unlinked_budget_movements": 0,
+        "approved_or_paid_without_approver": 4
+      },
+      "englishReportProbe": {
+        "status": 200,
+        "spanishHeaderDespiteEnglish": true
+      }
+    },
+    "authorization": {
+      "ownAreasForMissionLeader": [
+        "personal-ministries"
+      ],
+      "unrelatedDepartment": 403,
+      "foreignTenantDepartment": 403,
+      "anonymous": 401
+    }
+  },
+  "findings": [
+    {
+      "priority": "P1",
+      "id": "department-specific-depth",
+      "title": "La mitad de los departamentos de Ozama usa el paquete GENERAL",
+      "evidence": "15 de 30 espacios usan solo Programa, Registro de servicio y Recurso. Otros 12 usan categorías específicas con formulario genérico; solo 3 cuentan con aplicaciones especializadas.",
+      "source": "services/department-operations-service/src/main.ts:605",
+      "impact": "La existencia del espacio no acredita cobertura de las operaciones anuales de cada departamento.",
+      "required": "Definir y validar flujos por cargo y dominio, con campos estructurados, reglas y evidencias; priorizar protección de menores, finanzas y Secretaría."
+    },
+    {
+      "priority": "P1",
+      "id": "relationship-scope",
+      "title": "Las referencias no se validan uniformemente contra el espacio autorizado",
+      "evidence": "createBudget, createTask y createDecision aceptan initiativeId o meetingId sin comprobar el workspace de la referencia; createInitiative no valida que planId corresponda al workspace. Las claves foráneas simples no comprueban esta igualdad.",
+      "source": "services/department-operations-service/src/main.ts:1631",
+      "impact": "Riesgo de enlaces o información mezclada entre departamentos del mismo tenant. Las pruebas de otro tenant devolvieron 403; no se observó una fuga entre tenants.",
+      "required": "Validar todas las referencias en servidor y añadir pruebas negativas por rol y departamento en un entorno aislado."
+    },
+    {
+      "priority": "P1",
+      "id": "finance-controls",
+      "title": "Presupuesto genérico sin seguimiento completo ni aprobación independiente",
+      "evidence": "context no devuelve budgetEntries; la UI muestra agregados, no historial de partidas ni revisión. budgetSchema permite crear APPROVED y PAID. Central tiene 4 partidas en esos estados sin approved_by. Disponible se calcula como planificado menos gastos, sin descontar compromisos; gastos incluyen estados PLANNED y SUBMITTED.",
+      "source": "services/department-operations-service/src/main.ts:488",
+      "impact": "No certificable como control financiero enterprise o segregación de funciones.",
+      "required": "Libro de movimientos visible, transiciones autorizadas, doble control según política, cálculo consistente por moneda y pruebas de conciliación."
+    },
+    {
+      "priority": "P1",
+      "id": "specialized-notifications",
+      "title": "Avisos de Ministerios Personales y Mujer no pasan por entrega externa",
+      "evidence": "Sus helpers insertan directamente notifications.notifications. Central contiene 2 avisos de Ministerios Personales, 15 de Mujer y 30 de cumpleaños sin registro de entrega EMAIL o WHATSAPP. El worker reintenta deliveries existentes, no procesa estos inserts como eventos de entrega.",
+      "source": "services/womens-ministry-service/src/main.ts:76",
+      "impact": "Configurar SMTP o Meta no convierte automáticamente esos avisos en envíos de correo o WhatsApp.",
+      "required": "Publicar eventos durables al servicio de notificaciones, con consentimiento, preferencias, estados de entrega, reintentos y pruebas reales controladas."
+    },
+    {
+      "priority": "P1",
+      "id": "audit-atomicity",
+      "title": "Mutaciones y auditoría departamental no comparten transacción",
+      "evidence": "La operación se escribe con pool.query y después se inserta la auditoría; no se usa withTransaction ni outbox en department-operations-service.",
+      "source": "services/department-operations-service/src/main.ts:632",
+      "impact": "Una falla posterior puede devolver error aunque el cambio ya exista, o dejar una operación sin su auditoría de dominio.",
+      "required": "Transacción para operación y evidencia; outbox para avisos e idempotencia/reintentos."
+    },
+    {
+      "priority": "P2",
+      "id": "annual-lifecycle",
+      "title": "Planes, objetivos, indicadores y registros específicos no tienen ciclo de actualización completo",
+      "evidence": "El servicio ofrece creación, y aprobación de planes, pero no endpoints PATCH para planes, objetivos, KPI ni registros. La UI permite capturarlos sin editar luego sus valores o archivar registros.",
+      "source": "services/department-operations-service/src/main.ts:1376",
+      "impact": "El usuario no puede mantener correctamente todo el trabajo durante el año.",
+      "required": "Edición, avance, cierre, archivo, historial y controles de cambios aprobados."
+    },
+    {
+      "priority": "P2",
+      "id": "specialized-fields",
+      "title": "Las categorías específicas no tienen formularios propios",
+      "evidence": "El formulario de autorización parental observado solicita Tipo, Título, Fecha, Responsable, Visibilidad, Notas y Referencia. Todos los tipos genéricos guardan data={notes,reference}.",
+      "source": "apps/web/app/ministry-hub/page.tsx:742",
+      "impact": "Las etiquetas de unidades, maestros, repertorio, turnos, conciliación o protección no equivalen a motores operativos especializados.",
+      "required": "Schemas y formularios específicos, relaciones reales, validación y flujos de aprobación adecuados."
+    },
+    {
+      "priority": "P2",
+      "id": "calendar-link",
+      "title": "La calendarización de una iniciativa no garantiza retorno y enlace automático",
+      "evidence": "La UI ofrece calendarizar por una ruta nueva con departamento; calendarActivityId solo se acepta al crear la iniciativa, no en su PATCH. Las reuniones departamentales se guardan y notifican, sin entrada de calendario o recordatorios específicos en ese método.",
+      "source": "apps/web/app/ministry-hub/page.tsx:1361",
+      "impact": "La ruta puede producir registros separados y requiere pasos manuales no resueltos de extremo a extremo.",
+      "required": "Flujo de enlace bidireccional, retorno contextual y pruebas de calendario/conflictos y reuniones."
+    },
+    {
+      "priority": "P2",
+      "id": "document-context",
+      "title": "La biblioteca ignora el departamento recibido en la URL",
+      "evidence": "Abrir biblioteca desde Ministerio Infantil navega a /documents?departmentId=..., pero el filtro seleccionado observado queda vacío. documents/page.tsx inicializa departmentId='' y no consume esa query.",
+      "source": "apps/web/app/documents/page.tsx:60",
+      "impact": "El usuario pierde el contexto de su departamento.",
+      "required": "Inicializar/sincronizar filtros desde la URL y conservar el contexto al cargar o visualizar."
+    },
+    {
+      "priority": "P2",
+      "id": "mobile-accessibility",
+      "title": "Navegación móvil y modales no cumplen una experiencia accesible completa",
+      "evidence": "A 390 px el espacio observado desborda horizontalmente 118 px. Los 8 botones de secciones ocultan su span con display:none y no tienen aria-label. HubModal no declara dialog, aria-modal, foco contenido o manejo Escape.",
+      "source": "apps/web/app/ministry-hub/page.tsx:997",
+      "impact": "Problemas de navegación en celular y lector de pantalla.",
+      "required": "Layout sin desbordamiento, nombres accesibles, pestañas semánticas y diálogo con gestión de foco; pruebas WCAG y teclado."
+    },
+    {
+      "priority": "P2",
+      "id": "report-localization",
+      "title": "El reporte departamental no se localiza al idioma solicitado",
+      "evidence": "Solicitud executive.csv con accept-language: en devuelve encabezado Departamento y demás etiquetas españolas. Los handlers PDF y CSV tienen etiquetas fijas en español.",
+      "source": "services/department-operations-service/src/main.ts:1162",
+      "impact": "No se cumple el requisito de experiencia totalmente trilingüe.",
+      "required": "Localizar reportes, estados, mensajes y formatos según preferencia del usuario, y probar ES/EN/FR."
+    },
+    {
+      "priority": "P2",
+      "id": "forecast-integrity",
+      "title": "Pronóstico y resúmenes necesitan reglas temporales más fiables",
+      "evidence": "El pronóstico usa updatedAt como fecha de finalización y compara endsOn a medianoche; no tiene completedAt independiente. meetingsThisMonth compara el mes, no el año.",
+      "source": "services/department-operations-service/src/main.ts:1071",
+      "impact": "Una iniciativa terminada el día previsto puede aparecer tardía, y una edición posterior puede alterar el pronóstico.",
+      "required": "Persistir fecha real de cierre, aplicar zona horaria del tenant y probar límites de fecha/año."
+    },
+    {
+      "priority": "P2",
+      "id": "privacy-consistency",
+      "title": "Visibilidad y colaboración requieren validación más granular",
+      "evidence": "Solo RESTRICTED se fuerza en servidor; tipos con privacy=LEADERSHIP pueden enviarse como TEAM. comments se devuelve completo por workspace, sin filtrar según visibilidad del recurso comentado. La UI muestra botones de mutación a lectores aunque el servidor pueda denegarlos.",
+      "source": "services/department-operations-service/src/main.ts:2006",
+      "impact": "La seguridad del servidor y la experiencia por rol no están uniformemente alineadas.",
+      "required": "Políticas por recurso y campo, filtros de comentarios, mínimo de visibilidad y controles visibles únicamente cuando corresponda."
+    },
+    {
+      "priority": "P2",
+      "id": "birthday-scheduling",
+      "title": "Los cumpleaños dependen de abrir el módulo",
+      "evidence": "createBirthdayAlerts se invoca durante GET /womens-ministry/context, no desde un planificador independiente.",
+      "source": "services/womens-ministry-service/src/main.ts:169",
+      "impact": "Sin abrir esa pantalla no se garantiza el aviso proactivo de la semana previa o del día.",
+      "required": "Programador por zona horaria, procesamiento idempotente y entrega por canales autorizados."
+    }
+  ]
+}

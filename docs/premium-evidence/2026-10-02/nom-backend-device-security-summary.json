@@ -1,0 +1,96 @@
+{
+  "scope": "Nombramientos D10 backend and additive tenant migration 039",
+  "date": "2026-10-02",
+  "status": "implemented_and_regression_verified",
+  "builds": {
+    "e2ee": "passed",
+    "database": "passed",
+    "api": "passed_after_root_SSE_audit_server_time_exact_session_identity_own_session_labels_and_minimized_upstream_diagnostics"
+  },
+  "regression": {
+    "api": { "passed": 480, "failed": 0, "skipped": 26, "total": 506, "report": "nom-api-upstream-final-regression.json" },
+    "database": { "passed": 479, "failed": 0, "skipped": 7, "total": 486, "report": "nom-database-device-security-regression.json" },
+    "e2ee": { "passed": 43, "failed": 0, "skipped": 0, "total": 43, "report": "nom-e2ee-device-security-regression.json" }
+  },
+  "isolated_live_validation": {
+    "passed": 13, "failed": 0, "skipped": 0, "total": 13,
+    "report": "nom-device-binding-live-seventh.json",
+    "receipt": "nom-device-binding-live-seventh-receipt.json",
+    "note": "Separate owned-database run, not added to or represented as passes in the default API suite. Includes exact snapshot session identity, absolute-expiry preservation and own browser-label visibility. Existing server-enforced idle renewal remains in force."
+  },
+  "default_suite_skips": {
+    "api": {
+      "invitations.live.test.ts": { "count": 8, "reason": "Separate live fixture requires an explicit test database administrator connection." },
+      "tenant-isolation.live.test.ts": { "count": 5, "reason": "Separate live fixture requires an explicit test database administrator connection." },
+      "premium-federation-crypto.live.test.mjs": { "count": 13, "reason": "Explicit NOMBRAMIENTOS_PREMIUM_ISOLATED opt-in; run independently by the validation agent with owned databases, not represented as passes by this default-suite report." }
+    },
+    "database": {
+      "isolated-storage-policies.live.test.ts": { "count": 4, "reason": "Explicit isolated opt-in; independent owned-database run has separate evidence." },
+      "platform-export-worker.live.test.ts": { "count": 1, "reason": "Explicit live-integration opt-in not enabled in the default regression run." },
+      "runtime-privilege-boundary.test.ts": { "count": 1, "reason": "Installed Demo privilege inspection requires explicit live opt-in; guarded migration separately validates the new ACLs on all three installed tenants." },
+      "seed-audit-history.live.test.ts": { "count": 1, "reason": "Separate synthetic seed fixture administrator connection was not configured; no seeds were run against existing tenants." }
+    }
+  },
+  "production_dependency_audit": {
+    "command": "pnpm audit --prod --json",
+    "exit_code": 0,
+    "known_vulnerabilities": 0,
+    "dependencies": 507,
+    "report": "nom-production-dependency-audit.json",
+    "limitation": "No known registry advisories is not a proof of absence of application vulnerabilities."
+  },
+  "configured_scoped_lint": {
+    "config": "apps/web/eslint.config.mjs",
+    "report": "nom-device-security-scoped-lint.json",
+    "files": 30,
+    "errors": 0,
+    "warnings": 8,
+    "new_or_changed_line_warnings": 0,
+    "ignored_files": 0,
+    "note": "Root replaced six explicit any test-schema casts with strict aliases without changing behavior. Enlarged final scope includes two pre-existing authentication files with eight unused-variable warnings on deliberate secret-exclusion destructures (_sessionToken/_ceremonyToken), outside the new serverTime and session-label changes. All new files and changed lines have zero lint diagnostics; no lint rules were suppressed and no bulk fixes were applied.",
+    "previous_cut": "nom-device-security-scoped-lint-0945-cut.json"
+  },
+  "upstream_diagnostic_scoped_lint": {
+    "config": "apps/web/eslint.config.mjs", "report": "nom-upstream-diagnostic-lint.json",
+    "files": 4, "errors": 0, "warnings": 1, "new_or_changed_line_warnings": 0,
+    "note": "Existing secret-exclusion destructure _sessionToken remains an unused-variable warning; no suppression or bulk fix. This overlapping scoped report is separate, not added to the 30-file report."
+  },
+  "gateway_connector_budget": {
+    "status": "implemented_unit_isolated_http_and_real_browser_verified_final_readonly_cleanup_passed",
+    "report": "gateway-connector-budget-tests.json", "passed": 57, "failed": 0,
+    "historical_reproduction_report": "gateway-connector-budget-reproduction.json",
+    "defaults_per_minute": { "aggregate": 2400, "authorize": 2160, "redeem": 120, "organization": 120 },
+    "controls": ["Explicit secret-authenticated exact POST routes only", "No query/suffix/launch classification", "Operation admission before aggregate consumption", "Reserved redeem/organization capacity during authorize floods", "Existing public and browser-session limits preserved", "Fixed bounded namespaces contain no secrets, sessions or tenant data", "Local counting retained during Redis failure", "No cache of authorization or source revocation state"],
+    "runtime": "Root restarted the verified native application tree using official Native SkipDataSetup NoBuild; existing PostgreSQL remained active and no migrations, seeds or sync were run.",
+    "isolated_http_scope": "The two HTTP tests execute the actual quota middleware only, not the surrounding CSRF/JWT/application authorization guards. Bogus bearer/cookie combinations verify fixed machine-budget selection, not acceptance or authority through those other guards. Real browser validation remains a separate gate.",
+    "real_browser": { "report": "device-session-browser-results.json", "passed": 4, "failed": 0, "skipped": 0, "flaky": 0, "buildId": "lBS4__cY65O1NCqX7bET8", "note": "Real Chromium fixture run verified two browser re-entry cycles, individual and other-session closure, exact-device revocation and central-role access. Its captured upstream-rejection whitelist was empty during the fixture window; this is not a claim of absence outside that window." },
+    "limitations": ["Redis-outage fallback is bounded per process, not an exact cross-instance HA quota", "Default limits do not certify capacity or SLO", "Browser, owned-resource cleanup and local metadata are separate gates, not full-product certification"]
+  },
+  "final_readonly_metadata": {
+    "cleanup": { "report": "nom-browser-cleanup-readonly-final.json", "verifiedAt": "2026-10-02T16:16:09.971Z", "passed": true, "mutations": 0, "cleanedOwnedReceiptCount": 29, "remainingOwnedResources": 0, "originalRegistryCount": 3, "controlLedgerCount": 32, "tenantLedgerCount": 41, "tenantLedgerHead": "039_device_bound_http_sessions.sql", "pendingMigrations": 0, "auditRetentionDeclaredByReceipts": true, "auditIntegrityVerified": false },
+    "local_state": { "report": "final-local-state.json", "verifiedAt": "2026-10-02T16:16:14.481Z", "servicesReady": true, "httpStatuses": [200, 200, 200, 200], "postgresqlExistingMajor": 18, "metadataReviewClear": false, "passed": false, "unregisteredTenantDatabases": 1, "note": "One database has unknown ownership and was preserved. This review flag is not evidence of an owned-fixture residual and is not authorization for deletion." },
+    "frozen_previous_report": { "path": "../2026-10-01/final-local-state.json", "sha256Before": "642A810338C1114C54F9B865E0ADE296093C680073668ECB35B18EC7C9F2186E", "sha256After": "642A810338C1114C54F9B865E0ADE296093C680073668ECB35B18EC7C9F2186E", "unchanged": true },
+    "timing": "Both final read-only verification timestamps are later than the final browser run and its owned-fixture cleanup. No migrations, seeds, sync, runtime changes or database writes were performed by these verifiers."
+  },
+  "previous_api_cuts": [ "nom-api-device-security-regression.json", "nom-api-device-security-regression-0945-cut.json", "nom-api-device-security-regression-0952-cut.json", "nom-api-device-security-regression-1000-cut.json", "nom-api-device-security-regression-1008-cut.json" ],
+  "previous_database_cuts": [ "nom-database-device-security-regression-0952-cut.json", "nom-database-device-security-regression-1008-cut.json" ],
+  "verified_controls": [
+    "Existing wrapping-key possession through purpose-separated RFC9180 HPKE enrollment challenge",
+    "Independent immutable P-256 signing key; ES256 compact JWS verified with JOSE against the enrolled public key",
+    "Exact raw body, method, URL including query, idempotency key, identity, tenant, session, source session, device and key fingerprint binding",
+    "Server-issued, single-use nonces with stored expiry and atomic per-session pending budget",
+    "Bound active device and current-generation grant pinned in every protected data transaction",
+    "Narrow pending-device bootstrap exceptions without automatic roles or grants",
+    "Exact-device revocation marks bound sessions revoked in the same tenant transaction",
+    "Immutable GestionChurch source-session association and current-source comparison",
+    "Bounded expired-nonce housekeeping without runtime DELETE or EXECUTE privileges",
+    "Authoritative server-issued time supports browser clock skew without relaxing server expiry or replay checks",
+    "GET session observation time is generated by the server without extending absolute expiry; the existing server-enforced idle renewal policy is retained",
+    "GET session snapshot includes the exact authenticated opaque session UUID, never a client-supplied query/header identifier, without changing shared login response or granting access",
+    "Own session labels are resolved only from exact active-tenant identity/device bindings and an already-authorized session-ID list; no cross-tenant join, key/session mutation or unlabeled fallback after database failure",
+    "Authenticated tenant-local denial audit with no proof, nonce, secret or raw request-body logging",
+    "Direct SQL regression fixture helper refuses all installed/business databases"
+  ],
+  "preserved": [ "Existing E2EE wrapping keys", "Ciphertext", "Key generations and grants", "Recovery material", "Business data", "Existing roles" ],
+  "not_claimed": [ "OAuth DPoP compliance", "Global application 100-percent certification", "Independent penetration test", "Physical iPhone/Android verification", "Human accessibility and multilingual pilot", "Production rollout" ]
+}

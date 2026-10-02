@@ -1,0 +1,24 @@
+{
+  "measuredAt": "2026-10-02T02:57:21.307Z",
+  "webBuildId": "deA8EC3awHzyV_-6jgeyw",
+  "environment": "local Windows, PostgreSQL 18, synthetic tenant, loopback gateway; laboratory smoke, not production load or field Web Vitals",
+  "workload": {
+    "concurrency": 1,
+    "churchData": "synthetic fresh database",
+    "network": "loopback, unthrottled",
+    "writes": "25 retries of one idempotent activity"
+  },
+  "samples": {
+    "reads": 80,
+    "commands": 25
+  },
+  "p95Ms": {
+    "reads": 9.44,
+    "commands": 5.98
+  },
+  "developmentRegressionGuardMs": {
+    "reads": 300,
+    "commands": 600,
+    "userApprovedSlo": false
+  }
+}

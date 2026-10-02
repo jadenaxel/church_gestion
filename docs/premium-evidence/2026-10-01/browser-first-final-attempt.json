@@ -1,0 +1,1037 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\raulp\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+      "X:\\CODE\\GestionChurch\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config=playwright.premium.config.ts"
+    ],
+    "configFile": "X:\\CODE\\GestionChurch\\playwright.premium.config.ts",
+    "rootDir": "X:/CODE/GestionChurch/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "X:/CODE/GestionChurch/.local/premium-browser-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "isolated-chromium",
+        "name": "isolated-chromium",
+        "testDir": "X:/CODE/GestionChurch/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "premium.spec.ts",
+          "premium-nominations.spec.ts"
+        ],
+        "timeout": 180000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/premium-evidence/2026-10-01/browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "premium-nominations.spec.ts",
+      "file": "premium-nominations.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "GestionChurch SSO, tenant isolation and return work in the real browser",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2868,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:32:34.759Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "44bf0c62e61301b4b59c-d0ce41649b7810639c6d",
+          "file": "premium-nominations.spec.ts",
+          "line": 76,
+          "column": 1
+        },
+        {
+          "title": "guided start saves a real draft period without claiming activation or completing custody",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2107,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:32:40.347Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "44bf0c62e61301b4b59c-4d65088f7a2742254290",
+          "file": "premium-nominations.spec.ts",
+          "line": 90,
+          "column": 1
+        },
+        {
+          "title": "central explicit operational roles project and revocation invalidates the old session",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1010,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:32:42.462Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "44bf0c62e61301b4b59c-73dc188e5e768b114c8a",
+          "file": "premium-nominations.spec.ts",
+          "line": 115,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "premium.spec.ts",
+      "file": "premium.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "blank login, guarded routes and layout at 320/360/390/768/820/1280/1440",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 15712,
+                  "error": {
+                    "message": "Error: /dashboard must load authorized data, not just render a heading\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - /dashboard must load authorized data, not just render a heading getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    33 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n",
+                    "stack": "Error: /dashboard must load authorized data, not just render a heading\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - /dashboard must load authorized data, not just render a heading getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    33 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:50:118\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:46:7",
+                    "location": {
+                      "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                      "column": 118,
+                      "line": 50
+                    },
+                    "snippet": "  48 |         await expect(devicePage.locator('main')).toBeVisible();\n  49 |         await expect(devicePage.locator('.spinner'), `${route}: ${await devicePage.locator('main').innerText()}`).toHaveCount(0);\n> 50 |         await expect(devicePage.getByRole('alert'), `${route} must load authorized data, not just render a heading`).toHaveCount(0);\n     |                                                                                                                      ^\n  51 |         const dimensions = await devicePage.evaluate(() => ({ body: document.body.scrollWidth, view: document.documentElement.clientWidth }));\n  52 |         expect(dimensions.body, `${route} at ${width}px`).toBeLessThanOrEqual(dimensions.view + 1);\n  53 |       });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                        "column": 118,
+                        "line": 50
+                      },
+                      "message": "Error: /dashboard must load authorized data, not just render a heading\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - /dashboard must load authorized data, not just render a heading getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    33 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n\n  48 |         await expect(devicePage.locator('main')).toBeVisible();\n  49 |         await expect(devicePage.locator('.spinner'), `${route}: ${await devicePage.locator('main').innerText()}`).toHaveCount(0);\n> 50 |         await expect(devicePage.getByRole('alert'), `${route} must load authorized data, not just render a heading`).toHaveCount(0);\n     |                                                                                                                      ^\n  51 |         const dimensions = await devicePage.evaluate(() => ({ body: document.body.scrollWidth, view: document.documentElement.clientWidth }));\n  52 |         expect(dimensions.body, `${route} at ${width}px`).toBeLessThanOrEqual(dimensions.view + 1);\n  53 |       });\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:50:118\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:46:7"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "/dashboard at 320px",
+                      "duration": 15171,
+                      "error": {
+                        "message": "Error: /dashboard must load authorized data, not just render a heading\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - /dashboard must load authorized data, not just render a heading getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    33 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n",
+                        "stack": "Error: /dashboard must load authorized data, not just render a heading\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - /dashboard must load authorized data, not just render a heading getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    33 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:50:118\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:46:7",
+                        "location": {
+                          "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                          "column": 118,
+                          "line": 50
+                        },
+                        "snippet": "  48 |         await expect(devicePage.locator('main')).toBeVisible();\n  49 |         await expect(devicePage.locator('.spinner'), `${route}: ${await devicePage.locator('main').innerText()}`).toHaveCount(0);\n> 50 |         await expect(devicePage.getByRole('alert'), `${route} must load authorized data, not just render a heading`).toHaveCount(0);\n     |                                                                                                                      ^\n  51 |         const dimensions = await devicePage.evaluate(() => ({ body: document.body.scrollWidth, view: document.documentElement.clientWidth }));\n  52 |         expect(dimensions.body, `${route} at ${width}px`).toBeLessThanOrEqual(dimensions.view + 1);\n  53 |       });"
+                      }
+                    }
+                  ],
+                  "startTime": "2026-10-02T02:35:27.365Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-blank-login-guarde-7a417-0-360-390-768-820-1280-1440-isolated-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-blank-login-guarde-7a417-0-360-390-768-820-1280-1440-isolated-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                    "column": 118,
+                    "line": 50
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-d9a5d95e9abd34cd75ab",
+          "file": "premium.spec.ts",
+          "line": 31,
+          "column": 1
+        },
+        {
+          "title": "browser creates an activity with two dates and a real program; persisted detail survives reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1730,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:35:46.955Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-0163e2cffea027b996f3",
+          "file": "premium.spec.ts",
+          "line": 59,
+          "column": 1
+        },
+        {
+          "title": "department navigation follows real memberships; administrator-only settings refuse member",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 728,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert')\nExpected: visible\nError: strict mode violation: getByRole('alert') resolved to 2 elements:\n    1) <div role=\"alert\" aria-atomic=\"true\" class=\"notice notice-danger\">…</div> aka getByRole('alert').filter({ hasText: 'No fue posible completar la' })\n    2) <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div> aka locator('[id=\"__next-route-announcer__\"]')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert')\nExpected: visible\nError: strict mode violation: getByRole('alert') resolved to 2 elements:\n    1) <div role=\"alert\" aria-atomic=\"true\" class=\"notice notice-danger\">…</div> aka getByRole('alert').filter({ hasText: 'No fue posible completar la' })\n    2) <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div> aka locator('[id=\"__next-route-announcer__\"]')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:97:41",
+                    "location": {
+                      "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                      "column": 41,
+                      "line": 97
+                    },
+                    "snippet": "   95 |   expect((await page.request.get(`${gateway}/notifications/channels/settings`)).status()).toBe(403);\n   96 |   await page.goto('/settings/channels');\n>  97 |   await expect(page.getByRole('alert')).toBeVisible();\n      |                                         ^\n   98 | });\n   99 |\n  100 | test('form designer saves privately, previews mobile and publishes a usable audited custom field', async ({ page, browser }) => {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                        "column": 41,
+                        "line": 97
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert')\nExpected: visible\nError: strict mode violation: getByRole('alert') resolved to 2 elements:\n    1) <div role=\"alert\" aria-atomic=\"true\" class=\"notice notice-danger\">…</div> aka getByRole('alert').filter({ hasText: 'No fue posible completar la' })\n    2) <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div> aka locator('[id=\"__next-route-announcer__\"]')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\n\n   95 |   expect((await page.request.get(`${gateway}/notifications/channels/settings`)).status()).toBe(403);\n   96 |   await page.goto('/settings/channels');\n>  97 |   await expect(page.getByRole('alert')).toBeVisible();\n      |                                         ^\n   98 | });\n   99 |\n  100 | test('form designer saves privately, previews mobile and publishes a usable audited custom field', async ({ page, browser }) => {\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:97:41"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:35:49.799Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-department-navigat-1447f-only-settings-refuse-member-isolated-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-department-navigat-1447f-only-settings-refuse-member-isolated-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                    "column": 41,
+                    "line": 97
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-3eb5f94667ee2df60458",
+          "file": "premium.spec.ts",
+          "line": 90,
+          "column": 1
+        },
+        {
+          "title": "form designer saves privately, previews mobile and publishes a usable audited custom field",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2283,
+                  "error": {
+                    "message": "error: column \"custom_fields\" does not exist",
+                    "stack": "error: column \"custom_fields\" does not exist\n    at X:\\CODE\\GestionChurch\\node_modules\\.pnpm\\pg-pool@3.14.0_pg@8.16.3\\node_modules\\pg-pool\\index.js:45:11\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:144:24",
+                    "location": {
+                      "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                      "column": 24,
+                      "line": 144
+                    },
+                    "snippet": "  142 |     expect(response.status()).toBe(201);\n  143 |     const created = await response.json() as { id: string };\n> 144 |     const persisted = (await church.pool.query('SELECT custom_fields FROM calendar.activities WHERE id=$1', [created.id])).rows[0];\n      |                        ^\n  145 |     expect(persisted.custom_fields[custom!.id]).toBe('Synthetic logistics answer');\n  146 |     expect((await church.pool.query(\"SELECT action FROM audit.audit_events WHERE action IN ('activity-form.draft.updated','activity-form.published') ORDER BY created_at\")).rows.map(({ action }) => action)).toEqual(['activity-form.draft.updated', 'activity-form.published']);\n  147 |   } finally { await leaderContext.close(); }"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                        "column": 24,
+                        "line": 144
+                      },
+                      "message": "error: column \"custom_fields\" does not exist\n\n  142 |     expect(response.status()).toBe(201);\n  143 |     const created = await response.json() as { id: string };\n> 144 |     const persisted = (await church.pool.query('SELECT custom_fields FROM calendar.activities WHERE id=$1', [created.id])).rows[0];\n      |                        ^\n  145 |     expect(persisted.custom_fields[custom!.id]).toBe('Synthetic logistics answer');\n  146 |     expect((await church.pool.query(\"SELECT action FROM audit.audit_events WHERE action IN ('activity-form.draft.updated','activity-form.published') ORDER BY created_at\")).rows.map(({ action }) => action)).toEqual(['activity-form.draft.updated', 'activity-form.published']);\n  147 |   } finally { await leaderContext.close(); }\n    at X:\\CODE\\GestionChurch\\node_modules\\.pnpm\\pg-pool@3.14.0_pg@8.16.3\\node_modules\\pg-pool\\index.js:45:11\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:144:24"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:35:52.682Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-form-designer-save-46fbc-usable-audited-custom-field-isolated-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-form-designer-save-46fbc-usable-audited-custom-field-isolated-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                    "column": 24,
+                    "line": 144
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-8f9cccf10bcb69ee97f0",
+          "file": "premium.spec.ts",
+          "line": 100,
+          "column": 1
+        },
+        {
+          "title": "central commission and custodian assignments are editable without replacing departmental memberships",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1960,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:35:58.031Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-e5d6f8e3f8e25703563b",
+          "file": "premium.spec.ts",
+          "line": 150,
+          "column": 1
+        },
+        {
+          "title": "report filters match persisted records and produce a real CSV/PDF download",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 815,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:36:01.056Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-517ec3b9b153b165c74a",
+          "file": "premium.spec.ts",
+          "line": 181,
+          "column": 1
+        },
+        {
+          "title": "keyboard and automated accessibility checks on representative full pages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4372,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:36:01.879Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-c1fd9d96e34764034659",
+          "file": "premium.spec.ts",
+          "line": 212,
+          "column": 1
+        },
+        {
+          "title": "es: localized navigation survives reload and user-authored content is not translated",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 15595,
+                  "error": {
+                    "message": "Error: es /dashboard: data must load\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - es /dashboard: data must load getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    33 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n",
+                    "stack": "Error: es /dashboard: data must load\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - es /dashboard: data must load getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    33 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:261:83",
+                    "location": {
+                      "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                      "column": 83,
+                      "line": 261
+                    },
+                    "snippet": "  259 |       await expect(page.locator('.spinner')).toHaveCount(0);\n  260 |       await expect(page.locator('main h1')).toHaveText(translateText(locale, title!));\n> 261 |       await expect(page.getByRole('alert'), `${locale} ${route}: data must load`).toHaveCount(0);\n      |                                                                                   ^\n  262 |       await expect(page.locator('html')).toHaveAttribute('lang', locale);\n  263 |       const dimensions = await page.evaluate(() => ({ body: document.body.scrollWidth, view: document.documentElement.clientWidth }));\n  264 |       expect(dimensions.body, `${locale} ${route} 390px`).toBeLessThanOrEqual(dimensions.view + 1);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                        "column": 83,
+                        "line": 261
+                      },
+                      "message": "Error: es /dashboard: data must load\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - es /dashboard: data must load getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    33 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n\n  259 |       await expect(page.locator('.spinner')).toHaveCount(0);\n  260 |       await expect(page.locator('main h1')).toHaveText(translateText(locale, title!));\n> 261 |       await expect(page.getByRole('alert'), `${locale} ${route}: data must load`).toHaveCount(0);\n      |                                                                                   ^\n  262 |       await expect(page.locator('html')).toHaveAttribute('lang', locale);\n  263 |       const dimensions = await page.evaluate(() => ({ body: document.body.scrollWidth, view: document.documentElement.clientWidth }));\n  264 |       expect(dimensions.body, `${locale} ${route} 390px`).toBeLessThanOrEqual(dimensions.view + 1);\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:261:83"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:36:06.264Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-es-localized-navig-bffec-d-content-is-not-translated-isolated-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-es-localized-navig-bffec-d-content-is-not-translated-isolated-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                    "column": 83,
+                    "line": 261
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-e501ef3dfa83c17522b9",
+          "file": "premium.spec.ts",
+          "line": 239,
+          "column": 3
+        },
+        {
+          "title": "en: localized navigation survives reload and user-authored content is not translated",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 17201,
+                  "error": {
+                    "message": "Error: en /dashboard: data must load\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - en /dashboard: data must load getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    33 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n",
+                    "stack": "Error: en /dashboard: data must load\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - en /dashboard: data must load getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    33 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:261:83",
+                    "location": {
+                      "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                      "column": 83,
+                      "line": 261
+                    },
+                    "snippet": "  259 |       await expect(page.locator('.spinner')).toHaveCount(0);\n  260 |       await expect(page.locator('main h1')).toHaveText(translateText(locale, title!));\n> 261 |       await expect(page.getByRole('alert'), `${locale} ${route}: data must load`).toHaveCount(0);\n      |                                                                                   ^\n  262 |       await expect(page.locator('html')).toHaveAttribute('lang', locale);\n  263 |       const dimensions = await page.evaluate(() => ({ body: document.body.scrollWidth, view: document.documentElement.clientWidth }));\n  264 |       expect(dimensions.body, `${locale} ${route} 390px`).toBeLessThanOrEqual(dimensions.view + 1);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                        "column": 83,
+                        "line": 261
+                      },
+                      "message": "Error: en /dashboard: data must load\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - en /dashboard: data must load getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    33 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n\n  259 |       await expect(page.locator('.spinner')).toHaveCount(0);\n  260 |       await expect(page.locator('main h1')).toHaveText(translateText(locale, title!));\n> 261 |       await expect(page.getByRole('alert'), `${locale} ${route}: data must load`).toHaveCount(0);\n      |                                                                                   ^\n  262 |       await expect(page.locator('html')).toHaveAttribute('lang', locale);\n  263 |       const dimensions = await page.evaluate(() => ({ body: document.body.scrollWidth, view: document.documentElement.clientWidth }));\n  264 |       expect(dimensions.body, `${locale} ${route} 390px`).toBeLessThanOrEqual(dimensions.view + 1);\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:261:83"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:36:24.629Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-en-localized-navig-aa74d-d-content-is-not-translated-isolated-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-en-localized-navig-aa74d-d-content-is-not-translated-isolated-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                    "column": 83,
+                    "line": 261
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-d43ce6c356ec4b3258f2",
+          "file": "premium.spec.ts",
+          "line": 239,
+          "column": 3
+        },
+        {
+          "title": "fr: localized navigation survives reload and user-authored content is not translated",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 17179,
+                  "error": {
+                    "message": "Error: fr /dashboard: data must load\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - fr /dashboard: data must load getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    33 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n",
+                    "stack": "Error: fr /dashboard: data must load\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - fr /dashboard: data must load getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    33 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:261:83",
+                    "location": {
+                      "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                      "column": 83,
+                      "line": 261
+                    },
+                    "snippet": "  259 |       await expect(page.locator('.spinner')).toHaveCount(0);\n  260 |       await expect(page.locator('main h1')).toHaveText(translateText(locale, title!));\n> 261 |       await expect(page.getByRole('alert'), `${locale} ${route}: data must load`).toHaveCount(0);\n      |                                                                                   ^\n  262 |       await expect(page.locator('html')).toHaveAttribute('lang', locale);\n  263 |       const dimensions = await page.evaluate(() => ({ body: document.body.scrollWidth, view: document.documentElement.clientWidth }));\n  264 |       expect(dimensions.body, `${locale} ${route} 390px`).toBeLessThanOrEqual(dimensions.view + 1);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                        "column": 83,
+                        "line": 261
+                      },
+                      "message": "Error: fr /dashboard: data must load\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - fr /dashboard: data must load getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    33 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n\n  259 |       await expect(page.locator('.spinner')).toHaveCount(0);\n  260 |       await expect(page.locator('main h1')).toHaveText(translateText(locale, title!));\n> 261 |       await expect(page.getByRole('alert'), `${locale} ${route}: data must load`).toHaveCount(0);\n      |                                                                                   ^\n  262 |       await expect(page.locator('html')).toHaveAttribute('lang', locale);\n  263 |       const dimensions = await page.evaluate(() => ({ body: document.body.scrollWidth, view: document.documentElement.clientWidth }));\n  264 |       expect(dimensions.body, `${locale} ${route} 390px`).toBeLessThanOrEqual(dimensions.view + 1);\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:261:83"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:36:45.620Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-fr-localized-navig-297e4-d-content-is-not-translated-isolated-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-fr-localized-navig-297e4-d-content-is-not-translated-isolated-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                    "column": 83,
+                    "line": 261
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-a80efda6d958db27bc3f",
+          "file": "premium.spec.ts",
+          "line": 239,
+          "column": 3
+        },
+        {
+          "title": "failed dashboard does not invent zero metrics and a retry recovers the real result",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1216,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert')\nExpected substring: \u001b[32m\"No fue posible cargar el centro de control\"\u001b[39m\nError: strict mode violation: getByRole('alert') resolved to 2 elements:\n    1) <div role=\"alert\" aria-atomic=\"true\" class=\"notice notice-danger\">…</div> aka getByRole('alert').filter({ hasText: 'No fue posible cargar el' })\n    2) <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div> aka locator('[id=\"__next-route-announcer__\"]')\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert')\nExpected substring: \u001b[32m\"No fue posible cargar el centro de control\"\u001b[39m\nError: strict mode violation: getByRole('alert') resolved to 2 elements:\n    1) <div role=\"alert\" aria-atomic=\"true\" class=\"notice notice-danger\">…</div> aka getByRole('alert').filter({ hasText: 'No fue posible cargar el' })\n    2) <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div> aka locator('[id=\"__next-route-announcer__\"]')\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:290:41",
+                    "location": {
+                      "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                      "column": 41,
+                      "line": 290
+                    },
+                    "snippet": "  288 |   await page.route('**/api/v1/dashboard', (route) => route.fulfill({ status: 503, contentType: 'application/json', body: JSON.stringify({ code: 'SERVICE_UNAVAILABLE', message: 'Synthetic temporary unavailability' }) }));\n  289 |   await page.goto('/dashboard');\n> 290 |   await expect(page.getByRole('alert')).toContainText('No fue posible cargar el centro de control');\n      |                                         ^\n  291 |   await expect(page.locator('.stat-card')).toHaveCount(0);\n  292 |   await page.unroute('**/api/v1/dashboard');\n  293 |   await page.getByRole('button', { name: 'Reintentar', exact: true }).click();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                        "column": 41,
+                        "line": 290
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert')\nExpected substring: \u001b[32m\"No fue posible cargar el centro de control\"\u001b[39m\nError: strict mode violation: getByRole('alert') resolved to 2 elements:\n    1) <div role=\"alert\" aria-atomic=\"true\" class=\"notice notice-danger\">…</div> aka getByRole('alert').filter({ hasText: 'No fue posible cargar el' })\n    2) <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div> aka locator('[id=\"__next-route-announcer__\"]')\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\n\n  288 |   await page.route('**/api/v1/dashboard', (route) => route.fulfill({ status: 503, contentType: 'application/json', body: JSON.stringify({ code: 'SERVICE_UNAVAILABLE', message: 'Synthetic temporary unavailability' }) }));\n  289 |   await page.goto('/dashboard');\n> 290 |   await expect(page.getByRole('alert')).toContainText('No fue posible cargar el centro de control');\n      |                                         ^\n  291 |   await expect(page.locator('.stat-card')).toHaveCount(0);\n  292 |   await page.unroute('**/api/v1/dashboard');\n  293 |   await page.getByRole('button', { name: 'Reintentar', exact: true }).click();\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:290:41"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:37:06.619Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-failed-dashboard-d-3252f-ry-recovers-the-real-result-isolated-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-failed-dashboard-d-3252f-ry-recovers-the-real-result-isolated-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                    "column": 41,
+                    "line": 290
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-c90b3c034845061e75b4",
+          "file": "premium.spec.ts",
+          "line": 286,
+          "column": 1
+        },
+        {
+          "title": "dirty activity survives cancelled link navigation and browser Back without leaking a draft to storage",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1530,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:37:10.912Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-6caf48ad7759f4371f1a",
+          "file": "premium.spec.ts",
+          "line": 298,
+          "column": 1
+        },
+        {
+          "title": "lost acknowledgements after activity and attachment commits resume the same persisted records",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 649,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert')\nExpected substring: \u001b[32m\"Synthetic lost activity acknowledgement\"\u001b[39m\nError: strict mode violation: getByRole('alert') resolved to 2 elements:\n    1) <div role=\"alert\" class=\"form-error\">Synthetic lost activity acknowledgement</div> aka getByText('Synthetic lost activity')\n    2) <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div> aka locator('[id=\"__next-route-announcer__\"]')\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    - locator resolved to <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div>\u001b[22m\n\u001b[2m    - unexpected value \"\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert')\nExpected substring: \u001b[32m\"Synthetic lost activity acknowledgement\"\u001b[39m\nError: strict mode violation: getByRole('alert') resolved to 2 elements:\n    1) <div role=\"alert\" class=\"form-error\">Synthetic lost activity acknowledgement</div> aka getByText('Synthetic lost activity')\n    2) <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div> aka locator('[id=\"__next-route-announcer__\"]')\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    - locator resolved to <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div>\u001b[22m\n\u001b[2m    - unexpected value \"\"\u001b[22m\n\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:364:41",
+                    "location": {
+                      "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                      "column": 41,
+                      "line": 364
+                    },
+                    "snippet": "  362 |   });\n  363 |   await page.locator('button[type=submit]').click();\n> 364 |   await expect(page.getByRole('alert')).toContainText('Synthetic lost activity acknowledgement');\n      |                                         ^\n  365 |   expect((await church.pool.query('SELECT count(*)::int count FROM calendar.activities WHERE title=$1', [title])).rows[0].count).toBe(1);\n  366 |   await page.locator('button[type=submit]').click();\n  367 |   await expect(page.getByRole('alert')).toContainText('Synthetic lost upload acknowledgement');"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                        "column": 41,
+                        "line": 364
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert')\nExpected substring: \u001b[32m\"Synthetic lost activity acknowledgement\"\u001b[39m\nError: strict mode violation: getByRole('alert') resolved to 2 elements:\n    1) <div role=\"alert\" class=\"form-error\">Synthetic lost activity acknowledgement</div> aka getByText('Synthetic lost activity')\n    2) <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div> aka locator('[id=\"__next-route-announcer__\"]')\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    - locator resolved to <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div>\u001b[22m\n\u001b[2m    - unexpected value \"\"\u001b[22m\n\n\n  362 |   });\n  363 |   await page.locator('button[type=submit]').click();\n> 364 |   await expect(page.getByRole('alert')).toContainText('Synthetic lost activity acknowledgement');\n      |                                         ^\n  365 |   expect((await church.pool.query('SELECT count(*)::int count FROM calendar.activities WHERE title=$1', [title])).rows[0].count).toBe(1);\n  366 |   await page.locator('button[type=submit]').click();\n  367 |   await expect(page.getByRole('alert')).toContainText('Synthetic lost upload acknowledgement');\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:364:41"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:37:13.848Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-lost-acknowledgeme-a37e3--the-same-persisted-records-isolated-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-lost-acknowledgeme-a37e3--the-same-persisted-records-isolated-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                    "column": 41,
+                    "line": 364
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-14f90f565e6016826a93",
+          "file": "premium.spec.ts",
+          "line": 331,
+          "column": 1
+        },
+        {
+          "title": "administrative publication recovery requires confirmation and reports scheduling rather than delivery",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2237,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:37:16.628Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-11dea8b52e75b38cadf3",
+          "file": "premium.spec.ts",
+          "line": 379,
+          "column": 1
+        },
+        {
+          "title": "session expiry preserves the activity and File in memory until same-account reauthentication and explicit retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1641,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:37:20.190Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-f1e89b7df8a23d0b5189",
+          "file": "premium.spec.ts",
+          "line": 423,
+          "column": 1
+        },
+        {
+          "title": "a different reauthenticated identity cannot inherit the old draft or attachment",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1404,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:37:21.841Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-760eb245de1ae35130da",
+          "file": "premium.spec.ts",
+          "line": 456,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-02T02:32:32.620Z",
+    "duration": 291717.578,
+    "expected": 11,
+    "skipped": 0,
+    "unexpected": 8,
+    "flaky": 0
+  }
+}

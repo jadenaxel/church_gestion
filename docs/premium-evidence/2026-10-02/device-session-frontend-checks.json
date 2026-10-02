@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordType": "observed-command-results",
+  "recordedBy": "device_protocol_frontend",
+  "workspace": "X:/CODE/NOMBRAMIENTOS",
+  "scope": "D10 device-bound Nombramientos frontend",
+  "note": "This execution record transcribes command results observed in this task. It is not an independent security certification or a raw transcript. Browser results are recorded separately.",
+  "checks": [
+    { "command": "pnpm --filter @nombramientos/web test:unit", "exitCode": 0, "tests": 284, "passed": 284, "failed": 0, "skipped": 0 },
+    { "command": "pnpm --filter @nombramientos/web exec node --experimental-strip-types --test lib/device-session-proof.test.ts lib/device-registration.test.ts lib/request-deadline.test.ts", "exitCode": 0, "tests": 33, "passed": 33, "failed": 0, "skipped": 0, "note": "Overlaps the full unit suite and adds registration reconciliation cases; do not add counts together." },
+    { "command": "pnpm --filter @nombramientos/web typecheck", "exitCode": 0 },
+    { "command": "pnpm --filter @nombramientos/web exec eslint <16 D10 files>", "exitCode": 0, "errors": 0, "warnings": 0 },
+    { "command": "pnpm --filter @nombramientos/web build", "exitCode": 0, "buildId": "lBS4__cY65O1NCqX7bET8", "browserOriginGuard": "passed", "chunksInspected": 30, "standalonePreparation": "passed", "environment": { "GESTIONCHURCH_MODULE_MODE": "true", "NEXT_PUBLIC_API_URL": "http://localhost:4100", "NEXT_PUBLIC_GESTIONCHURCH_URL": "http://localhost:3000" } }
+  ],
+  "browserResult": "docs/premium-evidence/2026-10-02/device-session-browser-results.json",
+  "limits": ["No original tenant keys, roles, credentials or business records were used in browser fixtures.", "No native Android/iPhone, user pilot, independent penetration test or native-language human review is certified by these automated checks.", "The separate real-browser Chromium report contains four passing cases, zero failures and zero skips with confirmed owned-fixture cleanup. These four cases are not part of the unit commands above and do not certify the full product or physical mobile devices."]
+}

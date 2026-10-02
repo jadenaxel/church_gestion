@@ -1,0 +1,42 @@
+{
+  "verifiedAt": "2026-10-02T03:21:12.389Z",
+  "mode": "read-only local metadata; no schema, business, credential, membership or message writes",
+  "webBuildId": "9Rs93DdT6H9Go53CnWtsV",
+  "postgresqlExistingMajor": 18,
+  "registeredChurches": 2,
+  "originalCanonicalTargetsVerified": true,
+  "residuals": {
+    "syntheticTenants": 0,
+    "syntheticGlobalUsers": 0,
+    "unregisteredTenantDatabases": 1,
+    "temporaryControlDatabases": 0,
+    "unregisteredRuntimeLogins": 0
+  },
+  "residualScope": "Unregistered UUID tenant databases have unknown ownership unless an exact owned receipt proves otherwise. A nonzero count is a review flag, not authorization for deletion or a claim that this run left fixtures.",
+  "services": {
+    "web": {
+      "up": true,
+      "status": 200
+    },
+    "gateway": {
+      "up": true,
+      "status": 200
+    },
+    "nominationsWeb": {
+      "up": true,
+      "status": 200
+    },
+    "nominationsApi": {
+      "up": true,
+      "status": 200
+    }
+  },
+  "servicesReady": true,
+  "metadataReviewClear": false,
+  "pass": false,
+  "limits": [
+    "Own fixture cleanup verified separately in each test. This metadata count is not authorization to delete unknown resources.",
+    "Immutable synthetic control audit is deliberately retained.",
+    "Local readiness does not certify production infrastructure or providers."
+  ]
+}

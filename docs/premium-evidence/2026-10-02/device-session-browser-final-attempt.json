@@ -1,0 +1,244 @@
+{
+  "config": {
+    "argv": [
+      "[REDACTED_LOCAL_USER_PATH]",
+      "X:\\CODE\\GestionChurch\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.device-session.config.ts"
+    ],
+    "configFile": "X:\\CODE\\GestionChurch\\playwright.device-session.config.ts",
+    "rootDir": "X:/CODE/GestionChurch/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "X:/CODE/GestionChurch/.local/device-session-browser-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "device-session-isolated-chromium",
+        "name": "device-session-isolated-chromium",
+        "testDir": "X:/CODE/GestionChurch/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "device-signer-storage.spec.ts",
+          "premium-nominations.spec.ts"
+        ],
+        "timeout": 360000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/premium-evidence/2026-10-02/device-session-browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "device-signer-storage.spec.ts",
+      "file": "device-signer-storage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "real IndexedDB signer creation is immutable across tabs, scopes and reloads",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "device-session-isolated-chromium",
+              "projectName": "device-session-isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 184,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T16:08:58.676Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "febe7fc7ab67805923e7-4a566cdfe65b05e2d4b0",
+          "file": "device-signer-storage.spec.ts",
+          "line": 19,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "premium-nominations.spec.ts",
+      "file": "premium-nominations.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "GestionChurch SSO, tenant isolation and return work in the real browser",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "device-session-isolated-chromium",
+              "projectName": "device-session-isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1719,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T16:08:59.700Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "44bf0c62e61301b4b59c-14b0babcb43aaa9176f0",
+          "file": "premium-nominations.spec.ts",
+          "line": 222,
+          "column": 1
+        },
+        {
+          "title": "device-bound guided start, persisted browser proof, explicit approval and targeted revocation work end to end",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "device-session-isolated-chromium",
+              "projectName": "device-session-isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9906,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T16:09:03.949Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "44bf0c62e61301b4b59c-b65ebcc471ca4397bafe",
+          "file": "premium-nominations.spec.ts",
+          "line": 236,
+          "column": 1
+        },
+        {
+          "title": "central explicit operational roles project and revocation invalidates the old session",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "device-session-isolated-chromium",
+              "projectName": "device-session-isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 825,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T16:09:13.864Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "public-upstream-diagnostics-before-cleanup",
+                      "contentType": "application/json",
+                      "body": "eyJjYXB0dXJlZEF0IjoiMjAyNi0xMC0wMlQxNjowOToxNC43MDhaIiwid2luZG93T3BlbmVkQXQiOiIyMDI2LTEwLTAyVDE2OjA4OjU5LjcwNVoiLCJyZWNvcmRzIjpbXX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "44bf0c62e61301b4b59c-7a790b928d2d0ef0558e",
+          "file": "premium-nominations.spec.ts",
+          "line": 417,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-02T16:08:57.238Z",
+    "duration": 182974.54499999998,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "evidenceRedaction": {
+    "version": 3,
+    "scope": "local URL query strings and fragments; private error-context attachment references removed; local user filesystem paths redacted",
+    "rawReportRetainedPrivately": true,
+    "testOutcomesAndCountsUnchanged": true
+  }
+}

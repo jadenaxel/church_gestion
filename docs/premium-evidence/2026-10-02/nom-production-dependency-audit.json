@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-02",
+  "command": "pnpm audit --prod --json",
+  "exitCode": 0,
+  "scope": "NOMBRAMIENTOS production dependency graph; no packages modified",
+  "result": {
+    "advisories": {},
+    "metadata": {
+      "vulnerabilities": {
+        "info": 0,
+        "low": 0,
+        "moderate": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "dependencies": 401,
+      "devDependencies": 0,
+      "optionalDependencies": 106,
+      "totalDependencies": 507
+    }
+  }
+}

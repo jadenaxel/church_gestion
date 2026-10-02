@@ -1,0 +1,2058 @@
+{
+  "schemaVersion": 1,
+  "kind": "scoped-d10-source-evidence-selected-runtime-sha256-manifest",
+  "generationId": "7c312b63-21bc-4155-854b-5ea567e180c8",
+  "generatedAt": "2026-10-02T16:54:10.152Z",
+  "scope": "Exactly 57 named D10 source/migration/operational/dependency/reused-security/evidence-only files matched to the source scan, selected tests/contracts/release evidence, four explicitly named synthetic screenshots, selected Nombramientos runtime JavaScript and GestionChurch compiled build artifacts, and only public Nombramientos .next/static JS/CSS bundles plus their exact deployed standalone copies. Not a full application or supply-chain manifest.",
+  "builds": {
+    "nominationsExpected": "lBS4__cY65O1NCqX7bET8",
+    "nominationsDisk": "lBS4__cY65O1NCqX7bET8",
+    "nominationsStandalone": "lBS4__cY65O1NCqX7bET8",
+    "nominationsServed": "lBS4__cY65O1NCqX7bET8",
+    "gestionChurchExpected": "m3K6tJtdsnu8HBjapaS00",
+    "gestionChurchDisk": "m3K6tJtdsnu8HBjapaS00"
+  },
+  "gates": {
+    "sourceScan": {
+      "fileCount": 57,
+      "findings": 0,
+      "selfTestPassed": true,
+      "inventorySha256": "e9e106444bf9bac1a5a7129a2d45d844becac4677de0260fe5bd5862fc46958b"
+    },
+    "standaloneStaticMirror": {
+      "exactRelativePathsBytesAndHashesMatch": true,
+      "sourceCount": 35,
+      "deployedCount": 35
+    },
+    "publicEvidence": {
+      "filesChecked": 55,
+      "sanitizedBrowserReports": 13,
+      "capabilityUrlAndMetadataFieldsRejected": true,
+      "publicJsonAttachmentsDecodedAndCheckedInMemory": true,
+      "supplementalSecretPatternScannerSelfTestPassed": true,
+      "originalJsonLexemesCheckedAndSemanticDuplicateKeysRejected": true,
+      "decodedJsonKeysAndStringsReceiveFullPatternScan": true,
+      "classifiedTemporalPanMatches": 54,
+      "temporalPanClassificationScope": "Raw non-PAN rules remain mandatory. Original JSON string/key/numeric lexemes are PAN-scanned before parsing can round numbers or overwrite duplicates; decoded strings/keys receive all scanner rules. Only finite, fractional, nonnegative numeric tokens no greater than 24 hours at $.testResults[i].assertionResults[j].duration are classified as timing metrics. Decoded public attachments receive no timing exemption. Original evidence bytes are unchanged by this generator.",
+      "approvedPathReferenceScope": "Only the exact backend summary frozen-report metadata reference and five literal public API endpoint paths at root-array records of the two named, validated public HTTP diagnostic JSON attachments in selected browser reports are accepted. No paths are opened or resolved; queries, fragments, suffixes, nested routes, other attachments/files and unknown body formats are rejected.",
+      "approvedPublicDiagnosticPaths": [
+        "/v1/session",
+        "/v1/memberships",
+        "/v1/catalog",
+        "/v1/device-session",
+        "/v1/integrations/gestionchurch/session"
+      ],
+      "rawPlaywrightErrorContextsAndPrivateRawDiagnosticsIncluded": false,
+      "historicalSanitizationPolicy": "Distributed browser JSON declares v3 local URL query/fragment, private error-context-reference and local-user-filesystem-path redaction, preserving test outcomes/counts. Those declarations and sanitized content, including normalized public JSON attachments, are checked here; raw private originals are not read or independently compared by this generator."
+    },
+    "publicRedactionReceipt": {
+      "pass": true,
+      "files": 13,
+      "totalRedactions": 16,
+      "currentPublicBytesMatchReceipt": true,
+      "declaredBeforeAfterOutcomeHashesMatch": true,
+      "privateOriginalsRead": false,
+      "independentComparisonWithPrivateOriginals": false,
+      "receipt": "device-session-public-evidence-redaction-v3.json"
+    },
+    "browser": {
+      "tests": 4,
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "endedAt": "2026-10-02T16:12:00.212Z"
+    },
+    "cleanup": {
+      "pass": true,
+      "mutations": 0,
+      "remainingOwnedResources": {
+        "tenantRegistrations": 0,
+        "provisioningJobs": 0,
+        "memberships": 0,
+        "authSessions": 0,
+        "federatedIdentities": 0,
+        "databases": 0,
+        "nomRoles": 0,
+        "gcRuntimeRoles": 0,
+        "gcSourceRegistrations": 0,
+        "gcLaunchCodes": 0,
+        "secretReferences": 0
+      },
+      "auditRetentionDeclaredByReceipts": true,
+      "auditIntegrityVerified": false,
+      "verifiedAt": "2026-10-02T16:16:09.971Z"
+    },
+    "localReadiness": {
+      "servicesReady": true,
+      "services": {
+        "web": {
+          "up": true,
+          "status": 200
+        },
+        "gateway": {
+          "up": true,
+          "status": 200
+        },
+        "nominationsWeb": {
+          "up": true,
+          "status": 200
+        },
+        "nominationsApi": {
+          "up": true,
+          "status": 200
+        }
+      },
+      "metadataReviewClear": false,
+      "pass": false,
+      "residuals": {
+        "syntheticTenants": 0,
+        "syntheticGlobalUsers": 0,
+        "unregisteredTenantDatabases": 1,
+        "temporaryControlDatabases": 0,
+        "unregisteredRuntimeLogins": 0
+      },
+      "residualScope": "Unregistered UUID tenant databases have unknown ownership unless an exact owned receipt proves otherwise. A nonzero count is a review flag, not authorization for deletion or a claim that this run left fixtures.",
+      "limits": [
+        "Own fixture cleanup verified separately in each test. This metadata count is not authorization to delete unknown resources.",
+        "Immutable synthetic control audit is deliberately retained.",
+        "Local readiness does not certify production infrastructure or providers."
+      ],
+      "verifiedAt": "2026-10-02T16:16:14.481Z"
+    },
+    "rootDocumentsFrozenExplicitly": true
+  },
+  "testReports": [
+    {
+      "report": "nom-api-upstream-final-regression.json",
+      "total": 506,
+      "passed": 480,
+      "failed": 0,
+      "skippedOrPending": 26
+    },
+    {
+      "report": "nom-database-device-security-regression.json",
+      "total": 486,
+      "passed": 479,
+      "failed": 0,
+      "skippedOrPending": 7
+    },
+    {
+      "report": "nom-e2ee-device-security-regression.json",
+      "total": 43,
+      "passed": 43,
+      "failed": 0,
+      "skippedOrPending": 0
+    },
+    {
+      "report": "nom-device-binding-live-seventh.json",
+      "total": 13,
+      "passed": 13,
+      "failed": 0,
+      "skippedOrPending": 0
+    },
+    {
+      "report": "gateway-connector-budget-tests.json",
+      "total": 57,
+      "passed": 57,
+      "failed": 0,
+      "skippedOrPending": 0
+    }
+  ],
+  "frontendBuildAndChecks": {
+    "buildId": "lBS4__cY65O1NCqX7bET8",
+    "allExitCodesZero": true
+  },
+  "historicalEvidencePolicy": "Prior cuts, including real failures, are preserved and hashed as historical evidence. They are not reclassified as current passing tests. Suite totals overlap and must not be added together.",
+  "finalDisposition": "Scoped technical gates verified; metadata review remains uncleared. Unknown-owner resources are preserved without deletion authority. This is not full-production approval.",
+  "limitations": [
+    "Local agent review, not independent external penetration testing.",
+    "Does not replace physical Android/iPhone, human ES/EN/FR review or independent security review.",
+    "Does not hash runtime secrets, credentials, authenticated HTML, databases, original church business content, Git history or all dependencies.",
+    "Read-only cleanup verifies owned residual metadata and declared audit retention, not original audit-chain integrity.",
+    "GestionChurch gateway runs the named TypeScript source with tsx; its three selected dist JavaScript files are compiled build artifacts, not evidence of files served by that process.",
+    "Selected runtime/build files and public bundles are hashed, not the complete deployment or supply chain; no reproducible source-to-binary build assertion is made.",
+    "A passing scoped manifest does not certify completion of the entire enterprise prompt."
+  ],
+  "files": [
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/src/security.ts",
+      "category": "production-source",
+      "bytes": 8933,
+      "sha256": "ede0f28c75923ea4d034c35c77fe1d1e4c05daa18076327cfaa9167e5c096136"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/src/server.ts",
+      "category": "production-source",
+      "bytes": 8144,
+      "sha256": "bdb7273ad1ab8ef3218603c82f22eec40c4dd0ea53ed43b7685b80978be8ef55"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/src/lib/log-safety.ts",
+      "category": "production-source",
+      "bytes": 2422,
+      "sha256": "339885e5fd6e2be2d1f1588001fdaf514ae21900794332605f66bad0a24ecf15"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/src/modules/auth-routes.ts",
+      "category": "production-source",
+      "bytes": 10208,
+      "sha256": "30527cfec531f1388dfc3e5c436caa5defd6d626cce3b523324992324dcd1cb7"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/src/modules/enterprise-auth-routes.ts",
+      "category": "production-source",
+      "bytes": 15896,
+      "sha256": "e36f09e6f9f3979f28075b56aef0f5699b5b69c596004f21968da56f0404a2ef"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/src/modules/enterprise-auth-service.ts",
+      "category": "production-source",
+      "bytes": 59273,
+      "sha256": "8d0c1896aac276efcd1b674b289554d2df2e973b965a06bd6167ceb8476d5a92"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/src/modules/gestionchurch-integration-routes.ts",
+      "category": "production-source",
+      "bytes": 11969,
+      "sha256": "933f6f6606a982b4a39bc64292c95cfcfcc6a56c6be2e9a144a17b117382c39d"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/src/modules/device-session-proof.ts",
+      "category": "production-source",
+      "bytes": 16678,
+      "sha256": "0f88c1c0f256592f978b2335974c6e26b6aab37fe8ea87f0d770c424236e5341"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/src/modules/device-denial-audit.ts",
+      "category": "production-source",
+      "bytes": 2007,
+      "sha256": "7f4e2c0dc7f7e128f11429d8bfc80d467b86283e7dde8a5b43568d7f745d215f"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/src/modules/event-routes.ts",
+      "category": "production-source",
+      "bytes": 15248,
+      "sha256": "ee216f22db8f13f21f16274e81050420631c73332873d05720b1658f043d75ea"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/src/runtime.ts",
+      "category": "production-source",
+      "bytes": 9762,
+      "sha256": "cc2e74dbaf94ddc1ec5e3fa8572c5f9e24c6cbc91afc068438b9df203ff88227"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/src/pools.ts",
+      "category": "production-source",
+      "bytes": 7100,
+      "sha256": "4e59a9085c2cce6d6723b3c29ada14496afad710efeecbb54ae25553fbf38a3e"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/src/control-store.ts",
+      "category": "production-source",
+      "bytes": 73957,
+      "sha256": "c2df32461432463628dd6ac63929b6338a245e2ffe2e1f825fcff035e8d413cc"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/src/device-session-store.ts",
+      "category": "production-source",
+      "bytes": 13102,
+      "sha256": "9d3a7c6019b0073a77df9f8da3f7a2abee55d21007dbc8a65ef113fbc1efe3c1"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/src/key-lifecycle-store.ts",
+      "category": "production-source",
+      "bytes": 48727,
+      "sha256": "4bef6505633d9be09f110605311d678783291cb5da1577c451706019b1c61ae6"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/src/content-key-write-guard.ts",
+      "category": "production-source",
+      "bytes": 4190,
+      "sha256": "461f7a9b2e339589905f6fdd7b3da5aa71ddac05ae47ea9d31bd51de67e63fbd"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/src/runtime-grant-contract.ts",
+      "category": "production-source",
+      "bytes": 4943,
+      "sha256": "602666bdf5af71bb8c7b9b661ad9df9f93ffd4bede649e574d128d49f2de3a63"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/migrations/tenant/039_device_bound_http_sessions.sql",
+      "category": "tenant-metadata-migration",
+      "bytes": 3590,
+      "sha256": "a03d2b4dc047eb8403938a237579bc4f6b4a88622d25d3fe77b113d83a7f6a16"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/scripts/apply-device-session-migration.mjs",
+      "category": "guarded-operational-verification",
+      "bytes": 12917,
+      "sha256": "7b203ac07dc63815e95983ad701980d910862846c2fed853193369f0cb8fb77e"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/e2ee/src/device-session-challenge.ts",
+      "category": "production-source",
+      "bytes": 3973,
+      "sha256": "ec5ff748ee8e817c1dab58b59ccdd933b07d96d125c084a8cc5a23256ffcc736"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/lib/api.ts",
+      "category": "production-source",
+      "bytes": 62294,
+      "sha256": "d9e0012cf62640992cc371dd4b71eb1a51592ad76654a166cfc7ec4260b59960"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/lib/device-session-proof.ts",
+      "category": "production-source",
+      "bytes": 11251,
+      "sha256": "8ef3f91f4a63e9be2b36258a28eb0775bce793c0b3e5a7346113e7c80ecf61b6"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/lib/device-session-client.ts",
+      "category": "production-source",
+      "bytes": 6356,
+      "sha256": "6f6b2cfc1fd00b20237ef041f26a513039f8a7ebd245534e666db596170623e6"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/lib/device-event-stream.ts",
+      "category": "production-source",
+      "bytes": 1616,
+      "sha256": "fa032c64363437df1f1c79d154da749162d495e9f9848b3028eec9c859c43ec6"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/lib/device-registration.ts",
+      "category": "production-source",
+      "bytes": 1626,
+      "sha256": "62a90d17ef16df7e3d7ecf69c9162fb028b8d86c0098e4729e09c1503fedbe0d"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/lib/session-clock.ts",
+      "category": "production-source",
+      "bytes": 1024,
+      "sha256": "54bf4bf276c14773a8f90e2d19d917bdeeb2a47587b69c81dc2b54943d8dc338"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/lib/request-deadline.ts",
+      "category": "production-source",
+      "bytes": 1673,
+      "sha256": "e68d89bcf0b713a1fe580802ff7522fa52ff9047cb032333cd3df2d464d400ac"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/components/nombramientos/app-shell.tsx",
+      "category": "production-source",
+      "bytes": 25018,
+      "sha256": "23fe45ba05c9c6207e37bff138079f63eae7e828b78ec8aed465f7ece13e1d95"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/components/nombramientos/device-session-boundary.tsx",
+      "category": "production-source",
+      "bytes": 7478,
+      "sha256": "67f32b413849c7509503a331f6cdfeec7adf8b2b862a31e2a07bb7403375def1"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/components/nombramientos/key-lifecycle-view.tsx",
+      "category": "production-source",
+      "bytes": 61606,
+      "sha256": "f6bbdc79a9a85219aafbe54534db6fd36c8bc5982d21486a09aa7c4e5da18d9d"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/components/nombramientos/round-view.tsx",
+      "category": "production-source",
+      "bytes": 33739,
+      "sha256": "821b55b0678e183d5e746232146ed11f755cc74121433d2c625dedeb9f203f93"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/components/nombramientos/security-center.tsx",
+      "category": "production-source",
+      "bytes": 58308,
+      "sha256": "7576d971a7110c4fba4552cc5225e364882d69bc84ffc9fb9f0139e5aef69fc9"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/src/config.ts",
+      "category": "production-source",
+      "bytes": 13306,
+      "sha256": "1bf8fae161a6d911a7001303be6c8f395fc549230ad7fec76b2cb4a8a21708ea"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/src/modules/auth-service.ts",
+      "category": "production-source",
+      "bytes": 35161,
+      "sha256": "4abfce56c33389ca064f0b0aa2e5ff91bf828968ed9b7ae20116028bcde4977e"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/src/types.ts",
+      "category": "production-source",
+      "bytes": 4024,
+      "sha256": "8c5c446696ad354aa83076a3c122a204ed3551a8d8522864534bb6b4d1c63b31"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/src/index.ts",
+      "category": "production-source",
+      "bytes": 1467,
+      "sha256": "16616b8467b5b8dd668824bab9b67e798e8443f7cf207479355827d620d421d1"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/src/tenant-maintenance-policy.ts",
+      "category": "production-source",
+      "bytes": 13502,
+      "sha256": "5fb24bd6b95d299831f282fd1b0286d68e5e06b201a371b7b0ddc53d0da13864"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/src/local-state-verifier.ts",
+      "category": "production-source",
+      "bytes": 86163,
+      "sha256": "23d7d5f32893ed101822337fe994e6d4a703edcdbca5227c79cd0ca2f3a2fdc7"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/e2ee/src/index.ts",
+      "category": "production-source",
+      "bytes": 3245,
+      "sha256": "45ce7a3ff11c927b60c8f6dd588fe28c5537077666d906097de274e4ef367dbe"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/scripts/verify-gestionchurch-browser-cleanup.mjs",
+      "category": "guarded-operational-verification",
+      "bytes": 10487,
+      "sha256": "af4109478af61b95f7061a9eb712d8bde18ee07aceb3f01cc27e85062d711987"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/package.json",
+      "category": "dependency-metadata",
+      "bytes": 1848,
+      "sha256": "fd1566b4cd8496e2f96e1cc304598487ef6b788989eceeacd7845fce3fc42d97"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "pnpm-lock.yaml",
+      "category": "dependency-metadata",
+      "bytes": 359574,
+      "sha256": "06812dd773c9f8fbdcc4ef27c3aba1e2a2b95af81176e4645cbb140437e29733"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/components/nombramientos/tenant-switcher.tsx",
+      "category": "production-source",
+      "bytes": 3646,
+      "sha256": "19983950ee56daf549104dd7cfd866bc45333710629e01e71d1d0b3e5d52a0e5"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/lib/device-session-readiness.ts",
+      "category": "production-source",
+      "bytes": 2759,
+      "sha256": "b8819b6127b1d286d0a69337128471b1795b05777e3a6959eb64d7c10d9f0f46"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/i18n/src/es.ts",
+      "category": "production-source",
+      "bytes": 197663,
+      "sha256": "8d8850f30ed19b0aa8f9523b91c2b557041484afe716110ca1ff39cb5d0d1f13"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/i18n/src/en.ts",
+      "category": "production-source",
+      "bytes": 188627,
+      "sha256": "6563890c77c3b7b5705a13caa17b9b680e32bb19c67901bef344477753bd9a69"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/i18n/src/fr.ts",
+      "category": "production-source",
+      "bytes": 206519,
+      "sha256": "74bd9743a4cf2fe6bc8e3c3167512a3f9302df723ee8c56df531e1e6d8a7c5aa"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/lib/product-i18n.ts",
+      "category": "production-source",
+      "bytes": 13255,
+      "sha256": "b1b57918b1c731cead1fa21a515390f0c26f6d2230c33f8b7d0af7b91aba47c9"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/app/globals.css",
+      "category": "production-source",
+      "bytes": 108999,
+      "sha256": "41a1072a44134b9892812b7c6aee768beaf300f44214822cf1fd13a8bb6c5065"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/app/responsive.css",
+      "category": "production-source",
+      "bytes": 6306,
+      "sha256": "341e2a2982e38df391a4c63485a7d311eadd5fd674354009754e062c79220b18"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/components/nombramientos/device-sessions-panel.tsx",
+      "category": "production-source",
+      "bytes": 5999,
+      "sha256": "1a674096bac7540df9603610e8d7fd7ccea52cf65b0d9f5bbac74610f55bb17c"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/src/modules/gestionchurch-upstream-diagnostics.ts",
+      "category": "production-source",
+      "bytes": 1049,
+      "sha256": "7de7397bbc7254b27ef0c86122d0f97e84bc4ecd0906096344133bf441259e10"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "scripts/premium-evidence-date.ts",
+      "category": "evidence-only-verification-script",
+      "bytes": 1631,
+      "sha256": "e3a19d5ab59f3be6c2c3d11e4862e22d0dd2e80d71c858d26abbf7f60c072b13"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "scripts/verify-premium-local-state.ts",
+      "category": "evidence-only-verification-script",
+      "bytes": 5641,
+      "sha256": "2cbbf15053ed0027af2b1c5bf346e1beae09abd29a64c637bd9e893ac88b2070"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "services/api-gateway/src/main.ts",
+      "category": "production-source",
+      "bytes": 10497,
+      "sha256": "e14cb37994f23eed210718f9334c4dad0b9255d291954c05765d35b32c71c05f"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "services/api-gateway/src/nominations-connector-budget.ts",
+      "category": "production-source",
+      "bytes": 6262,
+      "sha256": "d643eadfa2beb06c168c8387a17bfa1f96bac03d3610f6b25b44226dba249fc4"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "packages/platform/src/security.ts",
+      "category": "reused-security-primitive",
+      "bytes": 7694,
+      "sha256": "7a1d492078b0db872ba69eb122b4ad6c8a3b2923869a3b1eae378f089e8ceb85"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/test/device-session-proof.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 5662,
+      "sha256": "ccd5898432ced993e0a167f40ad4d237f06c19818b16866381eefbc05108961d"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/test/device-denial-audit.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 3947,
+      "sha256": "b9f31df0cbe58533bbd9288b9883807160cfa3faaec7816e81a77ff5c9cf3947"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/test/device-stream-authority.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 6318,
+      "sha256": "4d06512f6d3962f23df49164efa88fd2973405b05335667c21decae0100d9ed2"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/test/gestionchurch-binding-authority.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 1770,
+      "sha256": "e2b7bf1ccc8a83b084267c8b3431709038300a6149256a0f4d6cafe3ea659358"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/test/gestionchurch-upstream-diagnostics.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 1804,
+      "sha256": "ac900863c029545b348e1d14407d3fc41d83d19f71d33afaa32657241595ea7e"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/test/gestionchurch-session-security.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 9594,
+      "sha256": "c5b48bfd82efdea12f73cee05b9b43b45af0c3de575b763729d4595bfe3812e0"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/test/enterprise-auth-routes.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 16902,
+      "sha256": "b47e540047a9f4767ba1c2443c4669197a52033e32b0903d878ed0731b4e320b"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/test/member-import.live.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 46316,
+      "sha256": "c1c63a435823659be884a7e3ee97bd4f08bf6dda805bbb928b78592cece3466d"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/test/openapi-contract.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 50273,
+      "sha256": "33826a9270a85674e2627766836e03d7987f46285267d10d37d8cd66999ef1d5"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/test/session-server-time.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 5045,
+      "sha256": "5343064161e8097cbbea4069e4ea88e657ca913368406314008951ae369d8d55"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/test/premium-federation-crypto.live.test.mjs",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 92136,
+      "sha256": "4371efeedd2af554a3ef7f0b50e9521a6c81285b191c9ebcb692f75bd164c9ef"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/test/device-session-migration-guards.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 3371,
+      "sha256": "52086c68d432828eae5c829e0bab777f5a8692a70bcd1702a04c2732e8d20280"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/test/device-session-store.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 2344,
+      "sha256": "cb102a5dd365f8bf13d43b5b1fc4b365437f97ed060040d9c96ff0492425a88a"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/test/content-key-write-guard.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 6088,
+      "sha256": "ec4a0fbe568536ff6a0a07be4f540c60bebf240c713db50e04302f5047cc3041"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/test/core-workflow.live.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 137055,
+      "sha256": "813ecd2cb051e4b568b38c0ff68834aad3ec9266e34cd04493b987e9e11fbf0a"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/test/key-lifecycle-historical-grant.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 14186,
+      "sha256": "ac2ebb85e08423fd28c0b31c3cca074d81d989913d20f7bfce612751eeabec2f"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/test/key-lifecycle.live.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 43276,
+      "sha256": "dc09a3066e95e20a8d21571ba426f6c46c0ae7c309319d0033638f56a2294943"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/test/local-catalog-settings.live.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 54701,
+      "sha256": "4d0e5c257907bb56022484a68fd15f5d47ce7420abcb5079fbc68623d6c653d3"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/test/member-eligibility-scope.live.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 29382,
+      "sha256": "1c6f99dab112d823e6d1177096f424881199a0545a1a092d3224badbe21bbe24"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/test/member-qualification.live.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 23086,
+      "sha256": "e327f4167146dc006c36bec6149d83205b9ba158426e673e19b261152ac52f5f"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/test/photo-store.live.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 38870,
+      "sha256": "85c2c611bfccf59bd4dcb360c11c5cef69e9bb403fc3987fde37c81c260d84f9"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/test/local-state-verifier.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 23169,
+      "sha256": "3678c9b957ab2d2dda47ce3b673d5c9e5c9955220d3e0eb3bdae812a0a893a71"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/test/tenant-maintenance-policy.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 12935,
+      "sha256": "cfd08b249c8afe1bab34aa1db33eead24cff94d983ef5e5be635a668b2b2af55"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/test/access-control.live.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 25109,
+      "sha256": "0edc2c6c3bf25143a49bd7507a53feb9a3cdd6fe4e57a3469262696fe3071b7a"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/test/legacy-invitation-binding-upgrade.live.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 23638,
+      "sha256": "ace4609f35469197087bd8ff698eed53619c2093622cb3a3eb53198837d1c8d4"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/test/integration.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 43774,
+      "sha256": "773f872dd71d215cee13d89d09142c0f253f6f7d3dd4eae60b6936905552a615"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/test/isolated-storage-policies.live.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 9359,
+      "sha256": "1469f9ef8a417abaf8e42639b1a921ea8a993a8755b15e2206c253195d9b439d"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/test/persistent-read-only-fixture.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 2025,
+      "sha256": "590f4fca4920ce248bb83994513242d5dc0549239a62d06a9c9f7370c001ed52"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/test/gestionchurch-browser-fixture-guards.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 2575,
+      "sha256": "6cf5fb5e801a02efacc690eb2007447915712216955acdd114936022e8dd1dca"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/test/direct-device-session-fixture.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 2705,
+      "sha256": "0655402ddc231d069ab9b6f9c421f3351d1fbb6611298f95d1f26c80e9d2b3fb"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/test/persistent-read-only-fixture.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 949,
+      "sha256": "336de4284fba18a5d29e7b867a48311b32904d82a95567a2c154541ae5268742"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/e2ee/test/device-session-challenge.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 4055,
+      "sha256": "2b6f8f91bd574af7879e2bb44d040354c7e3442138882c58589242bd4c53d123"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/lib/device-session-proof.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 16945,
+      "sha256": "6e6018ada949f0d3c0ed588726fba420a255bc6f04801436bead5a57abec4781"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/lib/request-deadline.test.ts",
+      "category": "selected-d10-tests-and-fixture-helpers",
+      "bytes": 10987,
+      "sha256": "23f9550292aa4e12a00757382fb9778e7819656247d9fc5e8b7e016689ffaa46"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "tests/unit/premium-evidence-date.test.ts",
+      "category": "selected-d10-tests-and-browser-config",
+      "bytes": 2450,
+      "sha256": "e85e464b1cf6b645a6efd864401af5e2da500de4cec6f91e7c25ad7a46fc5318"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "playwright.device-session.config.ts",
+      "category": "selected-d10-tests-and-browser-config",
+      "bytes": 984,
+      "sha256": "2b12bd64a45b64eab2a710be728f0d33eb6fa6cc225a42efe2bdc5b84aa08cae"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "tests/browser/device-signer-storage.spec.ts",
+      "category": "selected-d10-tests-and-browser-config",
+      "bytes": 5533,
+      "sha256": "794f70815f25a9c65944d9b65b1528eb721dbcc361b99a81510a26a41499c4d7"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "tests/browser/premium-nominations.spec.ts",
+      "category": "selected-d10-tests-and-browser-config",
+      "bytes": 28576,
+      "sha256": "d9368c500b3b71a807f409c07682c67d6d67a8126194a7b98e88bcc16b21cc02"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "tests/unit/nominations-connector-budget.test.ts",
+      "category": "selected-d10-tests-and-browser-config",
+      "bytes": 10259,
+      "sha256": "80a8af8303d15c66ac27201bb32c87b785569dc1552674ec0f065c57236b490e"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "tests/unit/gateway-connector-budget-reproduction.test.ts",
+      "category": "selected-d10-tests-and-browser-config",
+      "bytes": 9302,
+      "sha256": "144c29e089df00d9d860e8bbd9b62c8920ac49b8d947ab7db562f7a83fa4e77c"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "docs/api/openapi.json",
+      "category": "selected-contract-and-architecture-documents",
+      "bytes": 511171,
+      "sha256": "85ba8331aa636bda9c5f577871e915c8a92bbec592f3f3d9df16a155da78973c"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "docs/adr/0008-device-bound-module-sessions.md",
+      "category": "selected-contract-and-architecture-documents",
+      "bytes": 9173,
+      "sha256": "93fbba4c082933ad1233b064f4037c4426e464e5caa25dac6760efd6aac2c5a0"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "docs/key-lifecycle.md",
+      "category": "selected-contract-and-architecture-documents",
+      "bytes": 20951,
+      "sha256": "a5804b4cd12bca45c038f92ed0948c9279c514e58f38f823bc3bc062132f59f3"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "docs/adr/README.md",
+      "category": "selected-contract-and-architecture-documents",
+      "bytes": 1204,
+      "sha256": "192c3947a7f553db30ec32ebc8912af87e6741d8a82679662aec042710bb7bb8"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "scripts/scan-secrets.mjs",
+      "category": "selected-public-evidence-verification-tool",
+      "bytes": 32507,
+      "sha256": "bd2dc8aed84900a5365ac83332ac103441bcbc400d08f0ef58bfa5df88f9f823"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": ".local/sanitize-device-session-browser-evidence.mjs",
+      "category": "selected-public-evidence-verification-tool",
+      "bytes": 15878,
+      "sha256": "ef151a462d6d279f9d68af11f3256438c982dbfc94c5b5335a3d9b330b79ed5c"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-device-sessions-2026-10-02.md",
+      "category": "selected-release-documents",
+      "bytes": 19934,
+      "sha256": "553487f0c4647bf09382c4612190bc013d76ca8341098d205c62a8cd40d78380"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-release-report.md",
+      "category": "selected-release-documents",
+      "bytes": 17255,
+      "sha256": "8b759f36e2e7d3bc6d7f2c02e6454de2c02644fcdc8fb1e9ad9ff1648e9a1ac2"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-requirements-matrix.md",
+      "category": "selected-release-documents",
+      "bytes": 20134,
+      "sha256": "fed2cc938bc5adbccbd3270c1708cdd4f93be2209c5dea09fde806038b3c0a0d"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-authorization-decisions.md",
+      "category": "selected-release-documents",
+      "bytes": 2918,
+      "sha256": "7b7415fb105967a93cbb2f13f7d6c2e7af4d63f35253950ee20cec985039bc86"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-operations-runbook.md",
+      "category": "selected-release-documents",
+      "bytes": 14460,
+      "sha256": "a55b3885f79f837896851acf11bf95f4665774d33713183bc7b63999b3b491ac"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-threat-model.md",
+      "category": "selected-release-documents",
+      "bytes": 6850,
+      "sha256": "61c9c2e398c80d81fd808d0cbf752da9c5e4bd58edd3ebc479d12984464f2b2e"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-delivery-plan.md",
+      "category": "selected-release-documents",
+      "bytes": 8630,
+      "sha256": "2e954f47c9c89722e110bc1effc4c753c5ea3002bda374c405a574c19c422580"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": ".local/device-session-browser-results/device-session-active-desktop-59487f56-931a-4471-9a88-0f44f6ea7578.png",
+      "category": "selected-synthetic-visual-evidence",
+      "bytes": 165333,
+      "sha256": "233156acab941e6050e342f66e05db3a91f6c90145c85081ee47acdeae2a73fa"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": ".local/device-session-browser-results/device-session-active-mobile-59487f56-931a-4471-9a88-0f44f6ea7578.png",
+      "category": "selected-synthetic-visual-evidence",
+      "bytes": 67416,
+      "sha256": "a8a658bc3c7830c6837c59a661a032124780a68bf1a4b56aa58249454a924843"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": ".local/device-session-browser-results/device-session-active-tablet-fr-59487f56-931a-4471-9a88-0f44f6ea7578.png",
+      "category": "selected-synthetic-visual-evidence",
+      "bytes": 106015,
+      "sha256": "6de5240e57af72d4c396ae181c27aa0444d851c71b08f17a24208dd3f8f0f471"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": ".local/device-session-browser-results/device-session-pending-mobile-59487f56-931a-4471-9a88-0f44f6ea7578.png",
+      "category": "selected-synthetic-visual-evidence",
+      "bytes": 67198,
+      "sha256": "c4950ef71a9985cbd3b7bc4c3f8ef3e4c0f537e3e323fcbdd1b139c8302ff1bd"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-production-dependency-audit.json",
+      "category": "current-selected-evidence",
+      "bytes": 486,
+      "sha256": "495a0764bff05099b5aaf87f00bf98501490118603ceae5a9bf73be2ac0bc947"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-e2ee-device-security-regression.json",
+      "category": "current-selected-evidence",
+      "bytes": 14716,
+      "sha256": "18eb98fdc27e856a7f3d18010dcb4cebed342f1a053448f9ff6fede6890af396"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-device-session-migration-receipt.jsonl",
+      "category": "current-selected-evidence",
+      "bytes": 1517,
+      "sha256": "ad77a6f780fcade04ba396c23bcd4d6594eb7fcc1562df050e9cd4c3f5ffa3db"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-device-security-scoped-source-scan.json",
+      "category": "current-selected-evidence",
+      "bytes": 16780,
+      "sha256": "d923aef197e477ac4d221212b7b308345806728c1f520ac05fb5663df768d08d"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-device-security-scoped-lint.json",
+      "category": "current-selected-evidence",
+      "bytes": 36289,
+      "sha256": "2fb1de9c0890b103a2863536e621f6d8b6a70ef18f55911c8df43f15d3f5aa12"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-device-binding-live-seventh.json",
+      "category": "current-selected-evidence",
+      "bytes": 6968,
+      "sha256": "9e8757a0e587501aee9083a0ee3542fa17dcae93fef188350a903790c76dad34"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-device-binding-live-seventh-receipt.json",
+      "category": "current-selected-evidence",
+      "bytes": 1489,
+      "sha256": "d5f53a83aee07efe64b07df1650f7791ac253a377f91bb9ac54da495f271f7b5"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-database-device-security-regression.json",
+      "category": "current-selected-evidence",
+      "bytes": 194409,
+      "sha256": "36086916c279acaa7533af44ca92fa95fa1a8d2c5a4361dc0a9714f3e217a594"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-browser-cleanup-guard-tests.json",
+      "category": "current-selected-evidence",
+      "bytes": 1677,
+      "sha256": "761640998ddd85724f41a25735e0f88749d735736d2a8d7e440df85607253598"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/gateway-connector-budget-tests.json",
+      "category": "current-selected-evidence",
+      "bytes": 20460,
+      "sha256": "b3b16c1f69da081877026667e8455b03c92c507bafbbb148e64a39227671cf0f"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-backend-device-security-summary.json",
+      "category": "current-selected-evidence",
+      "bytes": 10252,
+      "sha256": "a35182bc12121b8649346f32a886056b2b4ffdffbc374c45e2bdf69e921e8bd2"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-upstream-diagnostic-tests.json",
+      "category": "current-selected-evidence",
+      "bytes": 8450,
+      "sha256": "d8d9d3a02c64b194aeb38f34a3b397b938a713644bae573c6fbad8e2e2ef7074"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-upstream-diagnostic-lint.json",
+      "category": "current-selected-evidence",
+      "bytes": 13677,
+      "sha256": "204a930b20b324a563094e08f1db16033b378801ebee73020c8802a7f0a50c20"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-api-upstream-final-regression.json",
+      "category": "current-selected-evidence",
+      "bytes": 193108,
+      "sha256": "18102c2234fb5d0a15096d78fe604d7e01ec7dd7c7a803bdd5c925686e1da909"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/gc-evidence-date-selector-tests.json",
+      "category": "current-selected-evidence",
+      "bytes": 5954,
+      "sha256": "6d3e988876058b31ec8cf0141a826b38f5186dab3fb649a0985c4033412deedf"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/device-session-frontend-checks.json",
+      "category": "current-selected-evidence",
+      "bytes": 2107,
+      "sha256": "348fd900a216f45353e78a51bbfa5831ce817b10b42cedc3d1e920f19f04cc0f"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/device-session-browser-results.json",
+      "category": "current-selected-evidence",
+      "bytes": 7476,
+      "sha256": "61771761ef847ced010deccafce910f4c52243e9563c8d8e0911d7b321b54ab2"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/device-session-browser-final-attempt.json",
+      "category": "current-selected-evidence",
+      "bytes": 7476,
+      "sha256": "61771761ef847ced010deccafce910f4c52243e9563c8d8e0911d7b321b54ab2"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/device-session-public-evidence-redaction-v3.json",
+      "category": "current-selected-evidence",
+      "bytes": 11052,
+      "sha256": "2be28f55d9d3f67d48a7d18e11e33212448d09c8f2a05432e530b964caae4d0f"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-browser-cleanup-readonly-final.json",
+      "category": "current-selected-evidence",
+      "bytes": 1476,
+      "sha256": "4bdada715d513d5dcb35e1e8bf44c6ec48eb32dc330cee259ed8555fc1d9a53a"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/final-local-state.json",
+      "category": "current-selected-evidence",
+      "bytes": 1363,
+      "sha256": "fc9cc233942d364110cb832768f9e7faeb9d41ada9762a51f62bc742af03922f"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-isolated-storage-policies-first.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 2313,
+      "sha256": "480d7a5012fb2e1c83505192d5c45ceabc092bbb151605a0028344c432a645a6"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-device-session-migration-first-receipt.jsonl",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 1671,
+      "sha256": "106120d5d830b03e291a21c5c636cf74feeef6fb27eac307d94b442373dcd0f2"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-device-security-scoped-source-scan-1027-cut.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 6737,
+      "sha256": "1d3e2cffa2770557e46dd7898e671a47697d20ae1bb1ce0e12b8aa6322ddbee5"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-device-security-scoped-source-scan-rx7-cut.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 14503,
+      "sha256": "00236ae0d3d2ca5c6923090db5fd2bf42fac9144493d86415c5b6cd64bcbcf99"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-device-security-scoped-source-scan-om0-cut.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 15145,
+      "sha256": "2432c7b91647f2690a7ac8138ca11fad360f98c690937ca7b85471a5ea7c645d"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-device-security-scoped-source-scan-8tx-cut.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 15204,
+      "sha256": "b34ce9ddce8c05a3cf656089a129fb400e3bd0fcb9b6d7d0b8c2ecde5994962f"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-device-security-scoped-source-scan-m8j-cut.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 15559,
+      "sha256": "cfbb6dc4722e171fe978f21c5ca2d44cb6bd13133e954e5c452ff8632b6d0d8f"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-device-security-scoped-lint-0945-cut.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 60935,
+      "sha256": "6b4396babfdbc266867fc461237322aa4a0696faed634b7c3f7f1446f1288b16"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-device-binding-live-first.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 10813,
+      "sha256": "474fa21502397fbb15e4516301e269cb79adae9cf03b832b16421f3670a66ae3"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-device-binding-live-second.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 7342,
+      "sha256": "91daf7812aa643145853b1471fce2a24adf0100e2aff581db3c5c5162932d59f"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-device-binding-live-third.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 5966,
+      "sha256": "a72006ccdb1a54de5d80809e0de34725f222bc699aa5913a2699981207b7b845"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-device-binding-live-fourth.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 6451,
+      "sha256": "b0fb370b4b93aea7ce84557d14d7de3563bb6c69647bf66067ff9cb06c9b1e31"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-device-binding-live-fifth.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 6959,
+      "sha256": "76c09df77c01862e0f9ef2d404174729f2797177533aa67b225450b834a5cc58"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-device-binding-live-sixth.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 6967,
+      "sha256": "8f77ad5dd6c93acd574ccadc0f9d7c131e25b9d451ceb34463f928b4063d3cbb"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-device-binding-live-sixth-receipt.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 1413,
+      "sha256": "b0628f10c5866fcecc6e39856b9a19bdfde6a633559ffdae1af208c154f69956"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-database-device-security-regression-1008-cut.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 193955,
+      "sha256": "449e1663b2f64f8e35a2f18749529a496b2f3c2d14eff71c7d21f3e04ce82877"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-database-device-security-regression-0952-cut.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 192730,
+      "sha256": "8b45aba93727c19662174cbca61fedff69575610c68881b95e15c18445e111fe"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-api-device-security-regression-1008-cut.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 188911,
+      "sha256": "c3a3c71eecc05c6067c5346226877102747b69209650790be0d5c786d552541f"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-api-device-security-regression-1000-cut.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 187320,
+      "sha256": "3458ec3b5a8cefff23a9548504135b873de73b9ac706a15a5235ca489f56a674"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-api-device-security-regression-0952-cut.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 185278,
+      "sha256": "1378cf211003f583c3e9560a73e8d789d54033dc2b8601108ef260684472c1ec"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-api-device-security-regression-0945-cut.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 185278,
+      "sha256": "315ef6f58b8445dbd913ad9eb855aced166806000cc3108c657ede6dfb7ecc7d"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/nom-api-device-security-regression.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 188923,
+      "sha256": "af49fc5dc4c15f2c7094f6727be9e9daf38669dab31af6ee270dd18b684e0779"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/device-session-browser-first-attempt.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 9975,
+      "sha256": "898177180ffcf938251415f1efb96428c9a4a4ba40f1a305de8ed136d025183b"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/device-session-browser-diagnostic-attempt.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 12573,
+      "sha256": "30655321ed52d77bd30d19897df564dd1594272fc5a8f9b568d7db6a01aa5a02"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/device-session-browser-clock-attempt.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 11630,
+      "sha256": "4412eb9709c13c9d20e74f91434280a19ce925446061e3a5d1be6f3740c55ab8"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/device-session-browser-membership-race-attempt.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 13347,
+      "sha256": "5bef40d5f78eb5d7fb93347ab09380706422ed015b880db8616b20d11a7a3732"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/device-session-browser-navigation-attempt.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 16875,
+      "sha256": "6e10c901b390403785c1a387160bf731a30d2d29c819891c42a76c75d6f5d6a0"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/device-session-browser-tablet-attempt.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 13677,
+      "sha256": "136fb842dd2372d8dbd5c6d04cbfcda128c853a8c636112e18570b5ef1e98a47"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/device-session-browser-focus-attempt.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 10871,
+      "sha256": "1456c3514c5132ae6ed4adc4c46d32fa4b0137cfe9796dd9c24b872d555897f4"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/device-session-browser-rebound-attempt.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 10960,
+      "sha256": "a53bac8d9ccab1ed6b349f2fff4fd7f5107bd480544094cd6083d21cff411bdb"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/device-session-browser-exchange-attempt.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 16195,
+      "sha256": "517824d018f1595b36636a7e0f32cc94649a54ca2483ebc59ca70e7a7f45a9a2"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/device-session-browser-upstream-diagnostic-attempt.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 13820,
+      "sha256": "5b3083407e3b04c577d239ddba6b97bcbb3017c89e8efc4aa79dae8677d2c4b3"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/device-session-browser-upstream-confirmation-attempt.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 15566,
+      "sha256": "7757da56f9a2af2cfcecb0e879944c18c904ee7a603ddadd889a78386327d916"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "docs/premium-evidence/2026-10-02/gateway-connector-budget-reproduction.json",
+      "category": "historical-preserved-cut-not-current-pass",
+      "bytes": 1101,
+      "sha256": "fa1018abbd2ae7d65f11ef85805a979cc9f5a39895cce180612a9d48b08f13d8"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/dist/src/main.js",
+      "category": "selected-compiled-runtime-artifact",
+      "bytes": 1527,
+      "sha256": "60eb32ba032413f87f7ff3d68d368d2dbd4717d20ca509ec63685bb92f62f5e7"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/dist/src/config.js",
+      "category": "selected-compiled-runtime-artifact",
+      "bytes": 12697,
+      "sha256": "abf178d7206d53c4b7e7504e60f0d3cc182f27f4e5fca8131ddba311a8c10668"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/dist/src/security.js",
+      "category": "selected-compiled-runtime-artifact",
+      "bytes": 8989,
+      "sha256": "07672866f8dc2c46436185f45608f83f4f5e966f082cf01dad0f263ba8f9c2ee"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/dist/src/server.js",
+      "category": "selected-compiled-runtime-artifact",
+      "bytes": 8329,
+      "sha256": "ff738e56d6b747249491121f1ca8d7bcc9b18f93c2661b0fac43edfbe1c14669"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/dist/src/lib/log-safety.js",
+      "category": "selected-compiled-runtime-artifact",
+      "bytes": 2146,
+      "sha256": "40e1d67b98edce63797825deb772754f05fd4d146a3657bd348a66dff49caf9d"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/dist/src/modules/device-session-proof.js",
+      "category": "selected-compiled-runtime-artifact",
+      "bytes": 16749,
+      "sha256": "cdd9f09ed49af2445a3c5353e6a88621b143c3c879c4329f25ca853c4b891019"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/dist/src/modules/device-denial-audit.js",
+      "category": "selected-compiled-runtime-artifact",
+      "bytes": 2102,
+      "sha256": "aa1ca4ef03fbae026669051d12e3ce4a0afe8cf90e9439aa7d17596cd96cd981"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/dist/src/modules/event-routes.js",
+      "category": "selected-compiled-runtime-artifact",
+      "bytes": 15323,
+      "sha256": "9096ca369897fa08ee48648a0ab91073e1925698e459a049e5e60595c993a4c7"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/dist/src/modules/auth-routes.js",
+      "category": "selected-compiled-runtime-artifact",
+      "bytes": 11091,
+      "sha256": "e441509906d1fe202dadcd40e14df8a132efd59eb035f9cd5e6246822603df37"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/dist/src/modules/auth-service.js",
+      "category": "selected-compiled-runtime-artifact",
+      "bytes": 33390,
+      "sha256": "55003d8529fed2e0a897f42189f40934e0871ea18e1579911c45599b2dad98ca"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/dist/src/modules/enterprise-auth-routes.js",
+      "category": "selected-compiled-runtime-artifact",
+      "bytes": 16767,
+      "sha256": "b9dab3f8499b391ab02bb1df290651ddf3af1c3a748fc24e2b28a5dc26ae9b69"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/dist/src/modules/enterprise-auth-service.js",
+      "category": "selected-compiled-runtime-artifact",
+      "bytes": 45910,
+      "sha256": "f6f1dde2c8d2cc218f97e87125c0b46b0015627ca0456ed8676589ecfa4f04e4"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/dist/src/modules/gestionchurch-integration-routes.js",
+      "category": "selected-compiled-runtime-artifact",
+      "bytes": 12044,
+      "sha256": "d66841fb0c8dc838b104bc3b8b00d110bc57b8b98ed5b34757a9c3e316325438"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/dist/src/modules/gestionchurch-upstream-diagnostics.js",
+      "category": "selected-compiled-runtime-artifact",
+      "bytes": 619,
+      "sha256": "609a14b4e055b9ced52aad4976c7d951fabf650d0a40426bf5c11306a1705e7f"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/dist/src/runtime.js",
+      "category": "selected-compiled-runtime-artifact",
+      "bytes": 7854,
+      "sha256": "3ac084b655d1409841b305d21621862e74a4e00a9e5a9f65055cfdc82c72260f"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/dist/src/pools.js",
+      "category": "selected-compiled-runtime-artifact",
+      "bytes": 6965,
+      "sha256": "ef87d39621948b725ada082e522f62d80868ff1b27213aa14c29005fc624c06b"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/dist/src/control-store.js",
+      "category": "selected-compiled-runtime-artifact",
+      "bytes": 56619,
+      "sha256": "59616d8ff6ce01cd7337f312698c7f27197faccdb5a6df4d7396337334212adf"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/dist/src/device-session-store.js",
+      "category": "selected-compiled-runtime-artifact",
+      "bytes": 11266,
+      "sha256": "835d3c4e2ffce37e56edb90241a4d8753794863d9ae419d223a9d180c358e712"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/dist/src/key-lifecycle-store.js",
+      "category": "selected-compiled-runtime-artifact",
+      "bytes": 40232,
+      "sha256": "c68f37330f85cdd23f64a8f0ba0fdd3216f8d406f3bbd81edf5e74ecd17f03a0"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/dist/src/content-key-write-guard.js",
+      "category": "selected-compiled-runtime-artifact",
+      "bytes": 3616,
+      "sha256": "84e3da7f7f977e50ebd4fc17d5ba32755790c2439941da0ac796697b8d533a21"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/e2ee/dist/device-session-challenge.js",
+      "category": "selected-compiled-runtime-artifact",
+      "bytes": 2858,
+      "sha256": "b5be4387490db4f0926d3f6c8186477765b3a6b22b5722105894cb38d75e2aab"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/BUILD_ID",
+      "category": "selected-compiled-runtime-artifact",
+      "bytes": 21,
+      "sha256": "8432c05c083656be5a13d6b5dd5548026ed502058b6ce817fb6f05e411910150"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/BUILD_ID",
+      "category": "selected-compiled-runtime-artifact",
+      "bytes": 21,
+      "sha256": "8432c05c083656be5a13d6b5dd5548026ed502058b6ce817fb6f05e411910150"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/server.js",
+      "category": "selected-compiled-runtime-artifact",
+      "bytes": 7668,
+      "sha256": "6697e3213e7cbefe9443d0937b8ab2333b310624931a9afb939d492d1bfd6339"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "apps/web/.next/BUILD_ID",
+      "category": "selected-build-metadata-and-generator",
+      "bytes": 21,
+      "sha256": "df50ab1de6c2b47d7a7223e224bcfba789c1c1097d79f5af8fdb48cdfbdd93b9"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": ".local/generate-device-session-evidence-manifest.mjs",
+      "category": "selected-build-metadata-and-generator",
+      "bytes": 62479,
+      "sha256": "9a6717c7d69a80ba38ceb31886a9cab77102fee4164fb4ee895054741e773929"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "dist/services/api-gateway/src/main.js",
+      "category": "selected-compiled-build-artifact-not-served-gateway-runtime",
+      "bytes": 11408,
+      "sha256": "f20ce044c00ca89239b79b0e8fea7714f24e8063c3b62ae0a5cf84cb57c71181"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "dist/services/api-gateway/src/nominations-connector-budget.js",
+      "category": "selected-compiled-build-artifact-not-served-gateway-runtime",
+      "bytes": 5288,
+      "sha256": "a577c87f942dbd5b9fec5a90ae6f5fbec5132dad6daaeea8fedc3f7463517e2c"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "dist/packages/platform/src/security.js",
+      "category": "selected-compiled-build-artifact-not-served-gateway-runtime",
+      "bytes": 8068,
+      "sha256": "1f1337c1cbb935433438c0ff7e9271333324fecc95ee703e17cb934f17584c6a"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/0bhh9t71-z6nc.css",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 5147,
+      "sha256": "51f5afa89b80299c57c4e5afb8476b4095a889df592def3a1cba11775758e892"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/0c9-ts9xhbbgf.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 44227,
+      "sha256": "76f2dd98349b5d6567e39f00d1575d4cc5bc9b8d4cba9aabd0092fa62432ed82"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/0cz1d0mv5g_q7.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 112594,
+      "sha256": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/0ezs81u8sbgc0.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 228926,
+      "sha256": "8a892169464225e9bf9684fed060e853202e5007a0cf390b78fdb0f8bc30ec01"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/0gb9d4zxl-iwz.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 27508,
+      "sha256": "8f356333719b94b356365a2d3e686e68b1fa44885e90367758ac1083fd0e7c88"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/0ifg_4jpdmvtu.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 7077,
+      "sha256": "6ff5cd85b973d9ae9e9815b9a559c9d15954149a03635e96482ffe62985d1e28"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/0miy2rd4jtgn2.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 42970,
+      "sha256": "775fe0f27912e945a1650b69240af6e01b22395b32e41af19da193702cb9b799"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/13q96ekc_5cwx.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 26566,
+      "sha256": "b1a1c4432eac97e198421d4aabb3cc72dc60c43db6413f39c3fc4ce2c5322276"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/19x9b52kfeizu.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 403715,
+      "sha256": "3f21f11f222bc88de525494f81865a403a12e10d2fb84258385a7f7698a0403c"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/1b7z9y086kzey.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 29037,
+      "sha256": "641c3b1641d8ac9988996903de6d6ac813b7435d4f939164619d1104415df000"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/1h5c7eocaqzx5.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 23752,
+      "sha256": "a6202869e1d60d57d5b697be5c7de3d50c7cb4ecfd33e490b174f80e27c9f0fe"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/1lzi5v2eu1o-g.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 25429,
+      "sha256": "ebd1a22a9621cb956754cb6fccf4b97d3ce2dab5c6c83c29bd16bb8bfa099964"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/1s1z-66oigqo6.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 683,
+      "sha256": "e1f2f430f633d267b4aab1abff40b74059ee30f0bccebf3e015c35748195c5ce"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/1sxwrf72zfw7_.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 35897,
+      "sha256": "471785b1b07062b7f4c3e2c1a29cb7bdff73abe60df9e422b77d719974f849a0"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/1ubgb8e8qhuuh.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 930904,
+      "sha256": "ef5b3ef57e7b9860477f37b753453610b4ff486b4c3d3613f8f0b4efc011d8d0"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/24370wfteinqn.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 460937,
+      "sha256": "c76cc9e9e7573eca4998018981043de4dfebfce17f21e972881756c5e5a6f5ee"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/29ip8lsd7i0k4.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 709090,
+      "sha256": "49ca360eebb3822ec49c1a2d472b8183d6d20ab0a0e55692de38393a8fc29eed"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/2hza9_w1c_v2_.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 38577,
+      "sha256": "5b94584ba413d09e9a333988799e8e0f31ccadd9e4835cac68dd53de8a6cb475"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/2iwv9mdmfa_3q.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 11775,
+      "sha256": "9422ac6edf61af776878a13f189a4b6d6784dcc62793270ef73acdd4cd447232"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/2jf9rbrw8daxq.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 14380,
+      "sha256": "98b99cdf8a7f2726691126263c7c013c15308a567d1d05f334e1ab147506150e"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/2oln0sk2fh4yt.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 23661,
+      "sha256": "2922a6edb83302bdd927dc0df2c8da7c32743099aa43112056790f97dfdf0b02"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/2t66l78g1kfil.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 41662,
+      "sha256": "1e48b4916acef2f08db24eb38dc246a2f540e2b9feb146e6e8f7a9c121acfcdd"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/2yr8wvkn-p8sk.css",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 280799,
+      "sha256": "f65ddc44ab21c508fd222440ea741df8d033574fabce0bfeec7a375f7a46cc0e"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/37ojvi8eq_zmr.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 159948,
+      "sha256": "2ce3cc0013930da7301d843d7b4ca4ddfc1483bb2f580735a82c9f679d0eb91d"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/3b0d2w19jiuiz.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 560350,
+      "sha256": "609258e33ffcf7c026745e1dc0f447b8bdc8cb2d9337fc475f530dd4b1452668"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/3emuur8jx3jve.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 12888,
+      "sha256": "609e37310348c70266ce2e2457c0145a5e938edf4ebab6b4ce9ae40c84babb38"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/3i5tpjjid9-r3.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 67658,
+      "sha256": "f63e90b8ab976e27df1eced62b59fb7beda12085b563752fbb382135cbc3cb0d"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/3ie-7l1ssddsk.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 1972,
+      "sha256": "615c8285695669cdb9d5f9c647177607910a1f017a547530fa041eed4aeaaa9a"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/3n2ovyrve9-_2.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 1443750,
+      "sha256": "3d5b794676d6b5b46668c5bb7b60635161b31177a7d8e4e9ac0f26735b0c36d6"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/turbopack-15y_9u-yqg50o.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 9721,
+      "sha256": "be59f5bce34fb905f3b208a2e9125fa56a3fc0328b19ff1219c3306934cb9463"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/turbopack-27welbxjtclyf.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 9655,
+      "sha256": "bc355f69d7f69aedd3ba1776beeab73d6b12d10ed76b2141acf4faf2973b7cf7"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/chunks/turbopack-worker-2ru9m5gbh1na6.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 849,
+      "sha256": "861da5809b4f43b053fab88fe560f16efe31827655a06502ada9274a742852de"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/lBS4__cY65O1NCqX7bET8/_buildManifest.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 219,
+      "sha256": "9476e0afd3f9da68a64e6ec58631191fd3eaca62c9f5a377e7517fe9a89e59ea"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/lBS4__cY65O1NCqX7bET8/_clientMiddlewareManifest.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 343,
+      "sha256": "49671d7d20c8a54e67b68d7441af7d53e17cc6b779b78d61316691ddfbb27077"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/static/lBS4__cY65O1NCqX7bET8/_ssgManifest.js",
+      "category": "selected-public-js-css-bundle",
+      "bytes": 80,
+      "sha256": "678f6ce2cb80b1fe72fc67e7412be6e2ab6ada083111b64f7c40d35e3cba5e00"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/0bhh9t71-z6nc.css",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 5147,
+      "sha256": "51f5afa89b80299c57c4e5afb8476b4095a889df592def3a1cba11775758e892"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/0c9-ts9xhbbgf.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 44227,
+      "sha256": "76f2dd98349b5d6567e39f00d1575d4cc5bc9b8d4cba9aabd0092fa62432ed82"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/0cz1d0mv5g_q7.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 112594,
+      "sha256": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/0ezs81u8sbgc0.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 228926,
+      "sha256": "8a892169464225e9bf9684fed060e853202e5007a0cf390b78fdb0f8bc30ec01"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/0gb9d4zxl-iwz.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 27508,
+      "sha256": "8f356333719b94b356365a2d3e686e68b1fa44885e90367758ac1083fd0e7c88"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/0ifg_4jpdmvtu.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 7077,
+      "sha256": "6ff5cd85b973d9ae9e9815b9a559c9d15954149a03635e96482ffe62985d1e28"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/0miy2rd4jtgn2.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 42970,
+      "sha256": "775fe0f27912e945a1650b69240af6e01b22395b32e41af19da193702cb9b799"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/13q96ekc_5cwx.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 26566,
+      "sha256": "b1a1c4432eac97e198421d4aabb3cc72dc60c43db6413f39c3fc4ce2c5322276"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/19x9b52kfeizu.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 403715,
+      "sha256": "3f21f11f222bc88de525494f81865a403a12e10d2fb84258385a7f7698a0403c"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/1b7z9y086kzey.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 29037,
+      "sha256": "641c3b1641d8ac9988996903de6d6ac813b7435d4f939164619d1104415df000"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/1h5c7eocaqzx5.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 23752,
+      "sha256": "a6202869e1d60d57d5b697be5c7de3d50c7cb4ecfd33e490b174f80e27c9f0fe"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/1lzi5v2eu1o-g.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 25429,
+      "sha256": "ebd1a22a9621cb956754cb6fccf4b97d3ce2dab5c6c83c29bd16bb8bfa099964"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/1s1z-66oigqo6.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 683,
+      "sha256": "e1f2f430f633d267b4aab1abff40b74059ee30f0bccebf3e015c35748195c5ce"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/1sxwrf72zfw7_.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 35897,
+      "sha256": "471785b1b07062b7f4c3e2c1a29cb7bdff73abe60df9e422b77d719974f849a0"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/1ubgb8e8qhuuh.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 930904,
+      "sha256": "ef5b3ef57e7b9860477f37b753453610b4ff486b4c3d3613f8f0b4efc011d8d0"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/24370wfteinqn.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 460937,
+      "sha256": "c76cc9e9e7573eca4998018981043de4dfebfce17f21e972881756c5e5a6f5ee"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/29ip8lsd7i0k4.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 709090,
+      "sha256": "49ca360eebb3822ec49c1a2d472b8183d6d20ab0a0e55692de38393a8fc29eed"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/2hza9_w1c_v2_.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 38577,
+      "sha256": "5b94584ba413d09e9a333988799e8e0f31ccadd9e4835cac68dd53de8a6cb475"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/2iwv9mdmfa_3q.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 11775,
+      "sha256": "9422ac6edf61af776878a13f189a4b6d6784dcc62793270ef73acdd4cd447232"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/2jf9rbrw8daxq.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 14380,
+      "sha256": "98b99cdf8a7f2726691126263c7c013c15308a567d1d05f334e1ab147506150e"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/2oln0sk2fh4yt.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 23661,
+      "sha256": "2922a6edb83302bdd927dc0df2c8da7c32743099aa43112056790f97dfdf0b02"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/2t66l78g1kfil.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 41662,
+      "sha256": "1e48b4916acef2f08db24eb38dc246a2f540e2b9feb146e6e8f7a9c121acfcdd"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/2yr8wvkn-p8sk.css",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 280799,
+      "sha256": "f65ddc44ab21c508fd222440ea741df8d033574fabce0bfeec7a375f7a46cc0e"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/37ojvi8eq_zmr.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 159948,
+      "sha256": "2ce3cc0013930da7301d843d7b4ca4ddfc1483bb2f580735a82c9f679d0eb91d"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/3b0d2w19jiuiz.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 560350,
+      "sha256": "609258e33ffcf7c026745e1dc0f447b8bdc8cb2d9337fc475f530dd4b1452668"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/3emuur8jx3jve.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 12888,
+      "sha256": "609e37310348c70266ce2e2457c0145a5e938edf4ebab6b4ce9ae40c84babb38"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/3i5tpjjid9-r3.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 67658,
+      "sha256": "f63e90b8ab976e27df1eced62b59fb7beda12085b563752fbb382135cbc3cb0d"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/3ie-7l1ssddsk.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 1972,
+      "sha256": "615c8285695669cdb9d5f9c647177607910a1f017a547530fa041eed4aeaaa9a"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/3n2ovyrve9-_2.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 1443750,
+      "sha256": "3d5b794676d6b5b46668c5bb7b60635161b31177a7d8e4e9ac0f26735b0c36d6"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/turbopack-15y_9u-yqg50o.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 9721,
+      "sha256": "be59f5bce34fb905f3b208a2e9125fa56a3fc0328b19ff1219c3306934cb9463"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/turbopack-27welbxjtclyf.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 9655,
+      "sha256": "bc355f69d7f69aedd3ba1776beeab73d6b12d10ed76b2141acf4faf2973b7cf7"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/chunks/turbopack-worker-2ru9m5gbh1na6.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 849,
+      "sha256": "861da5809b4f43b053fab88fe560f16efe31827655a06502ada9274a742852de"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/lBS4__cY65O1NCqX7bET8/_buildManifest.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 219,
+      "sha256": "9476e0afd3f9da68a64e6ec58631191fd3eaca62c9f5a377e7517fe9a89e59ea"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/lBS4__cY65O1NCqX7bET8/_clientMiddlewareManifest.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 343,
+      "sha256": "49671d7d20c8a54e67b68d7441af7d53e17cc6b779b78d61316691ddfbb27077"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/.next/standalone/apps/web/.next/static/lBS4__cY65O1NCqX7bET8/_ssgManifest.js",
+      "category": "selected-standalone-public-js-css-mirror",
+      "bytes": 80,
+      "sha256": "678f6ce2cb80b1fe72fc67e7412be6e2ab6ada083111b64f7c40d35e3cba5e00"
+    }
+  ],
+  "fileCount": 268,
+  "bytesHashed": 18016538,
+  "inventorySha256": "2a7db0538935f70f95750c59db9ab850562d82442091b7b498904423593f2c75"
+}

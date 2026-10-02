@@ -1,0 +1,32 @@
+{
+  "kind": "owned-fixture-device-session-validation",
+  "cut": "seventh",
+  "priorCutsPreserved": true,
+  "fixtureRunId": "0318f792-6e48-41cf-ad4e-ffb5d13f581b",
+  "controlDatabase": "nom_e2e_c_0318f7926e4841cfad4effb5d13f581b",
+  "tenantDatabase": "nom_t_17d26a0649724b5d8dad70ea78cfd42f",
+  "ownerRole": "nom_o_17d26a0649724b5d8dad70ea78cfd42f",
+  "runtimeRole": "nom_r_17d26a0649724b5d8dad70ea78cfd42f",
+  "tests": { "passed": 13, "failed": 0, "durationSeconds": 15.02 },
+  "additionalAssertions": {
+    "getSessionSnapshotIdExactlyOwnAuthenticatedSessionForAAndB": true,
+    "sessionServerTimeWithinActualRequestWindow": true,
+    "sessionAbsoluteExpiryUnchanged": true,
+    "ownBrowsersABHaveDistinctCorrectDeviceLabels": true,
+    "ownSessionInventoryCurrentSessionExact": true,
+    "identityDSessionIdsAndLabelsExcludedFromIdentityA": true,
+    "identityASessionIdsAndLabelsExcludedFromIdentityD": true
+  },
+  "denialAudit": {
+    "tenantApiVisibleDeniedRequestsVerified": 35,
+    "hashChainVerified": true,
+    "secretFreeMetadata": true
+  },
+  "cleanup": { "databasesAndRolesRemaining": 0 },
+  "originalChurchDataQaMutations": false,
+  "runtimeReadOnlyHealthChecksAfterFixtureCleanup": [
+    { "url": "http://127.0.0.1:3300/es/auth/sign-in", "status": 200, "checkedAt": "2026-10-02T14:47:53.4700555+00:00" },
+    { "url": "http://127.0.0.1:4100/healthz", "status": 200, "checkedAt": "2026-10-02T14:47:53.5034009+00:00" }
+  ],
+  "report": "nom-device-binding-live-seventh.json"
+}

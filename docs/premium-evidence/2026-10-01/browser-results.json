@@ -1,0 +1,1260 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\raulp\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+      "X:\\CODE\\GestionChurch\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.premium.config.ts"
+    ],
+    "configFile": "X:\\CODE\\GestionChurch\\playwright.premium.config.ts",
+    "rootDir": "X:/CODE/GestionChurch/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "X:/CODE/GestionChurch/.local/premium-browser-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "isolated-chromium",
+        "name": "isolated-chromium",
+        "testDir": "X:/CODE/GestionChurch/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "premium.spec.ts",
+          "premium-nominations.spec.ts"
+        ],
+        "timeout": 180000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/premium-evidence/2026-10-01/browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "premium-nominations.spec.ts",
+      "file": "premium-nominations.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "GestionChurch SSO, tenant isolation and return work in the real browser",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2866,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T04:12:44.309Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "44bf0c62e61301b4b59c-d0ce41649b7810639c6d",
+          "file": "premium-nominations.spec.ts",
+          "line": 76,
+          "column": 1
+        },
+        {
+          "title": "guided start saves a real draft period without claiming activation or completing custody",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1777,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T04:12:49.646Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "44bf0c62e61301b4b59c-4d65088f7a2742254290",
+          "file": "premium-nominations.spec.ts",
+          "line": 90,
+          "column": 1
+        },
+        {
+          "title": "central explicit operational roles project and revocation invalidates the old session",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 840,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T04:12:51.429Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "44bf0c62e61301b4b59c-73dc188e5e768b114c8a",
+          "file": "premium-nominations.spec.ts",
+          "line": 119,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "premium.spec.ts",
+      "file": "premium.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "blank login, guarded routes and layout at 320/360/390/768/820/1280/1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14622,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "/dashboard at 320px",
+                      "duration": 89
+                    },
+                    {
+                      "title": "/calendar at 320px",
+                      "duration": 254
+                    },
+                    {
+                      "title": "/reviews at 320px",
+                      "duration": 235
+                    },
+                    {
+                      "title": "/reports at 320px",
+                      "duration": 142
+                    },
+                    {
+                      "title": "/notifications at 320px",
+                      "duration": 140
+                    },
+                    {
+                      "title": "/team at 320px",
+                      "duration": 83
+                    },
+                    {
+                      "title": "/documents at 320px",
+                      "duration": 262
+                    },
+                    {
+                      "title": "/settings/departments at 320px",
+                      "duration": 57
+                    },
+                    {
+                      "title": "/settings/roster at 320px",
+                      "duration": 86
+                    },
+                    {
+                      "title": "/settings/activity-form at 320px",
+                      "duration": 69
+                    },
+                    {
+                      "title": "/settings/channels at 320px",
+                      "duration": 80
+                    },
+                    {
+                      "title": "/audit at 320px",
+                      "duration": 363
+                    },
+                    {
+                      "title": "/personal-ministries at 320px",
+                      "duration": 142
+                    },
+                    {
+                      "title": "/womens-ministry at 320px",
+                      "duration": 144
+                    },
+                    {
+                      "title": "/elders at 320px",
+                      "duration": 245
+                    },
+                    {
+                      "title": "/ministry-hub at 320px",
+                      "duration": 235
+                    },
+                    {
+                      "title": "/dashboard at 360px",
+                      "duration": 89
+                    },
+                    {
+                      "title": "/calendar at 360px",
+                      "duration": 90
+                    },
+                    {
+                      "title": "/reviews at 360px",
+                      "duration": 139
+                    },
+                    {
+                      "title": "/reports at 360px",
+                      "duration": 77
+                    },
+                    {
+                      "title": "/notifications at 360px",
+                      "duration": 82
+                    },
+                    {
+                      "title": "/team at 360px",
+                      "duration": 68
+                    },
+                    {
+                      "title": "/documents at 360px",
+                      "duration": 55
+                    },
+                    {
+                      "title": "/settings/departments at 360px",
+                      "duration": 68
+                    },
+                    {
+                      "title": "/settings/roster at 360px",
+                      "duration": 80
+                    },
+                    {
+                      "title": "/settings/activity-form at 360px",
+                      "duration": 75
+                    },
+                    {
+                      "title": "/settings/channels at 360px",
+                      "duration": 70
+                    },
+                    {
+                      "title": "/audit at 360px",
+                      "duration": 377
+                    },
+                    {
+                      "title": "/personal-ministries at 360px",
+                      "duration": 69
+                    },
+                    {
+                      "title": "/womens-ministry at 360px",
+                      "duration": 69
+                    },
+                    {
+                      "title": "/elders at 360px",
+                      "duration": 58
+                    },
+                    {
+                      "title": "/ministry-hub at 360px",
+                      "duration": 78
+                    },
+                    {
+                      "title": "/dashboard at 390px",
+                      "duration": 84
+                    },
+                    {
+                      "title": "/calendar at 390px",
+                      "duration": 82
+                    },
+                    {
+                      "title": "/reviews at 390px",
+                      "duration": 136
+                    },
+                    {
+                      "title": "/reports at 390px",
+                      "duration": 87
+                    },
+                    {
+                      "title": "/notifications at 390px",
+                      "duration": 80
+                    },
+                    {
+                      "title": "/team at 390px",
+                      "duration": 59
+                    },
+                    {
+                      "title": "/documents at 390px",
+                      "duration": 71
+                    },
+                    {
+                      "title": "/settings/departments at 390px",
+                      "duration": 65
+                    },
+                    {
+                      "title": "/settings/roster at 390px",
+                      "duration": 67
+                    },
+                    {
+                      "title": "/settings/activity-form at 390px",
+                      "duration": 74
+                    },
+                    {
+                      "title": "/settings/channels at 390px",
+                      "duration": 84
+                    },
+                    {
+                      "title": "/audit at 390px",
+                      "duration": 365
+                    },
+                    {
+                      "title": "/personal-ministries at 390px",
+                      "duration": 69
+                    },
+                    {
+                      "title": "/womens-ministry at 390px",
+                      "duration": 62
+                    },
+                    {
+                      "title": "/elders at 390px",
+                      "duration": 61
+                    },
+                    {
+                      "title": "/ministry-hub at 390px",
+                      "duration": 73
+                    },
+                    {
+                      "title": "/dashboard at 768px",
+                      "duration": 128
+                    },
+                    {
+                      "title": "/calendar at 768px",
+                      "duration": 88
+                    },
+                    {
+                      "title": "/reviews at 768px",
+                      "duration": 138
+                    },
+                    {
+                      "title": "/reports at 768px",
+                      "duration": 86
+                    },
+                    {
+                      "title": "/notifications at 768px",
+                      "duration": 84
+                    },
+                    {
+                      "title": "/team at 768px",
+                      "duration": 58
+                    },
+                    {
+                      "title": "/documents at 768px",
+                      "duration": 65
+                    },
+                    {
+                      "title": "/settings/departments at 768px",
+                      "duration": 66
+                    },
+                    {
+                      "title": "/settings/roster at 768px",
+                      "duration": 69
+                    },
+                    {
+                      "title": "/settings/activity-form at 768px",
+                      "duration": 72
+                    },
+                    {
+                      "title": "/settings/channels at 768px",
+                      "duration": 71
+                    },
+                    {
+                      "title": "/audit at 768px",
+                      "duration": 347
+                    },
+                    {
+                      "title": "/personal-ministries at 768px",
+                      "duration": 68
+                    },
+                    {
+                      "title": "/womens-ministry at 768px",
+                      "duration": 66
+                    },
+                    {
+                      "title": "/elders at 768px",
+                      "duration": 63
+                    },
+                    {
+                      "title": "/ministry-hub at 768px",
+                      "duration": 73
+                    },
+                    {
+                      "title": "/dashboard at 820px",
+                      "duration": 80
+                    },
+                    {
+                      "title": "/calendar at 820px",
+                      "duration": 73
+                    },
+                    {
+                      "title": "/reviews at 820px",
+                      "duration": 142
+                    },
+                    {
+                      "title": "/reports at 820px",
+                      "duration": 71
+                    },
+                    {
+                      "title": "/notifications at 820px",
+                      "duration": 86
+                    },
+                    {
+                      "title": "/team at 820px",
+                      "duration": 76
+                    },
+                    {
+                      "title": "/documents at 820px",
+                      "duration": 51
+                    },
+                    {
+                      "title": "/settings/departments at 820px",
+                      "duration": 65
+                    },
+                    {
+                      "title": "/settings/roster at 820px",
+                      "duration": 60
+                    },
+                    {
+                      "title": "/settings/activity-form at 820px",
+                      "duration": 69
+                    },
+                    {
+                      "title": "/settings/channels at 820px",
+                      "duration": 74
+                    },
+                    {
+                      "title": "/audit at 820px",
+                      "duration": 368
+                    },
+                    {
+                      "title": "/personal-ministries at 820px",
+                      "duration": 61
+                    },
+                    {
+                      "title": "/womens-ministry at 820px",
+                      "duration": 63
+                    },
+                    {
+                      "title": "/elders at 820px",
+                      "duration": 57
+                    },
+                    {
+                      "title": "/ministry-hub at 820px",
+                      "duration": 75
+                    },
+                    {
+                      "title": "/dashboard at 1280px",
+                      "duration": 86
+                    },
+                    {
+                      "title": "/calendar at 1280px",
+                      "duration": 75
+                    },
+                    {
+                      "title": "/reviews at 1280px",
+                      "duration": 130
+                    },
+                    {
+                      "title": "/reports at 1280px",
+                      "duration": 71
+                    },
+                    {
+                      "title": "/notifications at 1280px",
+                      "duration": 81
+                    },
+                    {
+                      "title": "/team at 1280px",
+                      "duration": 60
+                    },
+                    {
+                      "title": "/documents at 1280px",
+                      "duration": 58
+                    },
+                    {
+                      "title": "/settings/departments at 1280px",
+                      "duration": 74
+                    },
+                    {
+                      "title": "/settings/roster at 1280px",
+                      "duration": 60
+                    },
+                    {
+                      "title": "/settings/activity-form at 1280px",
+                      "duration": 67
+                    },
+                    {
+                      "title": "/settings/channels at 1280px",
+                      "duration": 73
+                    },
+                    {
+                      "title": "/audit at 1280px",
+                      "duration": 362
+                    },
+                    {
+                      "title": "/personal-ministries at 1280px",
+                      "duration": 67
+                    },
+                    {
+                      "title": "/womens-ministry at 1280px",
+                      "duration": 62
+                    },
+                    {
+                      "title": "/elders at 1280px",
+                      "duration": 60
+                    },
+                    {
+                      "title": "/ministry-hub at 1280px",
+                      "duration": 77
+                    },
+                    {
+                      "title": "/dashboard at 1440px",
+                      "duration": 83
+                    },
+                    {
+                      "title": "/calendar at 1440px",
+                      "duration": 72
+                    },
+                    {
+                      "title": "/reviews at 1440px",
+                      "duration": 133
+                    },
+                    {
+                      "title": "/reports at 1440px",
+                      "duration": 88
+                    },
+                    {
+                      "title": "/notifications at 1440px",
+                      "duration": 84
+                    },
+                    {
+                      "title": "/team at 1440px",
+                      "duration": 64
+                    },
+                    {
+                      "title": "/documents at 1440px",
+                      "duration": 59
+                    },
+                    {
+                      "title": "/settings/departments at 1440px",
+                      "duration": 64
+                    },
+                    {
+                      "title": "/settings/roster at 1440px",
+                      "duration": 56
+                    },
+                    {
+                      "title": "/settings/activity-form at 1440px",
+                      "duration": 74
+                    },
+                    {
+                      "title": "/settings/channels at 1440px",
+                      "duration": 68
+                    },
+                    {
+                      "title": "/audit at 1440px",
+                      "duration": 368
+                    },
+                    {
+                      "title": "/personal-ministries at 1440px",
+                      "duration": 64
+                    },
+                    {
+                      "title": "/womens-ministry at 1440px",
+                      "duration": 66
+                    },
+                    {
+                      "title": "/elders at 1440px",
+                      "duration": 58
+                    },
+                    {
+                      "title": "/ministry-hub at 1440px",
+                      "duration": 74
+                    }
+                  ],
+                  "startTime": "2026-10-02T04:15:36.954Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-d9a5d95e9abd34cd75ab",
+          "file": "premium.spec.ts",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "browser creates an activity with two dates and a real program; persisted detail survives reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 932,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T04:15:52.494Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-0163e2cffea027b996f3",
+          "file": "premium.spec.ts",
+          "line": 63,
+          "column": 1
+        },
+        {
+          "title": "department navigation follows real memberships; administrator-only settings refuse member",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 512,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T04:15:53.432Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-3eb5f94667ee2df60458",
+          "file": "premium.spec.ts",
+          "line": 94,
+          "column": 1
+        },
+        {
+          "title": "form designer saves privately, previews mobile and publishes a usable audited custom field",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1513,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T04:15:53.950Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-8f9cccf10bcb69ee97f0",
+          "file": "premium.spec.ts",
+          "line": 104,
+          "column": 1
+        },
+        {
+          "title": "central commission and custodian assignments are editable without replacing departmental memberships",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1153,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T04:15:55.470Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-e5d6f8e3f8e25703563b",
+          "file": "premium.spec.ts",
+          "line": 154,
+          "column": 1
+        },
+        {
+          "title": "report filters match persisted records and produce a real CSV/PDF download",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 868,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T04:15:56.630Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-517ec3b9b153b165c74a",
+          "file": "premium.spec.ts",
+          "line": 185,
+          "column": 1
+        },
+        {
+          "title": "keyboard and automated accessibility checks on representative full pages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4969,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T04:15:57.505Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-c1fd9d96e34764034659",
+          "file": "premium.spec.ts",
+          "line": 216,
+          "column": 1
+        },
+        {
+          "title": "es: localized navigation survives reload and user-authored content is not translated",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3248,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T04:16:02.481Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-e501ef3dfa83c17522b9",
+          "file": "premium.spec.ts",
+          "line": 243,
+          "column": 3
+        },
+        {
+          "title": "en: localized navigation survives reload and user-authored content is not translated",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4038,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T04:16:05.735Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-d43ce6c356ec4b3258f2",
+          "file": "premium.spec.ts",
+          "line": 243,
+          "column": 3
+        },
+        {
+          "title": "fr: localized navigation survives reload and user-authored content is not translated",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3957,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T04:16:09.779Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-a80efda6d958db27bc3f",
+          "file": "premium.spec.ts",
+          "line": 243,
+          "column": 3
+        },
+        {
+          "title": "failed dashboard does not invent zero metrics and a retry recovers the real result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 628,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T04:16:13.741Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-c90b3c034845061e75b4",
+          "file": "premium.spec.ts",
+          "line": 290,
+          "column": 1
+        },
+        {
+          "title": "dirty activity survives cancelled link navigation and browser Back without leaking a draft to storage",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 647,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T04:16:14.375Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-6caf48ad7759f4371f1a",
+          "file": "premium.spec.ts",
+          "line": 302,
+          "column": 1
+        },
+        {
+          "title": "lost acknowledgements after activity and attachment commits resume the same persisted records",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 785,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T04:16:15.029Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-14f90f565e6016826a93",
+          "file": "premium.spec.ts",
+          "line": 335,
+          "column": 1
+        },
+        {
+          "title": "administrative publication recovery requires confirmation and reports scheduling rather than delivery",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1144,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T04:16:15.819Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-11dea8b52e75b38cadf3",
+          "file": "premium.spec.ts",
+          "line": 383,
+          "column": 1
+        },
+        {
+          "title": "explicit draft save reconciles lost acknowledgements and keeps custom data and program after reload and another tab",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1415,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T04:16:16.969Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-32bc37024f9a79a74ac9",
+          "file": "premium.spec.ts",
+          "line": 410,
+          "column": 1
+        },
+        {
+          "title": "password reset publication recovery exposes only metadata and forbids expired intent retries",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 693,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T04:16:18.391Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-e32bdfab4b9c573c79c3",
+          "file": "premium.spec.ts",
+          "line": 472,
+          "column": 1
+        },
+        {
+          "title": "session expiry preserves the activity and File in memory until same-account reauthentication and explicit retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1286,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T04:16:19.091Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-f1e89b7df8a23d0b5189",
+          "file": "premium.spec.ts",
+          "line": 512,
+          "column": 1
+        },
+        {
+          "title": "a different reauthenticated identity cannot inherit the old draft or attachment",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1191,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T04:16:20.382Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-760eb245de1ae35130da",
+          "file": "premium.spec.ts",
+          "line": 545,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-02T04:12:42.610Z",
+    "duration": 220658.34300000002,
+    "expected": 21,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

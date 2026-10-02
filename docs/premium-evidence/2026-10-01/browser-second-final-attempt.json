@@ -1,0 +1,1366 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\raulp\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+      "X:\\CODE\\GestionChurch\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config=playwright.premium.config.ts"
+    ],
+    "configFile": "X:\\CODE\\GestionChurch\\playwright.premium.config.ts",
+    "rootDir": "X:/CODE/GestionChurch/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "X:/CODE/GestionChurch/.local/premium-browser-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "isolated-chromium",
+        "name": "isolated-chromium",
+        "testDir": "X:/CODE/GestionChurch/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "premium.spec.ts",
+          "premium-nominations.spec.ts"
+        ],
+        "timeout": 180000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/premium-evidence/2026-10-01/browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "premium-nominations.spec.ts",
+      "file": "premium-nominations.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "GestionChurch SSO, tenant isolation and return work in the real browser",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2766,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:42:17.016Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "44bf0c62e61301b4b59c-d0ce41649b7810639c6d",
+          "file": "premium-nominations.spec.ts",
+          "line": 76,
+          "column": 1
+        },
+        {
+          "title": "guided start saves a real draft period without claiming activation or completing custody",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 906,
+                  "error": {
+                    "message": "Error: locator.click: Error: strict mode violation: getByRole('link', { name: 'Iniciar proceso', exact: true }) resolved to 2 elements:\n    1) <a data-size=\"sm\" data-slot=\"button\" data-variant=\"default\" href=\"/es/app/workflow\" aria-label=\"Iniciar proceso\" class=\"inline-flex shrink-0 items-center justify-center text-sm font-medium whitespace-nowrap transition-[box-shadow,transform,border-color] outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_s…>…</a> aka getByLabel('Iniciar proceso')\n    2) <a data-slot=\"button\" data-size=\"default\" data-variant=\"default\" href=\"/es/app/workflow\" class=\"inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-[box-shadow,transform,border-color] outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:poi…>…</a> aka getByRole('link', { name: 'Iniciar proceso' }).nth(1)\n\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: 'Iniciar proceso', exact: true })\u001b[22m\n",
+                    "stack": "Error: locator.click: Error: strict mode violation: getByRole('link', { name: 'Iniciar proceso', exact: true }) resolved to 2 elements:\n    1) <a data-size=\"sm\" data-slot=\"button\" data-variant=\"default\" href=\"/es/app/workflow\" aria-label=\"Iniciar proceso\" class=\"inline-flex shrink-0 items-center justify-center text-sm font-medium whitespace-nowrap transition-[box-shadow,transform,border-color] outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_s…>…</a> aka getByLabel('Iniciar proceso')\n    2) <a data-slot=\"button\" data-size=\"default\" data-variant=\"default\" href=\"/es/app/workflow\" class=\"inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-[box-shadow,transform,border-color] outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:poi…>…</a> aka getByRole('link', { name: 'Iniciar proceso' }).nth(1)\n\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: 'Iniciar proceso', exact: true })\u001b[22m\n\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium-nominations.spec.ts:93:74",
+                    "location": {
+                      "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium-nominations.spec.ts",
+                      "column": 74,
+                      "line": 93
+                    },
+                    "snippet": "  91 |   await login(page);\n  92 |   await launch(page);\n> 93 |   await page.getByRole('link', { name: 'Iniciar proceso', exact: true }).click();\n     |                                                                          ^\n  94 |   await expect(page).toHaveURL(/\\/es\\/app\\/workflow$/);\n  95 |   await page.getByRole('button', { name: 'Iniciar proceso', exact: true }).click();\n  96 |   const dialog = page.getByRole('dialog', { name: 'Nuevo proceso de nombramientos', exact: true });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium-nominations.spec.ts",
+                        "column": 74,
+                        "line": 93
+                      },
+                      "message": "Error: locator.click: Error: strict mode violation: getByRole('link', { name: 'Iniciar proceso', exact: true }) resolved to 2 elements:\n    1) <a data-size=\"sm\" data-slot=\"button\" data-variant=\"default\" href=\"/es/app/workflow\" aria-label=\"Iniciar proceso\" class=\"inline-flex shrink-0 items-center justify-center text-sm font-medium whitespace-nowrap transition-[box-shadow,transform,border-color] outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_s…>…</a> aka getByLabel('Iniciar proceso')\n    2) <a data-slot=\"button\" data-size=\"default\" data-variant=\"default\" href=\"/es/app/workflow\" class=\"inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-[box-shadow,transform,border-color] outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:poi…>…</a> aka getByRole('link', { name: 'Iniciar proceso' }).nth(1)\n\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: 'Iniciar proceso', exact: true })\u001b[22m\n\n\n  91 |   await login(page);\n  92 |   await launch(page);\n> 93 |   await page.getByRole('link', { name: 'Iniciar proceso', exact: true }).click();\n     |                                                                          ^\n  94 |   await expect(page).toHaveURL(/\\/es\\/app\\/workflow$/);\n  95 |   await page.getByRole('button', { name: 'Iniciar proceso', exact: true }).click();\n  96 |   const dialog = page.getByRole('dialog', { name: 'Nuevo proceso de nombramientos', exact: true });\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium-nominations.spec.ts:93:74"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:42:22.471Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-nominations-guided-7698b-ation-or-completing-custody-isolated-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-nominations-guided-7698b-ation-or-completing-custody-isolated-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium-nominations.spec.ts",
+                    "column": 74,
+                    "line": 93
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "44bf0c62e61301b4b59c-4d65088f7a2742254290",
+          "file": "premium-nominations.spec.ts",
+          "line": 90,
+          "column": 1
+        },
+        {
+          "title": "central explicit operational roles project and revocation invalidates the old session",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2178,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:45:09.577Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "44bf0c62e61301b4b59c-73dc188e5e768b114c8a",
+          "file": "premium-nominations.spec.ts",
+          "line": 115,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "premium.spec.ts",
+      "file": "premium.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "blank login, guarded routes and layout at 320/360/390/768/820/1280/1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14864,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "/dashboard at 320px",
+                      "duration": 82
+                    },
+                    {
+                      "title": "/calendar at 320px",
+                      "duration": 142
+                    },
+                    {
+                      "title": "/reviews at 320px",
+                      "duration": 123
+                    },
+                    {
+                      "title": "/reports at 320px",
+                      "duration": 249
+                    },
+                    {
+                      "title": "/notifications at 320px",
+                      "duration": 143
+                    },
+                    {
+                      "title": "/team at 320px",
+                      "duration": 133
+                    },
+                    {
+                      "title": "/documents at 320px",
+                      "duration": 123
+                    },
+                    {
+                      "title": "/settings/departments at 320px",
+                      "duration": 52
+                    },
+                    {
+                      "title": "/settings/roster at 320px",
+                      "duration": 81
+                    },
+                    {
+                      "title": "/settings/activity-form at 320px",
+                      "duration": 64
+                    },
+                    {
+                      "title": "/settings/channels at 320px",
+                      "duration": 80
+                    },
+                    {
+                      "title": "/audit at 320px",
+                      "duration": 368
+                    },
+                    {
+                      "title": "/personal-ministries at 320px",
+                      "duration": 135
+                    },
+                    {
+                      "title": "/womens-ministry at 320px",
+                      "duration": 243
+                    },
+                    {
+                      "title": "/elders at 320px",
+                      "duration": 134
+                    },
+                    {
+                      "title": "/ministry-hub at 320px",
+                      "duration": 226
+                    },
+                    {
+                      "title": "/dashboard at 360px",
+                      "duration": 112
+                    },
+                    {
+                      "title": "/calendar at 360px",
+                      "duration": 86
+                    },
+                    {
+                      "title": "/reviews at 360px",
+                      "duration": 132
+                    },
+                    {
+                      "title": "/reports at 360px",
+                      "duration": 88
+                    },
+                    {
+                      "title": "/notifications at 360px",
+                      "duration": 141
+                    },
+                    {
+                      "title": "/team at 360px",
+                      "duration": 74
+                    },
+                    {
+                      "title": "/documents at 360px",
+                      "duration": 62
+                    },
+                    {
+                      "title": "/settings/departments at 360px",
+                      "duration": 64
+                    },
+                    {
+                      "title": "/settings/roster at 360px",
+                      "duration": 72
+                    },
+                    {
+                      "title": "/settings/activity-form at 360px",
+                      "duration": 79
+                    },
+                    {
+                      "title": "/settings/channels at 360px",
+                      "duration": 76
+                    },
+                    {
+                      "title": "/audit at 360px",
+                      "duration": 366
+                    },
+                    {
+                      "title": "/personal-ministries at 360px",
+                      "duration": 69
+                    },
+                    {
+                      "title": "/womens-ministry at 360px",
+                      "duration": 67
+                    },
+                    {
+                      "title": "/elders at 360px",
+                      "duration": 68
+                    },
+                    {
+                      "title": "/ministry-hub at 360px",
+                      "duration": 81
+                    },
+                    {
+                      "title": "/dashboard at 390px",
+                      "duration": 89
+                    },
+                    {
+                      "title": "/calendar at 390px",
+                      "duration": 91
+                    },
+                    {
+                      "title": "/reviews at 390px",
+                      "duration": 139
+                    },
+                    {
+                      "title": "/reports at 390px",
+                      "duration": 92
+                    },
+                    {
+                      "title": "/notifications at 390px",
+                      "duration": 75
+                    },
+                    {
+                      "title": "/team at 390px",
+                      "duration": 60
+                    },
+                    {
+                      "title": "/documents at 390px",
+                      "duration": 65
+                    },
+                    {
+                      "title": "/settings/departments at 390px",
+                      "duration": 67
+                    },
+                    {
+                      "title": "/settings/roster at 390px",
+                      "duration": 62
+                    },
+                    {
+                      "title": "/settings/activity-form at 390px",
+                      "duration": 77
+                    },
+                    {
+                      "title": "/settings/channels at 390px",
+                      "duration": 86
+                    },
+                    {
+                      "title": "/audit at 390px",
+                      "duration": 367
+                    },
+                    {
+                      "title": "/personal-ministries at 390px",
+                      "duration": 71
+                    },
+                    {
+                      "title": "/womens-ministry at 390px",
+                      "duration": 67
+                    },
+                    {
+                      "title": "/elders at 390px",
+                      "duration": 58
+                    },
+                    {
+                      "title": "/ministry-hub at 390px",
+                      "duration": 73
+                    },
+                    {
+                      "title": "/dashboard at 768px",
+                      "duration": 121
+                    },
+                    {
+                      "title": "/calendar at 768px",
+                      "duration": 71
+                    },
+                    {
+                      "title": "/reviews at 768px",
+                      "duration": 134
+                    },
+                    {
+                      "title": "/reports at 768px",
+                      "duration": 106
+                    },
+                    {
+                      "title": "/notifications at 768px",
+                      "duration": 102
+                    },
+                    {
+                      "title": "/team at 768px",
+                      "duration": 71
+                    },
+                    {
+                      "title": "/documents at 768px",
+                      "duration": 73
+                    },
+                    {
+                      "title": "/settings/departments at 768px",
+                      "duration": 79
+                    },
+                    {
+                      "title": "/settings/roster at 768px",
+                      "duration": 70
+                    },
+                    {
+                      "title": "/settings/activity-form at 768px",
+                      "duration": 83
+                    },
+                    {
+                      "title": "/settings/channels at 768px",
+                      "duration": 100
+                    },
+                    {
+                      "title": "/audit at 768px",
+                      "duration": 368
+                    },
+                    {
+                      "title": "/personal-ministries at 768px",
+                      "duration": 68
+                    },
+                    {
+                      "title": "/womens-ministry at 768px",
+                      "duration": 69
+                    },
+                    {
+                      "title": "/elders at 768px",
+                      "duration": 61
+                    },
+                    {
+                      "title": "/ministry-hub at 768px",
+                      "duration": 78
+                    },
+                    {
+                      "title": "/dashboard at 820px",
+                      "duration": 96
+                    },
+                    {
+                      "title": "/calendar at 820px",
+                      "duration": 80
+                    },
+                    {
+                      "title": "/reviews at 820px",
+                      "duration": 145
+                    },
+                    {
+                      "title": "/reports at 820px",
+                      "duration": 73
+                    },
+                    {
+                      "title": "/notifications at 820px",
+                      "duration": 79
+                    },
+                    {
+                      "title": "/team at 820px",
+                      "duration": 61
+                    },
+                    {
+                      "title": "/documents at 820px",
+                      "duration": 60
+                    },
+                    {
+                      "title": "/settings/departments at 820px",
+                      "duration": 66
+                    },
+                    {
+                      "title": "/settings/roster at 820px",
+                      "duration": 79
+                    },
+                    {
+                      "title": "/settings/activity-form at 820px",
+                      "duration": 67
+                    },
+                    {
+                      "title": "/settings/channels at 820px",
+                      "duration": 69
+                    },
+                    {
+                      "title": "/audit at 820px",
+                      "duration": 367
+                    },
+                    {
+                      "title": "/personal-ministries at 820px",
+                      "duration": 64
+                    },
+                    {
+                      "title": "/womens-ministry at 820px",
+                      "duration": 71
+                    },
+                    {
+                      "title": "/elders at 820px",
+                      "duration": 61
+                    },
+                    {
+                      "title": "/ministry-hub at 820px",
+                      "duration": 80
+                    },
+                    {
+                      "title": "/dashboard at 1280px",
+                      "duration": 86
+                    },
+                    {
+                      "title": "/calendar at 1280px",
+                      "duration": 67
+                    },
+                    {
+                      "title": "/reviews at 1280px",
+                      "duration": 143
+                    },
+                    {
+                      "title": "/reports at 1280px",
+                      "duration": 81
+                    },
+                    {
+                      "title": "/notifications at 1280px",
+                      "duration": 80
+                    },
+                    {
+                      "title": "/team at 1280px",
+                      "duration": 74
+                    },
+                    {
+                      "title": "/documents at 1280px",
+                      "duration": 55
+                    },
+                    {
+                      "title": "/settings/departments at 1280px",
+                      "duration": 66
+                    },
+                    {
+                      "title": "/settings/roster at 1280px",
+                      "duration": 60
+                    },
+                    {
+                      "title": "/settings/activity-form at 1280px",
+                      "duration": 76
+                    },
+                    {
+                      "title": "/settings/channels at 1280px",
+                      "duration": 72
+                    },
+                    {
+                      "title": "/audit at 1280px",
+                      "duration": 363
+                    },
+                    {
+                      "title": "/personal-ministries at 1280px",
+                      "duration": 65
+                    },
+                    {
+                      "title": "/womens-ministry at 1280px",
+                      "duration": 64
+                    },
+                    {
+                      "title": "/elders at 1280px",
+                      "duration": 58
+                    },
+                    {
+                      "title": "/ministry-hub at 1280px",
+                      "duration": 78
+                    },
+                    {
+                      "title": "/dashboard at 1440px",
+                      "duration": 90
+                    },
+                    {
+                      "title": "/calendar at 1440px",
+                      "duration": 90
+                    },
+                    {
+                      "title": "/reviews at 1440px",
+                      "duration": 142
+                    },
+                    {
+                      "title": "/reports at 1440px",
+                      "duration": 87
+                    },
+                    {
+                      "title": "/notifications at 1440px",
+                      "duration": 73
+                    },
+                    {
+                      "title": "/team at 1440px",
+                      "duration": 68
+                    },
+                    {
+                      "title": "/documents at 1440px",
+                      "duration": 61
+                    },
+                    {
+                      "title": "/settings/departments at 1440px",
+                      "duration": 64
+                    },
+                    {
+                      "title": "/settings/roster at 1440px",
+                      "duration": 61
+                    },
+                    {
+                      "title": "/settings/activity-form at 1440px",
+                      "duration": 69
+                    },
+                    {
+                      "title": "/settings/channels at 1440px",
+                      "duration": 73
+                    },
+                    {
+                      "title": "/audit at 1440px",
+                      "duration": 336
+                    },
+                    {
+                      "title": "/personal-ministries at 1440px",
+                      "duration": 62
+                    },
+                    {
+                      "title": "/womens-ministry at 1440px",
+                      "duration": 71
+                    },
+                    {
+                      "title": "/elders at 1440px",
+                      "duration": 52
+                    },
+                    {
+                      "title": "/ministry-hub at 1440px",
+                      "duration": 78
+                    }
+                  ],
+                  "startTime": "2026-10-02T02:47:56.924Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-d9a5d95e9abd34cd75ab",
+          "file": "premium.spec.ts",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "browser creates an activity with two dates and a real program; persisted detail survives reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 875,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:48:12.780Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-0163e2cffea027b996f3",
+          "file": "premium.spec.ts",
+          "line": 63,
+          "column": 1
+        },
+        {
+          "title": "department navigation follows real memberships; administrator-only settings refuse member",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 517,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:48:13.661Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-3eb5f94667ee2df60458",
+          "file": "premium.spec.ts",
+          "line": 94,
+          "column": 1
+        },
+        {
+          "title": "form designer saves privately, previews mobile and publishes a usable audited custom field",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1539,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:48:14.184Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-8f9cccf10bcb69ee97f0",
+          "file": "premium.spec.ts",
+          "line": 104,
+          "column": 1
+        },
+        {
+          "title": "central commission and custodian assignments are editable without replacing departmental memberships",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1176,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:48:15.729Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-e5d6f8e3f8e25703563b",
+          "file": "premium.spec.ts",
+          "line": 154,
+          "column": 1
+        },
+        {
+          "title": "report filters match persisted records and produce a real CSV/PDF download",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 808,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:48:16.913Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-517ec3b9b153b165c74a",
+          "file": "premium.spec.ts",
+          "line": 185,
+          "column": 1
+        },
+        {
+          "title": "keyboard and automated accessibility checks on representative full pages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4016,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:48:17.733Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-c1fd9d96e34764034659",
+          "file": "premium.spec.ts",
+          "line": 216,
+          "column": 1
+        },
+        {
+          "title": "es: localized navigation survives reload and user-authored content is not translated",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 17502,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('main h1')\nExpected: \u001b[32m\"Inicio\"\u001b[39m\nReceived: \u001b[31m\"Detalle de actividad\"\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('main h1') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('main h1')\u001b[22m\n\u001b[2m    33 × locator resolved to <h1>Detalle de actividad</h1>\u001b[22m\n\u001b[2m       - unexpected value \"Detalle de actividad\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('main h1')\nExpected: \u001b[32m\"Inicio\"\u001b[39m\nReceived: \u001b[31m\"Detalle de actividad\"\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('main h1') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('main h1')\u001b[22m\n\u001b[2m    33 × locator resolved to <h1>Detalle de actividad</h1>\u001b[22m\n\u001b[2m       - unexpected value \"Detalle de actividad\"\u001b[22m\n\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:281:43",
+                    "location": {
+                      "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                      "column": 43,
+                      "line": 281
+                    },
+                    "snippet": "  279 |     await page.screenshot({ path: resolve(folder, `reportes-${locale}-390.png`), fullPage: true });\n  280 |     await page.goto(`/activities/${activity.id}`);\n> 281 |     await expect(page.locator('main h1')).toHaveText('Inicio');\n      |                                           ^\n  282 |     await expect(page.locator('main')).toContainText('Calendario');\n  283 |     await page.reload();\n  284 |     await expect(page.locator('main h1')).toHaveText('Inicio');"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                        "column": 43,
+                        "line": 281
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('main h1')\nExpected: \u001b[32m\"Inicio\"\u001b[39m\nReceived: \u001b[31m\"Detalle de actividad\"\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('main h1') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('main h1')\u001b[22m\n\u001b[2m    33 × locator resolved to <h1>Detalle de actividad</h1>\u001b[22m\n\u001b[2m       - unexpected value \"Detalle de actividad\"\u001b[22m\n\n\n  279 |     await page.screenshot({ path: resolve(folder, `reportes-${locale}-390.png`), fullPage: true });\n  280 |     await page.goto(`/activities/${activity.id}`);\n> 281 |     await expect(page.locator('main h1')).toHaveText('Inicio');\n      |                                           ^\n  282 |     await expect(page.locator('main')).toContainText('Calendario');\n  283 |     await page.reload();\n  284 |     await expect(page.locator('main h1')).toHaveText('Inicio');\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:281:43"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:48:21.756Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-es-localized-navig-bffec-d-content-is-not-translated-isolated-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-es-localized-navig-bffec-d-content-is-not-translated-isolated-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                    "column": 43,
+                    "line": 281
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-e501ef3dfa83c17522b9",
+          "file": "premium.spec.ts",
+          "line": 243,
+          "column": 3
+        },
+        {
+          "title": "en: localized navigation survives reload and user-authored content is not translated",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 20152,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('main h1')\nExpected: \u001b[32m\"Inicio\"\u001b[39m\nReceived: \u001b[31m\"Activity details\"\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('main h1') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('main h1')\u001b[22m\n\u001b[2m    - locator resolved to <h1>Detalle de actividad</h1>\u001b[22m\n\u001b[2m    - unexpected value \"Detalle de actividad\"\u001b[22m\n\u001b[2m    32 × locator resolved to <h1>Activity details</h1>\u001b[22m\n\u001b[2m       - unexpected value \"Activity details\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('main h1')\nExpected: \u001b[32m\"Inicio\"\u001b[39m\nReceived: \u001b[31m\"Activity details\"\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('main h1') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('main h1')\u001b[22m\n\u001b[2m    - locator resolved to <h1>Detalle de actividad</h1>\u001b[22m\n\u001b[2m    - unexpected value \"Detalle de actividad\"\u001b[22m\n\u001b[2m    32 × locator resolved to <h1>Activity details</h1>\u001b[22m\n\u001b[2m       - unexpected value \"Activity details\"\u001b[22m\n\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:281:43",
+                    "location": {
+                      "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                      "column": 43,
+                      "line": 281
+                    },
+                    "snippet": "  279 |     await page.screenshot({ path: resolve(folder, `reportes-${locale}-390.png`), fullPage: true });\n  280 |     await page.goto(`/activities/${activity.id}`);\n> 281 |     await expect(page.locator('main h1')).toHaveText('Inicio');\n      |                                           ^\n  282 |     await expect(page.locator('main')).toContainText('Calendario');\n  283 |     await page.reload();\n  284 |     await expect(page.locator('main h1')).toHaveText('Inicio');"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                        "column": 43,
+                        "line": 281
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('main h1')\nExpected: \u001b[32m\"Inicio\"\u001b[39m\nReceived: \u001b[31m\"Activity details\"\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('main h1') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('main h1')\u001b[22m\n\u001b[2m    - locator resolved to <h1>Detalle de actividad</h1>\u001b[22m\n\u001b[2m    - unexpected value \"Detalle de actividad\"\u001b[22m\n\u001b[2m    32 × locator resolved to <h1>Activity details</h1>\u001b[22m\n\u001b[2m       - unexpected value \"Activity details\"\u001b[22m\n\n\n  279 |     await page.screenshot({ path: resolve(folder, `reportes-${locale}-390.png`), fullPage: true });\n  280 |     await page.goto(`/activities/${activity.id}`);\n> 281 |     await expect(page.locator('main h1')).toHaveText('Inicio');\n      |                                           ^\n  282 |     await expect(page.locator('main')).toContainText('Calendario');\n  283 |     await page.reload();\n  284 |     await expect(page.locator('main h1')).toHaveText('Inicio');\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:281:43"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:48:42.071Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-en-localized-navig-aa74d-d-content-is-not-translated-isolated-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-en-localized-navig-aa74d-d-content-is-not-translated-isolated-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                    "column": 43,
+                    "line": 281
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-d43ce6c356ec4b3258f2",
+          "file": "premium.spec.ts",
+          "line": 243,
+          "column": 3
+        },
+        {
+          "title": "fr: localized navigation survives reload and user-authored content is not translated",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 20286,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('main h1')\nExpected: \u001b[32m\"Inicio\"\u001b[39m\nReceived: \u001b[31m\"Détails de l’activité\"\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('main h1') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('main h1')\u001b[22m\n\u001b[2m    - locator resolved to <h1>Detalle de actividad</h1>\u001b[22m\n\u001b[2m    - unexpected value \"Detalle de actividad\"\u001b[22m\n\u001b[2m    32 × locator resolved to <h1>Détails de l’activité</h1>\u001b[22m\n\u001b[2m       - unexpected value \"Détails de l’activité\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('main h1')\nExpected: \u001b[32m\"Inicio\"\u001b[39m\nReceived: \u001b[31m\"Détails de l’activité\"\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('main h1') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('main h1')\u001b[22m\n\u001b[2m    - locator resolved to <h1>Detalle de actividad</h1>\u001b[22m\n\u001b[2m    - unexpected value \"Detalle de actividad\"\u001b[22m\n\u001b[2m    32 × locator resolved to <h1>Détails de l’activité</h1>\u001b[22m\n\u001b[2m       - unexpected value \"Détails de l’activité\"\u001b[22m\n\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:281:43",
+                    "location": {
+                      "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                      "column": 43,
+                      "line": 281
+                    },
+                    "snippet": "  279 |     await page.screenshot({ path: resolve(folder, `reportes-${locale}-390.png`), fullPage: true });\n  280 |     await page.goto(`/activities/${activity.id}`);\n> 281 |     await expect(page.locator('main h1')).toHaveText('Inicio');\n      |                                           ^\n  282 |     await expect(page.locator('main')).toContainText('Calendario');\n  283 |     await page.reload();\n  284 |     await expect(page.locator('main h1')).toHaveText('Inicio');"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                        "column": 43,
+                        "line": 281
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('main h1')\nExpected: \u001b[32m\"Inicio\"\u001b[39m\nReceived: \u001b[31m\"Détails de l’activité\"\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('main h1') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('main h1')\u001b[22m\n\u001b[2m    - locator resolved to <h1>Detalle de actividad</h1>\u001b[22m\n\u001b[2m    - unexpected value \"Detalle de actividad\"\u001b[22m\n\u001b[2m    32 × locator resolved to <h1>Détails de l’activité</h1>\u001b[22m\n\u001b[2m       - unexpected value \"Détails de l’activité\"\u001b[22m\n\n\n  279 |     await page.screenshot({ path: resolve(folder, `reportes-${locale}-390.png`), fullPage: true });\n  280 |     await page.goto(`/activities/${activity.id}`);\n> 281 |     await expect(page.locator('main h1')).toHaveText('Inicio');\n      |                                           ^\n  282 |     await expect(page.locator('main')).toContainText('Calendario');\n  283 |     await page.reload();\n  284 |     await expect(page.locator('main h1')).toHaveText('Inicio');\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:281:43"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:49:06.048Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-fr-localized-navig-297e4-d-content-is-not-translated-isolated-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-fr-localized-navig-297e4-d-content-is-not-translated-isolated-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                    "column": 43,
+                    "line": 281
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-a80efda6d958db27bc3f",
+          "file": "premium.spec.ts",
+          "line": 243,
+          "column": 3
+        },
+        {
+          "title": "failed dashboard does not invent zero metrics and a retry recovers the real result",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 16269,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    33 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    33 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:298:41",
+                    "location": {
+                      "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                      "column": 41,
+                      "line": 298
+                    },
+                    "snippet": "  296 |   await page.unroute('**/api/v1/dashboard');\n  297 |   await page.getByRole('button', { name: 'Reintentar', exact: true }).click();\n> 298 |   await expect(appAlerts(page)).toHaveCount(0);\n      |                                         ^\n  299 |   await expect(page.locator('.stat-card').first()).toBeVisible();\n  300 | });\n  301 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                        "column": 41,
+                        "line": 298
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByRole('alert') with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    33 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n\n  296 |   await page.unroute('**/api/v1/dashboard');\n  297 |   await page.getByRole('button', { name: 'Reintentar', exact: true }).click();\n> 298 |   await expect(appAlerts(page)).toHaveCount(0);\n      |                                         ^\n  299 |   await expect(page.locator('.stat-card').first()).toBeVisible();\n  300 | });\n  301 |\n    at X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts:298:41"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:49:30.256Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-failed-dashboard-d-3252f-ry-recovers-the-real-result-isolated-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "X:\\CODE\\GestionChurch\\.local\\premium-browser-results\\premium-failed-dashboard-d-3252f-ry-recovers-the-real-result-isolated-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "X:\\CODE\\GestionChurch\\tests\\browser\\premium.spec.ts",
+                    "column": 41,
+                    "line": 298
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-c90b3c034845061e75b4",
+          "file": "premium.spec.ts",
+          "line": 290,
+          "column": 1
+        },
+        {
+          "title": "dirty activity survives cancelled link navigation and browser Back without leaking a draft to storage",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1748,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:49:50.408Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-6caf48ad7759f4371f1a",
+          "file": "premium.spec.ts",
+          "line": 302,
+          "column": 1
+        },
+        {
+          "title": "lost acknowledgements after activity and attachment commits resume the same persisted records",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 866,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:49:53.311Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-14f90f565e6016826a93",
+          "file": "premium.spec.ts",
+          "line": 335,
+          "column": 1
+        },
+        {
+          "title": "administrative publication recovery requires confirmation and reports scheduling rather than delivery",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1214,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:49:54.187Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-11dea8b52e75b38cadf3",
+          "file": "premium.spec.ts",
+          "line": 383,
+          "column": 1
+        },
+        {
+          "title": "session expiry preserves the activity and File in memory until same-account reauthentication and explicit retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1222,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:49:55.411Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-f1e89b7df8a23d0b5189",
+          "file": "premium.spec.ts",
+          "line": 427,
+          "column": 1
+        },
+        {
+          "title": "a different reauthenticated identity cannot inherit the old draft or attachment",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "isolated-chromium",
+              "projectName": "isolated-chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1353,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-02T02:49:56.642Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1fb7ddc5863c49f0e0e5-760eb245de1ae35130da",
+          "file": "premium.spec.ts",
+          "line": 460,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-02T02:42:15.137Z",
+    "duration": 464110.108,
+    "expected": 14,
+    "skipped": 0,
+    "unexpected": 5,
+    "flaky": 0
+  }
+}

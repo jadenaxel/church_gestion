@@ -1,0 +1,31 @@
+{
+  "executionDateLocal": "2026-10-01",
+  "postflightVerifiedAt": "2026-10-02T03:59:40Z",
+  "scope": "Reviewed local PostgreSQL 18 cluster at loopback:55432; exact registered canonical Central/Ozama targets and gestionchurch_control",
+  "mode": "Root applied scoped additive scripts after both agents confirmed no active owned fixtures; read-only preflight and postflight passed",
+  "identity": {
+    "script": "scripts/apply-premium-password-reset-outbox.ts",
+    "appliedDatabases": 2,
+    "tablesPerDatabase": 1,
+    "indexesPerDatabase": 1,
+    "existingIdentityDefaultPrivilegesVerified": true,
+    "newGrants": 0
+  },
+  "control": {
+    "script": "scripts/apply-premium-tenant-settings-reconciliation.ts",
+    "tables": 1,
+    "indexes": 2,
+    "publicTablePrivilegesRevoked": true,
+    "protectedTenantAndAuditInventoryUnchanged": true
+  },
+  "businessDataMutations": 0,
+  "seedRuns": 0,
+  "synchronizationRuns": 0,
+  "credentialsChanged": 0,
+  "rolesAssignedToRealUsers": 0,
+  "messagesSent": 0,
+  "limitations": [
+    "This schema application does not prove production least privilege, provider delivery, disaster recovery or complete application acceptance.",
+    "It does not perform full migrations, replace keys or adopt/delete any unregistered database."
+  ]
+}

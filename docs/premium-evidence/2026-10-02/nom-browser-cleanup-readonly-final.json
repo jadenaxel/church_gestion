@@ -1,0 +1,55 @@
+{
+  "pass": true,
+  "operation": "owned-browser-cleanup-readonly-verification",
+  "verifiedAt": "2026-10-02T16:16:09.971Z",
+  "mutations": 0,
+  "originalRegistryCount": 3,
+  "originalRoutesCanonical": true,
+  "ledgers": [
+    {
+      "scope": "control",
+      "appliedCount": 32,
+      "appliedHead": "032_gestionchurch_explicit_operational_roles.sql",
+      "pendingCount": 0,
+      "checksumsVerified": true
+    },
+    {
+      "scope": "tenant",
+      "appliedCount": 41,
+      "appliedHead": "039_device_bound_http_sessions.sql",
+      "pendingCount": 0,
+      "checksumsVerified": true
+    },
+    {
+      "scope": "tenant",
+      "appliedCount": 41,
+      "appliedHead": "039_device_bound_http_sessions.sql",
+      "pendingCount": 0,
+      "checksumsVerified": true
+    },
+    {
+      "scope": "tenant",
+      "appliedCount": 41,
+      "appliedHead": "039_device_bound_http_sessions.sql",
+      "pendingCount": 0,
+      "checksumsVerified": true
+    }
+  ],
+  "cleanedOwnedReceiptCount": 29,
+  "remainingOwnedResources": {
+    "tenantRegistrations": 0,
+    "provisioningJobs": 0,
+    "memberships": 0,
+    "authSessions": 0,
+    "federatedIdentities": 0,
+    "databases": 0,
+    "nomRoles": 0,
+    "gcRuntimeRoles": 0,
+    "gcSourceRegistrations": 0,
+    "gcLaunchCodes": 0,
+    "secretReferences": 0
+  },
+  "auditRetentionDeclaredByReceipts": true,
+  "auditIntegrityVerified": false,
+  "scope": "original-three-routes-and-only-UUIDs-in-validated-owned-browser-receipts"
+}

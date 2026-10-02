@@ -1,0 +1,54 @@
+{
+  "recordedAt": "2026-10-02T04:10:30Z",
+  "scope": "tenant settings durable reconciliation; isolated PostgreSQL, not HTTP or browser evidence",
+  "postgresql": {
+    "startAt": "2026-10-02T04:10:29Z",
+    "command": "RUN_PREMIUM_TENANT_SETTINGS_RECONCILIATION_DB_TESTS=1 pnpm exec vitest run tests/integration/premium-tenant-settings-reconciliation-db.test.ts",
+    "testsPassed": 12,
+    "testsFailed": 0,
+    "durationMs": 1370,
+    "databaseFixtures": 2,
+    "cleanup": {
+      "ownershipMarkerAndNonceVerified": true,
+      "poolsClosed": true,
+      "connectionsRemainingBeforeExactDrop": 0,
+      "databasesRemainingAfterDrop": 0,
+      "originalBusinessDataMutations": 0
+    },
+    "cases": [
+      "Name-only PATCH preserves timezone, timestamp and unrelated calendar settings",
+      "Tenant audit failure rolls back tenant stage, retains pending intent and retries once",
+      "Control audit failure retains tenant stage and restart worker completes without duplicate audit or rewrite",
+      "Lost intent COMMIT acknowledgement recovers only the exact durable receipt",
+      "Lost tenant COMMIT acknowledgement remains pending and safely replays the receipt",
+      "Lost final control COMMIT acknowledgement is confirmed only by durable completed evidence",
+      "Lost claim COMMIT acknowledgement writes no tenant data; expired lease resumes",
+      "Independent Calendar change remains untouched; explicit versioned same-timezone replacement succeeds while old-key replay retains its conflict receipt",
+      "Concurrent duplicates converge once; reused key, different actor and stale version are rejected",
+      "Wrong database is rejected; later independent Calendar divergence remains visible without automatic synchronization",
+      "Twelve older suspended intents do not starve active recovery and remain untouched",
+      "Concurrent name-only completion cannot pair the old name with a newer version; stale snapshot save is rejected"
+    ],
+    "commitFaultInjection": "Real PostgreSQL COMMIT executes before a synthetic acknowledgement exception; not a network-disconnect or distributed-transaction proof"
+  },
+  "focusedUnits": {
+    "testsPassed": 22,
+    "testsFailed": 0,
+    "files": [
+      "tests/unit/tenant-settings-reconciliation.test.ts",
+      "tests/unit/tenant-runtime-boundary.test.ts",
+      "tests/unit/database-leased-client.test.ts"
+    ]
+  },
+  "checks": {
+    "servicesTypecheck": "PASS",
+    "focusedLintSevenFiles": "PASS",
+    "reconciliationHttpThreeCaseSuite": "adapted, not executed in this evidence record"
+  },
+  "limits": [
+    "No cross-database atomicity is claimed; accepted intents and stage receipts make incomplete work durable and recoverable",
+    "Calendar PATCH retains its independent calendar.manage authority and may diverge after completion; Tenant GET reports incoherence rather than silently overwriting it",
+    "Production TLS, credentials, staging restart, load and operational manual-conflict UX remain separate validation",
+    "No authorization or cryptographic device protocol change; D10 remains pending"
+  ]
+}

@@ -1,0 +1,383 @@
+{
+  "kind": "supplemental-secret-and-high-confidence-pii-pattern-scan",
+  "scanner": "scripts/scan-secrets.mjs exported inspectTextContent",
+  "scannerVersion": 2,
+  "reviewClassification": "Local agent code review and supplemental pattern scan; not an independent external penetration test.",
+  "selfTestPassed": true,
+  "scope": "Exact 50 named files: 43 Nombramientos D10 production source files, 1 tenant metadata migration, 2 guarded operational scripts, 2 dependency metadata files; plus 2 GestionChurch evidence-only verification scripts, separated below. No workspace walk.",
+  "frontendBuildId": "RX7EbHCqHHF4OYxV5ZyyZ",
+  "priorCutPreserved": "nom-device-security-scoped-source-scan-1027-cut.json",
+  "scannedAtUtc": "2026-10-02T14:54:51.917Z",
+  "fileCount": 50,
+  "scopeCounts": {
+    "NombramientosProductionSource": 43,
+    "NombramientosTenantMetadataMigrations": 1,
+    "NombramientosGuardedOperationalScripts": 2,
+    "NombramientosDependencyMetadata": 2,
+    "GestionChurchEvidenceOnlyVerificationScripts": 2
+  },
+  "bytesScanned": 1751842,
+  "pass": true,
+  "findings": [],
+  "inventory": [
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/src/security.ts",
+      "category": "production-source",
+      "bytes": 8933,
+      "sha256": "ede0f28c75923ea4d034c35c77fe1d1e4c05daa18076327cfaa9167e5c096136"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/src/server.ts",
+      "category": "production-source",
+      "bytes": 8144,
+      "sha256": "bdb7273ad1ab8ef3218603c82f22eec40c4dd0ea53ed43b7685b80978be8ef55"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/src/lib/log-safety.ts",
+      "category": "production-source",
+      "bytes": 2422,
+      "sha256": "339885e5fd6e2be2d1f1588001fdaf514ae21900794332605f66bad0a24ecf15"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/src/modules/auth-routes.ts",
+      "category": "production-source",
+      "bytes": 10208,
+      "sha256": "30527cfec531f1388dfc3e5c436caa5defd6d626cce3b523324992324dcd1cb7"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/src/modules/enterprise-auth-routes.ts",
+      "category": "production-source",
+      "bytes": 15896,
+      "sha256": "e36f09e6f9f3979f28075b56aef0f5699b5b69c596004f21968da56f0404a2ef"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/src/modules/enterprise-auth-service.ts",
+      "category": "production-source",
+      "bytes": 59273,
+      "sha256": "8d0c1896aac276efcd1b674b289554d2df2e973b965a06bd6167ceb8476d5a92"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/src/modules/gestionchurch-integration-routes.ts",
+      "category": "production-source",
+      "bytes": 11587,
+      "sha256": "8977bbc37f26ad71eb294892e95e382dea5a1624fe9785b657f1d456540eb52e"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/src/modules/device-session-proof.ts",
+      "category": "production-source",
+      "bytes": 16678,
+      "sha256": "0f88c1c0f256592f978b2335974c6e26b6aab37fe8ea87f0d770c424236e5341"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/src/modules/device-denial-audit.ts",
+      "category": "production-source",
+      "bytes": 2007,
+      "sha256": "7f4e2c0dc7f7e128f11429d8bfc80d467b86283e7dde8a5b43568d7f745d215f"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/src/modules/event-routes.ts",
+      "category": "production-source",
+      "bytes": 15248,
+      "sha256": "ee216f22db8f13f21f16274e81050420631c73332873d05720b1658f043d75ea"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/src/runtime.ts",
+      "category": "production-source",
+      "bytes": 9762,
+      "sha256": "cc2e74dbaf94ddc1ec5e3fa8572c5f9e24c6cbc91afc068438b9df203ff88227"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/src/pools.ts",
+      "category": "production-source",
+      "bytes": 7100,
+      "sha256": "4e59a9085c2cce6d6723b3c29ada14496afad710efeecbb54ae25553fbf38a3e"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/src/control-store.ts",
+      "category": "production-source",
+      "bytes": 73957,
+      "sha256": "c2df32461432463628dd6ac63929b6338a245e2ffe2e1f825fcff035e8d413cc"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/src/device-session-store.ts",
+      "category": "production-source",
+      "bytes": 13102,
+      "sha256": "9d3a7c6019b0073a77df9f8da3f7a2abee55d21007dbc8a65ef113fbc1efe3c1"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/src/key-lifecycle-store.ts",
+      "category": "production-source",
+      "bytes": 48727,
+      "sha256": "4bef6505633d9be09f110605311d678783291cb5da1577c451706019b1c61ae6"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/src/content-key-write-guard.ts",
+      "category": "production-source",
+      "bytes": 4190,
+      "sha256": "461f7a9b2e339589905f6fdd7b3da5aa71ddac05ae47ea9d31bd51de67e63fbd"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/src/runtime-grant-contract.ts",
+      "category": "production-source",
+      "bytes": 4943,
+      "sha256": "602666bdf5af71bb8c7b9b661ad9df9f93ffd4bede649e574d128d49f2de3a63"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/migrations/tenant/039_device_bound_http_sessions.sql",
+      "category": "tenant-metadata-migration",
+      "bytes": 3590,
+      "sha256": "a03d2b4dc047eb8403938a237579bc4f6b4a88622d25d3fe77b113d83a7f6a16"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/scripts/apply-device-session-migration.mjs",
+      "category": "guarded-operational-verification",
+      "bytes": 12917,
+      "sha256": "7b203ac07dc63815e95983ad701980d910862846c2fed853193369f0cb8fb77e"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/e2ee/src/device-session-challenge.ts",
+      "category": "production-source",
+      "bytes": 3973,
+      "sha256": "ec5ff748ee8e817c1dab58b59ccdd933b07d96d125c084a8cc5a23256ffcc736"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/lib/api.ts",
+      "category": "production-source",
+      "bytes": 62294,
+      "sha256": "d9e0012cf62640992cc371dd4b71eb1a51592ad76654a166cfc7ec4260b59960"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/lib/device-session-proof.ts",
+      "category": "production-source",
+      "bytes": 11251,
+      "sha256": "8ef3f91f4a63e9be2b36258a28eb0775bce793c0b3e5a7346113e7c80ecf61b6"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/lib/device-session-client.ts",
+      "category": "production-source",
+      "bytes": 6356,
+      "sha256": "6f6b2cfc1fd00b20237ef041f26a513039f8a7ebd245534e666db596170623e6"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/lib/device-event-stream.ts",
+      "category": "production-source",
+      "bytes": 1616,
+      "sha256": "fa032c64363437df1f1c79d154da749162d495e9f9848b3028eec9c859c43ec6"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/lib/device-registration.ts",
+      "category": "production-source",
+      "bytes": 1626,
+      "sha256": "62a90d17ef16df7e3d7ecf69c9162fb028b8d86c0098e4729e09c1503fedbe0d"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/lib/session-clock.ts",
+      "category": "production-source",
+      "bytes": 1024,
+      "sha256": "54bf4bf276c14773a8f90e2d19d917bdeeb2a47587b69c81dc2b54943d8dc338"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/lib/request-deadline.ts",
+      "category": "production-source",
+      "bytes": 1673,
+      "sha256": "e68d89bcf0b713a1fe580802ff7522fa52ff9047cb032333cd3df2d464d400ac"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/components/nombramientos/app-shell.tsx",
+      "category": "production-source",
+      "bytes": 23752,
+      "sha256": "20d3c36e81f233805a4cccb08d08fc77192ff757f0e5f3b021a7fc904e8366ff"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/components/nombramientos/device-session-boundary.tsx",
+      "category": "production-source",
+      "bytes": 7422,
+      "sha256": "9869d88a86e5ee179009d553e4a8a08cd7fa5835b2d6b8f7a43aeace128d7e67"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/components/nombramientos/key-lifecycle-view.tsx",
+      "category": "production-source",
+      "bytes": 61606,
+      "sha256": "f6bbdc79a9a85219aafbe54534db6fd36c8bc5982d21486a09aa7c4e5da18d9d"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/components/nombramientos/round-view.tsx",
+      "category": "production-source",
+      "bytes": 33739,
+      "sha256": "821b55b0678e183d5e746232146ed11f755cc74121433d2c625dedeb9f203f93"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/components/nombramientos/security-center.tsx",
+      "category": "production-source",
+      "bytes": 58308,
+      "sha256": "7576d971a7110c4fba4552cc5225e364882d69bc84ffc9fb9f0139e5aef69fc9"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/src/config.ts",
+      "category": "production-source",
+      "bytes": 13306,
+      "sha256": "1bf8fae161a6d911a7001303be6c8f395fc549230ad7fec76b2cb4a8a21708ea"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/src/modules/auth-service.ts",
+      "category": "production-source",
+      "bytes": 35161,
+      "sha256": "4abfce56c33389ca064f0b0aa2e5ff91bf828968ed9b7ae20116028bcde4977e"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/src/types.ts",
+      "category": "production-source",
+      "bytes": 4024,
+      "sha256": "8c5c446696ad354aa83076a3c122a204ed3551a8d8522864534bb6b4d1c63b31"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/src/index.ts",
+      "category": "production-source",
+      "bytes": 1467,
+      "sha256": "16616b8467b5b8dd668824bab9b67e798e8443f7cf207479355827d620d421d1"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/src/tenant-maintenance-policy.ts",
+      "category": "production-source",
+      "bytes": 13502,
+      "sha256": "5fb24bd6b95d299831f282fd1b0286d68e5e06b201a371b7b0ddc53d0da13864"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/src/local-state-verifier.ts",
+      "category": "production-source",
+      "bytes": 86163,
+      "sha256": "23d7d5f32893ed101822337fe994e6d4a703edcdbca5227c79cd0ca2f3a2fdc7"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/e2ee/src/index.ts",
+      "category": "production-source",
+      "bytes": 3245,
+      "sha256": "45ce7a3ff11c927b60c8f6dd588fe28c5537077666d906097de274e4ef367dbe"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/database/scripts/verify-gestionchurch-browser-cleanup.mjs",
+      "category": "guarded-operational-verification",
+      "bytes": 10487,
+      "sha256": "af4109478af61b95f7061a9eb712d8bde18ee07aceb3f01cc27e85062d711987"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/api/package.json",
+      "category": "dependency-metadata",
+      "bytes": 1848,
+      "sha256": "fd1566b4cd8496e2f96e1cc304598487ef6b788989eceeacd7845fce3fc42d97"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "pnpm-lock.yaml",
+      "category": "dependency-metadata",
+      "bytes": 359574,
+      "sha256": "06812dd773c9f8fbdcc4ef27c3aba1e2a2b95af81176e4645cbb140437e29733"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/components/nombramientos/tenant-switcher.tsx",
+      "category": "production-source",
+      "bytes": 3646,
+      "sha256": "19983950ee56daf549104dd7cfd866bc45333710629e01e71d1d0b3e5d52a0e5"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/lib/device-session-readiness.ts",
+      "category": "production-source",
+      "bytes": 2759,
+      "sha256": "b8819b6127b1d286d0a69337128471b1795b05777e3a6959eb64d7c10d9f0f46"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/i18n/src/es.ts",
+      "category": "production-source",
+      "bytes": 197663,
+      "sha256": "8d8850f30ed19b0aa8f9523b91c2b557041484afe716110ca1ff39cb5d0d1f13"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/i18n/src/en.ts",
+      "category": "production-source",
+      "bytes": 188627,
+      "sha256": "6563890c77c3b7b5705a13caa17b9b680e32bb19c67901bef344477753bd9a69"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "packages/i18n/src/fr.ts",
+      "category": "production-source",
+      "bytes": 206519,
+      "sha256": "74bd9743a4cf2fe6bc8e3c3167512a3f9302df723ee8c56df531e1e6d8a7c5aa"
+    },
+    {
+      "workspace": "Nombramientos",
+      "file": "apps/web/lib/product-i18n.ts",
+      "category": "production-source",
+      "bytes": 13255,
+      "sha256": "b1b57918b1c731cead1fa21a515390f0c26f6d2230c33f8b7d0af7b91aba47c9"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "scripts/premium-evidence-date.ts",
+      "category": "evidence-only-verification-script",
+      "bytes": 1631,
+      "sha256": "e3a19d5ab59f3be6c2c3d11e4862e22d0dd2e80d71c858d26abbf7f60c072b13"
+    },
+    {
+      "workspace": "GestionChurch",
+      "file": "scripts/verify-premium-local-state.ts",
+      "category": "evidence-only-verification-script",
+      "bytes": 5641,
+      "sha256": "2cbbf15053ed0027af2b1c5bf346e1beae09abd29a64c637bd9e893ac88b2070"
+    }
+  ],
+  "inventorySha256": "245676b917245265e744756ebffd9937927f81f6622659a8968800a5609e02e1",
+  "limitations": [
+    "Secret/signature/high-confidence PII pattern scan only; no entropy analysis, data-flow taint analysis or cryptographic proof",
+    "Does not cover all repository source, Git history, compiled delivery bundles or dependency implementation",
+    "Does not read runtime secrets, environment credential files, databases, original church data or encrypted business content",
+    "GestionChurch files in this inventory are verification scripts, not a scan of GestionChurch application production source",
+    "Does not replace independent penetration testing, deployment review or the multilingual/physical-device pilot",
+    "Frontend browser validation is separate; successful source scan does not turn a failed browser attempt into a pass"
+  ]
+}

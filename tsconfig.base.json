@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2024",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2024", "DOM"],
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "useDefineForClassFields": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@gc/contracts": ["./packages/contracts/src/index.ts"],
+      "@gc/database": ["./packages/database/src/index.ts"],
+      "@gc/database/migrations": ["./packages/database/src/migrations.ts"],
+      "@gc/calendar-domain": ["./packages/calendar-domain/src/index.ts"],
+      "@gc/notification-domain": ["./packages/notification-domain/src/index.ts"],
+      "@gc/messaging": ["./packages/messaging/src/index.ts"],
+      "@gc/platform": ["./packages/platform/src/index.ts"]
+    }
+  }
+}

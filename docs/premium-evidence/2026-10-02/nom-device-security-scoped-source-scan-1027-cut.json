@@ -1,0 +1,181 @@
+{
+  "kind": "supplemental-secret-and-high-confidence-pii-pattern-scan",
+  "scanner": "scripts/scan-secrets.mjs exported inspectTextContent",
+  "scannerVersion": 2,
+  "selfTestPassed": true,
+  "scope": "Exact 32 named Nombramientos D10 production source files, metadata migration and guarded migration script; no workspace walk",
+  "scannedAtUtc": "2026-10-02T14:27:46.132Z",
+  "fileCount": 32,
+  "bytesScanned": 603275,
+  "pass": true,
+  "findings": [],
+  "inventory": [
+    {
+      "file": "apps/api/src/security.ts",
+      "bytes": 8933,
+      "sha256": "ede0f28c75923ea4d034c35c77fe1d1e4c05daa18076327cfaa9167e5c096136"
+    },
+    {
+      "file": "apps/api/src/server.ts",
+      "bytes": 8144,
+      "sha256": "bdb7273ad1ab8ef3218603c82f22eec40c4dd0ea53ed43b7685b80978be8ef55"
+    },
+    {
+      "file": "apps/api/src/lib/log-safety.ts",
+      "bytes": 2422,
+      "sha256": "339885e5fd6e2be2d1f1588001fdaf514ae21900794332605f66bad0a24ecf15"
+    },
+    {
+      "file": "apps/api/src/modules/auth-routes.ts",
+      "bytes": 10162,
+      "sha256": "67276cca4e26bba44ed33d3bcd40ecdd2e983d13d379c3395a8d11c4ba629954"
+    },
+    {
+      "file": "apps/api/src/modules/enterprise-auth-routes.ts",
+      "bytes": 15896,
+      "sha256": "e36f09e6f9f3979f28075b56aef0f5699b5b69c596004f21968da56f0404a2ef"
+    },
+    {
+      "file": "apps/api/src/modules/enterprise-auth-service.ts",
+      "bytes": 59273,
+      "sha256": "8d0c1896aac276efcd1b674b289554d2df2e973b965a06bd6167ceb8476d5a92"
+    },
+    {
+      "file": "apps/api/src/modules/gestionchurch-integration-routes.ts",
+      "bytes": 11587,
+      "sha256": "8977bbc37f26ad71eb294892e95e382dea5a1624fe9785b657f1d456540eb52e"
+    },
+    {
+      "file": "apps/api/src/modules/device-session-proof.ts",
+      "bytes": 16678,
+      "sha256": "0f88c1c0f256592f978b2335974c6e26b6aab37fe8ea87f0d770c424236e5341"
+    },
+    {
+      "file": "apps/api/src/modules/device-denial-audit.ts",
+      "bytes": 2007,
+      "sha256": "7f4e2c0dc7f7e128f11429d8bfc80d467b86283e7dde8a5b43568d7f745d215f"
+    },
+    {
+      "file": "apps/api/src/modules/event-routes.ts",
+      "bytes": 15248,
+      "sha256": "ee216f22db8f13f21f16274e81050420631c73332873d05720b1658f043d75ea"
+    },
+    {
+      "file": "packages/database/src/runtime.ts",
+      "bytes": 9762,
+      "sha256": "cc2e74dbaf94ddc1ec5e3fa8572c5f9e24c6cbc91afc068438b9df203ff88227"
+    },
+    {
+      "file": "packages/database/src/pools.ts",
+      "bytes": 7100,
+      "sha256": "4e59a9085c2cce6d6723b3c29ada14496afad710efeecbb54ae25553fbf38a3e"
+    },
+    {
+      "file": "packages/database/src/control-store.ts",
+      "bytes": 73957,
+      "sha256": "c2df32461432463628dd6ac63929b6338a245e2ffe2e1f825fcff035e8d413cc"
+    },
+    {
+      "file": "packages/database/src/device-session-store.ts",
+      "bytes": 13102,
+      "sha256": "9d3a7c6019b0073a77df9f8da3f7a2abee55d21007dbc8a65ef113fbc1efe3c1"
+    },
+    {
+      "file": "packages/database/src/key-lifecycle-store.ts",
+      "bytes": 48727,
+      "sha256": "4bef6505633d9be09f110605311d678783291cb5da1577c451706019b1c61ae6"
+    },
+    {
+      "file": "packages/database/src/content-key-write-guard.ts",
+      "bytes": 4190,
+      "sha256": "461f7a9b2e339589905f6fdd7b3da5aa71ddac05ae47ea9d31bd51de67e63fbd"
+    },
+    {
+      "file": "packages/database/src/runtime-grant-contract.ts",
+      "bytes": 4943,
+      "sha256": "602666bdf5af71bb8c7b9b661ad9df9f93ffd4bede649e574d128d49f2de3a63"
+    },
+    {
+      "file": "packages/database/migrations/tenant/039_device_bound_http_sessions.sql",
+      "bytes": 3590,
+      "sha256": "a03d2b4dc047eb8403938a237579bc4f6b4a88622d25d3fe77b113d83a7f6a16"
+    },
+    {
+      "file": "packages/database/scripts/apply-device-session-migration.mjs",
+      "bytes": 12917,
+      "sha256": "7b203ac07dc63815e95983ad701980d910862846c2fed853193369f0cb8fb77e"
+    },
+    {
+      "file": "packages/e2ee/src/device-session-challenge.ts",
+      "bytes": 3973,
+      "sha256": "ec5ff748ee8e817c1dab58b59ccdd933b07d96d125c084a8cc5a23256ffcc736"
+    },
+    {
+      "file": "apps/web/lib/api.ts",
+      "bytes": 61866,
+      "sha256": "3d360bb9814a8daf00e5f5b5f5e792aff179a9818230b851e6f10ca51645a6fc"
+    },
+    {
+      "file": "apps/web/lib/device-session-proof.ts",
+      "bytes": 11251,
+      "sha256": "8ef3f91f4a63e9be2b36258a28eb0775bce793c0b3e5a7346113e7c80ecf61b6"
+    },
+    {
+      "file": "apps/web/lib/device-session-client.ts",
+      "bytes": 6356,
+      "sha256": "6f6b2cfc1fd00b20237ef041f26a513039f8a7ebd245534e666db596170623e6"
+    },
+    {
+      "file": "apps/web/lib/device-event-stream.ts",
+      "bytes": 1616,
+      "sha256": "fa032c64363437df1f1c79d154da749162d495e9f9848b3028eec9c859c43ec6"
+    },
+    {
+      "file": "apps/web/lib/device-registration.ts",
+      "bytes": 1626,
+      "sha256": "62a90d17ef16df7e3d7ecf69c9162fb028b8d86c0098e4729e09c1503fedbe0d"
+    },
+    {
+      "file": "apps/web/lib/session-clock.ts",
+      "bytes": 1024,
+      "sha256": "54bf4bf276c14773a8f90e2d19d917bdeeb2a47587b69c81dc2b54943d8dc338"
+    },
+    {
+      "file": "apps/web/lib/request-deadline.ts",
+      "bytes": 1673,
+      "sha256": "e68d89bcf0b713a1fe580802ff7522fa52ff9047cb032333cd3df2d464d400ac"
+    },
+    {
+      "file": "apps/web/components/nombramientos/app-shell.tsx",
+      "bytes": 23274,
+      "sha256": "e0c38b0a09ea64a5ccc67445cb0bae7d251422f8968033c6ad3788a4c84719de"
+    },
+    {
+      "file": "apps/web/components/nombramientos/device-session-boundary.tsx",
+      "bytes": 8325,
+      "sha256": "5fe71a0f0465be7057ce0714016fbf39e21ca44bb641c7bf3fc87dddb34302d4"
+    },
+    {
+      "file": "apps/web/components/nombramientos/key-lifecycle-view.tsx",
+      "bytes": 61606,
+      "sha256": "f6bbdc79a9a85219aafbe54534db6fd36c8bc5982d21486a09aa7c4e5da18d9d"
+    },
+    {
+      "file": "apps/web/components/nombramientos/round-view.tsx",
+      "bytes": 33739,
+      "sha256": "821b55b0678e183d5e746232146ed11f755cc74121433d2c625dedeb9f203f93"
+    },
+    {
+      "file": "apps/web/components/nombramientos/security-center.tsx",
+      "bytes": 58308,
+      "sha256": "7576d971a7110c4fba4552cc5225e364882d69bc84ffc9fb9f0139e5aef69fc9"
+    }
+  ],
+  "limitations": [
+    "Signature/PII pattern scan only; no entropy analysis, data-flow taint analysis or cryptographic proof",
+    "Does not cover all repository source, Git history, compiled delivery bundles or dependencies",
+    "Does not read runtime secrets, environment credential files, databases, original church data or encrypted business content",
+    "Does not replace independent penetration testing, deployment review or the multilingual/physical-device pilot",
+    "Frontend clock work is still under validation; file hashes identify exactly the source observed by this scan"
+  ]
+}
